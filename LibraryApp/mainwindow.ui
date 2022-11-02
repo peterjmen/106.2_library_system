@@ -88,22 +88,6 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_easypic">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>400</y>
-      <width>111</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Resources/grudges.jpg</pixmap>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
