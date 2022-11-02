@@ -34,7 +34,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -44,9 +44,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -66,10 +66,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\filemanager.cpp"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\filemanager.cpp"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/filemanager.cpp"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/filemanager.cpp"
 },
 {
     "arguments": [
@@ -106,7 +106,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -116,9 +116,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -138,10 +138,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\main.cpp"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\main.cpp"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/main.cpp"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/main.cpp"
 },
 {
     "arguments": [
@@ -178,7 +178,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -188,9 +188,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -210,10 +210,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\mainwindow.cpp"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\mainwindow.cpp"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/mainwindow.cpp"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -250,7 +250,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -260,9 +260,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -282,10 +282,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\suclogin.cpp"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\suclogin.cpp"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/suclogin.cpp"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/suclogin.cpp"
 },
 {
     "arguments": [
@@ -322,7 +322,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -332,9 +332,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -354,10 +354,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\filemanager.h"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\filemanager.h"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/filemanager.h"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/filemanager.h"
 },
 {
     "arguments": [
@@ -394,7 +394,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -404,9 +404,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -426,10 +426,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\mainwindow.h"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\mainwindow.h"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/mainwindow.h"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/mainwindow.h"
 },
 {
     "arguments": [
@@ -466,7 +466,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -476,9 +476,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -498,10 +498,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp\\suclogin.h"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\suclogin.h"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/LibraryApp/suclogin.h"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/LibraryApp/suclogin.h"
 },
 {
     "arguments": [
@@ -538,7 +538,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -548,9 +548,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -570,10 +570,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_suclogin.h"
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_suclogin.h"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_suclogin.h"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_suclogin.h"
 },
 {
     "arguments": [
@@ -610,7 +610,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\LibraryApp",
+        "C:\\Github\\106.2_library_system\\LibraryApp",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include",
         "-I",
@@ -620,9 +620,9 @@
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -642,9 +642,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\peter\\OneDrive\\Documents\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "C:\\Github\\106.2_library_system\\build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
-    "directory": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/peter/OneDrive/Documents/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "directory": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_mainwindow.h"
 }
 ]
