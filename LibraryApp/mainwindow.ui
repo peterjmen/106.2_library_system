@@ -101,7 +101,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../Desktop/cat/grudges.jpg</pixmap>
+     <pixmap>../Resources/grudges.jpg</pixmap>
     </property>
    </widget>
   </widget>

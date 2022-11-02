@@ -102,7 +102,7 @@ public:
         label_easypic = new QLabel(centralwidget);
         label_easypic->setObjectName("label_easypic");
         label_easypic->setGeometry(QRect(70, 400, 111, 141));
-        label_easypic->setPixmap(QPixmap(QString::fromUtf8("../../Desktop/cat/grudges.jpg")));
+        label_easypic->setPixmap(QPixmap(QString::fromUtf8("../Resources/grudges.jpg")));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
