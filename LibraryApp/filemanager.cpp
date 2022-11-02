@@ -10,6 +10,57 @@ FileManager::FileManager()
 
 }
 
+void FileManager::WriteFile(QString fileName, QVector<QString> fileContent){
+    fileName.append(".csv");
+    QFile file(fileName);
+    file.open(QIODevice::ReadWrite | QIODevice::Append);
+
+    if(!file.isOpen()){
+        qDebug() << "No file was found :(";
+        return;
+       }
+
+    QTextStream stream(&file);
+    for(int i = 0; i < fileContent.size(); i++){
+        stream << fileContent.at(i);
+        if(i != fileContent.size()-1){
+            stream << ",";
+        }
+        else{
+            stream << "\n";
+        }
+    }
+    file.close();
+    if(!file.isOpen()){
+        qDebug() << "Filed closed - write";
+    }
+
+
+}
+
+bool FileManager::CheckValidUser(QString username, QString fileName){\
+    nameFound = false;
+    QVector<QVector<QString>> content = ReadFile(fileName, 3); //TODO 3 because columns .. how far accross it can go
+
+    for(int i = 0; i<content.size();i++){
+        if(content.at(i).at(0) == username){
+            nameFound = true;
+            return false;
+        }
+        else{
+            continue;
+        }
+    }
+    if(!nameFound){
+        return true;
+
+    }
+    return false;
+}
+
+
+
+
 
 //below is creating dynamic 2d array to store username and passwords
 QVector<QVector<QString>> FileManager::ReadFile(QString fileName, int numCols){
@@ -44,5 +95,5 @@ QVector<QVector<QString>> FileManager::ReadFile(QString fileName, int numCols){
             }
         }
     }
-
+return columns; //may cause issues
 }

@@ -5,6 +5,7 @@
 
 #include "suclogin.h" //and created instances in private
 #include "filemanager.h" //and created instances in private
+#include "adminwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,12 +21,14 @@ public:
 
 private slots:
     void on_pushButton_login_clicked();
-
+    void on_pushButton_signUp_clicked();
 
 private:
     Ui::MainWindow *ui;
     sucLogin *suclogin;
+    adminWindow *adminwindow;
     FileManager fManager;
     bool signedIn = false;
 };
 #endif // MAINWINDOW_H
+

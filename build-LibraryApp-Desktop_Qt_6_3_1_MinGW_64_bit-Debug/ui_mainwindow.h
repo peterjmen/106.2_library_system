@@ -37,7 +37,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit_password;
     QPushButton *pushButton_login;
-    QPushButton *pushButton;
+    QPushButton *pushButton_signUp;
     QLabel *label_pic;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -90,10 +90,10 @@ public:
 
         verticalLayout->addWidget(pushButton_login);
 
-        pushButton = new QPushButton(groupBox);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton_signUp = new QPushButton(groupBox);
+        pushButton_signUp->setObjectName(QString::fromUtf8("pushButton_signUp"));
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(pushButton_signUp);
 
         label_pic = new QLabel(centralwidget);
         label_pic->setObjectName(QString::fromUtf8("label_pic"));
@@ -119,7 +119,7 @@ public:
         label->setText(QCoreApplication::translate("MainWindow", "UserName", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Signin", nullptr));
+        pushButton_signUp->setText(QCoreApplication::translate("MainWindow", "Sign-up", nullptr));
         label_pic->setText(QString());
     } // retranslateUi
 

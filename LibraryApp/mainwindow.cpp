@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "adminwindow.h"
+
 #include <QMessageBox>
 #include <QPixmap>
 #include <QFile>
@@ -15,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
     int w = ui->label_pic->width();
     int h = ui->label_pic->height();
     ui->label_pic->setPixmap(myfirstpic.scaled(w,h,Qt::KeepAspectRatio));
+//    ui->pushButton_signUp.connect(ui->pushButton_signUp, SIGNAL(clicked()), this,SLOT(on_pushButton_signUp_clicked()));
+
 }
 
 MainWindow::~MainWindow()
@@ -23,23 +27,20 @@ MainWindow::~MainWindow()
 }
 
 
+
 void MainWindow::on_pushButton_login_clicked()
 {
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
 
 
-
-
-
-
     QVector<QVector<QString>> fileContent = fManager.ReadFile("accountInformation", 3);
 
         if(username == "admin" && password == "admin"){
-            QMessageBox::information(this, "Admin Login", "Thank you for logging in admin, this sections still needs to be implemented");
+            QMessageBox::information(this, "Admin Login", "Proceed to admin page");
             hide();
-//            adminlogin = new adminLogin(this);
-//            adminlogin->show();
+            adminwindow = new adminWindow(this);
+            adminwindow->show();
             signedIn = true;
 
         } else {
@@ -86,4 +87,30 @@ void MainWindow::on_pushButton_login_clicked()
 //        QMessageBox::warning(this, "Login", "Username and Password is not correct");
 //    }
 //}
+
+
+
+
+
+void MainWindow::on_pushButton_signUp_clicked()
+{
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+
+    QVector<QString> content;
+    content.append(username);
+    content.append(password);
+    content.append("1"); //1 for access level 1
+
+    if(fManager.CheckValidUser(username, "accountInformation")){
+        fManager.WriteFile("accountInformation", content);
+
+        QMessageBox box(this);
+        box.setIcon(QMessageBox::Information);
+        box.setText("Congratulations, you have signed up successfully");
+        box.setWindowTitle("Sign-up");
+        box.setStandardButtons(QMessageBox::Ok);
+        box.exec();
+    }
+}
 
