@@ -38,7 +38,6 @@ public:
     QLineEdit *lineEdit_password;
     QPushButton *pushButton_login;
     QPushButton *pushButton_register;
-    QPushButton *pushButton;
     QLabel *label_pic;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -47,12 +46,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(805, 618);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(260, 80, 531, 341));
+        groupBox->setGeometry(QRect(170, 50, 531, 341));
         verticalLayout = new QVBoxLayout(groupBox);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
@@ -96,18 +95,13 @@ public:
 
         verticalLayout->addWidget(pushButton_register);
 
-        pushButton = new QPushButton(groupBox);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-
-        verticalLayout->addWidget(pushButton);
-
         label_pic = new QLabel(centralwidget);
         label_pic->setObjectName(QString::fromUtf8("label_pic"));
-        label_pic->setGeometry(QRect(120, 290, 101, 171));
+        label_pic->setGeometry(QRect(20, 80, 101, 171));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 805, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -126,8 +120,7 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
         pushButton_register->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "testifworking", nullptr));
-        label_pic->setText(QString());
+        label_pic->setText(QCoreApplication::translate("MainWindow", "grudges is here", nullptr));
     } // retranslateUi
 
 };

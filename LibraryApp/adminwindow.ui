@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>706</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,16 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>60</y>
-     <width>211</width>
-     <height>171</height>
+     <x>150</x>
+     <y>90</y>
+     <width>381</width>
+     <height>181</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Welcome to the admin window</string>
@@ -29,8 +34,8 @@
   <widget class="QPushButton" name="pushButton_admin_logout">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>230</y>
+     <x>300</x>
+     <y>290</y>
      <width>80</width>
      <height>24</height>
     </rect>

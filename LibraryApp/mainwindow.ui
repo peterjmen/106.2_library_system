@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>805</width>
+    <height>618</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>80</y>
+      <x>170</x>
+      <y>50</y>
       <width>531</width>
       <height>341</height>
      </rect>
@@ -73,26 +73,19 @@
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>testifworking</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
    <widget class="QLabel" name="label_pic">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>290</y>
+      <x>20</x>
+      <y>80</y>
       <width>101</width>
       <height>171</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>grudges is here</string>
     </property>
    </widget>
   </widget>
@@ -101,7 +94,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>805</width>
      <height>21</height>
     </rect>
    </property>
