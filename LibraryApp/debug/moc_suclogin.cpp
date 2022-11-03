@@ -1,52 +1,45 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'suclogin.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.0)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include <memory>
 #include "../suclogin.h"
+#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'suclogin.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.4.0. It"
+#error "This file was generated using the moc from 6.3.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
-#endif
-
-#ifndef Q_CONSTINIT
-#define Q_CONSTINIT
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-namespace {
 struct qt_meta_stringdata_sucLogin_t {
-    uint offsetsAndSizes[6];
-    char stringdata0[9];
-    char stringdata1[29];
-    char stringdata2[1];
+    const uint offsetsAndSize[6];
+    char stringdata0[39];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_sucLogin_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_sucLogin_t qt_meta_stringdata_sucLogin = {
+    uint(offsetof(qt_meta_stringdata_sucLogin_t, stringdata0) + ofs), len 
+static const qt_meta_stringdata_sucLogin_t qt_meta_stringdata_sucLogin = {
     {
-        QT_MOC_LITERAL(0, 8),  // "sucLogin"
-        QT_MOC_LITERAL(9, 28),  // "on_pushButton_logout_clicked"
-        QT_MOC_LITERAL(38, 0)   // ""
+QT_MOC_LITERAL(0, 8), // "sucLogin"
+QT_MOC_LITERAL(9, 28), // "on_pushButton_logout_clicked"
+QT_MOC_LITERAL(38, 0) // ""
+
     },
-    "sucLogin",
-    "on_pushButton_logout_clicked",
+    "sucLogin\0on_pushButton_logout_clicked\0"
     ""
 };
 #undef QT_MOC_LITERAL
-} // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_sucLogin[] = {
+static const uint qt_meta_data_sucLogin[] = {
 
  // content:
       10,       // revision
@@ -68,21 +61,6 @@ Q_CONSTINIT static const uint qt_meta_data_sucLogin[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject sucLogin::staticMetaObject = { {
-    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_sucLogin.offsetsAndSizes,
-    qt_meta_data_sucLogin,
-    qt_static_metacall,
-    nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_sucLogin_t,
-        // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<sucLogin, std::true_type>,
-        // method 'on_pushButton_logout_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
-    >,
-    nullptr
-} };
-
 void sucLogin::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -95,6 +73,22 @@ void sucLogin::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     }
     (void)_a;
 }
+
+const QMetaObject sucLogin::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    qt_meta_stringdata_sucLogin.offsetsAndSize,
+    qt_meta_data_sucLogin,
+    qt_static_metacall,
+    nullptr,
+qt_incomplete_metaTypeArray<qt_meta_stringdata_sucLogin_t
+, QtPrivate::TypeAndForceComplete<sucLogin, std::true_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>
+
+
+>,
+    nullptr
+} };
+
 
 const QMetaObject *sucLogin::metaObject() const
 {

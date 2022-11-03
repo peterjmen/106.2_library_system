@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap myfirstpic("C:/Github/106.2_library_system/Resources/grudges.jpg");
+    QPixmap myfirstpic("Resources/grudges.jpg");
     int w = ui->label_pic->width();
     int h = ui->label_pic->height();
     ui->label_pic->setPixmap(myfirstpic.scaled(w,h,Qt::KeepAspectRatio));

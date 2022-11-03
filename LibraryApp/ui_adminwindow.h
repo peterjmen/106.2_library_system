@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'adminwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.4.0
+** Created by: Qt User Interface Compiler version 6.3.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,13 +26,13 @@ public:
     void setupUi(QDialog *adminWindow)
     {
         if (adminWindow->objectName().isEmpty())
-            adminWindow->setObjectName("adminWindow");
+            adminWindow->setObjectName(QString::fromUtf8("adminWindow"));
         adminWindow->resize(400, 300);
         label = new QLabel(adminWindow);
-        label->setObjectName("label");
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(130, 60, 211, 171));
         pushButton_admin_logout = new QPushButton(adminWindow);
-        pushButton_admin_logout->setObjectName("pushButton_admin_logout");
+        pushButton_admin_logout->setObjectName(QString::fromUtf8("pushButton_admin_logout"));
         pushButton_admin_logout->setGeometry(QRect(150, 230, 80, 24));
 
         retranslateUi(adminWindow);

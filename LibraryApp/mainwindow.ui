@@ -73,6 +73,13 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>testifworking</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QLabel" name="label_pic">

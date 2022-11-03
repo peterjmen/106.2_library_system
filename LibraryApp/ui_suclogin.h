@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'suclogin.ui'
 **
-** Created by: Qt User Interface Compiler version 6.4.0
+** Created by: Qt User Interface Compiler version 6.3.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,13 +26,13 @@ public:
     void setupUi(QDialog *sucLogin)
     {
         if (sucLogin->objectName().isEmpty())
-            sucLogin->setObjectName("sucLogin");
+            sucLogin->setObjectName(QString::fromUtf8("sucLogin"));
         sucLogin->resize(810, 517);
         label = new QLabel(sucLogin);
-        label->setObjectName("label");
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(250, 220, 261, 101));
         pushButton_logout = new QPushButton(sucLogin);
-        pushButton_logout->setObjectName("pushButton_logout");
+        pushButton_logout->setObjectName(QString::fromUtf8("pushButton_logout"));
         pushButton_logout->setGeometry(QRect(500, 400, 80, 24));
 
         retranslateUi(sucLogin);
