@@ -76,7 +76,6 @@ void MainWindow::on_pushButton_login_clicked()
 
 
 
-
 //    if(username == "test" && password == "test"){
 //        QMessageBox::information(this, "Login", "Username and Password is correct");
 //        hide();
@@ -89,10 +88,7 @@ void MainWindow::on_pushButton_login_clicked()
 //}
 
 
-
-
-
-void MainWindow::on_pushButton_signUp_clicked()
+void MainWindow::on_pushButton_register_clicked()
 {
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
@@ -109,6 +105,13 @@ void MainWindow::on_pushButton_signUp_clicked()
         box.setIcon(QMessageBox::Information);
         box.setText("Congratulations, you have signed up successfully");
         box.setWindowTitle("Sign-up");
+        box.setStandardButtons(QMessageBox::Ok);
+        box.exec();
+    } else {
+        QMessageBox box(this);
+        box.setIcon(QMessageBox::Warning);
+        box.setText("Unfortunatley that username has been taken");
+        box.setWindowTitle("Sign-up failed");
         box.setStandardButtons(QMessageBox::Ok);
         box.exec();
     }

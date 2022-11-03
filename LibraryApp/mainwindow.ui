@@ -20,7 +20,7 @@
       <x>260</x>
       <y>80</y>
       <width>531</width>
-      <height>351</height>
+      <height>341</height>
      </rect>
     </property>
     <property name="title">
@@ -67,9 +67,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_signUp">
+      <widget class="QPushButton" name="pushButton_register">
        <property name="text">
-        <string>Sign-up</string>
+        <string>Register</string>
        </property>
       </widget>
      </item>
@@ -78,8 +78,8 @@
    <widget class="QLabel" name="label_pic">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>150</y>
+      <x>120</x>
+      <y>290</y>
       <width>101</width>
       <height>171</height>
      </rect>
