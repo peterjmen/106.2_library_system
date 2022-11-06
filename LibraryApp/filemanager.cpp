@@ -87,6 +87,8 @@ QVector<QVector<QString>> FileManager::ReadFile(QString fileName, int numCols){
 
             for(int i = 0; i < numCols; i++){
             if (i == numCols-1){
+
+                //TODO remove debugs
                 qDebug() << "Reached iteraton " << i+1; //as start is 0
                 columns.append(rows); //adds content of row to columns vector
                 qDebug() << "String in this row :" << qUtf8Printable(stringOfFile);

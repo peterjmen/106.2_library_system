@@ -694,10 +694,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_mainwindow.h"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_suclogin.h"
     ],
     "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/ui_mainwindow.h"
+    "file": "C:/Github/106.2_library_system/LibraryApp/ui_suclogin.h"
 },
 {
     "arguments": [
@@ -834,9 +834,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_suclogin.h"
+        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_mainwindow.h"
     ],
     "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/ui_suclogin.h"
+    "file": "C:/Github/106.2_library_system/LibraryApp/ui_mainwindow.h"
 }
 ]

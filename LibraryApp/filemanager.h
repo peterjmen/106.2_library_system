@@ -17,3 +17,5 @@ private:
 };
 
 #endif // FILEMANAGER_H
+
+

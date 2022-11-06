@@ -27,7 +27,6 @@ MainWindow::~MainWindow()
 }
 
 
-
 void MainWindow::on_pushButton_login_clicked()
 {
     QString username = ui->lineEdit_username->text();
@@ -35,6 +34,7 @@ void MainWindow::on_pushButton_login_clicked()
 
 
     QVector<QVector<QString>> fileContent = fManager.ReadFile("accountInformation", 3);
+
 
         if(username == "admin" && password == "admin"){
             QMessageBox::information(this, "Admin Login", "Proceed to admin page");
@@ -116,4 +116,6 @@ void MainWindow::on_pushButton_register_clicked()
         box.exec();
     }
 }
+
+
 
