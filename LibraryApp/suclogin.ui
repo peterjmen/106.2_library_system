@@ -122,15 +122,45 @@
   <widget class="QPushButton" name="showBook">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>270</x>
      <y>250</y>
-     <width>80</width>
+     <width>261</width>
      <height>24</height>
     </rect>
    </property>
    <property name="text">
-    <string>Show book</string>
+    <string> (not implemented</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>490</y>
+     <width>541</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="bookCoverVertLayout"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -36,6 +37,10 @@ public:
     QLabel *label_4;
     QSpacerItem *verticalSpacer_2;
     QPushButton *showBook;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *bookCoverVertLayout;
+    QVBoxLayout *bookInfoVertLayout;
 
     void setupUi(QDialog *sucLogin)
     {
@@ -93,7 +98,23 @@ public:
 
         showBook = new QPushButton(sucLogin);
         showBook->setObjectName(QString::fromUtf8("showBook"));
-        showBook->setGeometry(QRect(360, 250, 80, 24));
+        showBook->setGeometry(QRect(270, 250, 261, 24));
+        horizontalLayoutWidget = new QWidget(sucLogin);
+        horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(QRect(150, 490, 541, 461));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(10, 10, 10, 10);
+        bookCoverVertLayout = new QVBoxLayout();
+        bookCoverVertLayout->setObjectName(QString::fromUtf8("bookCoverVertLayout"));
+
+        horizontalLayout->addLayout(bookCoverVertLayout);
+
+        bookInfoVertLayout = new QVBoxLayout();
+        bookInfoVertLayout->setObjectName(QString::fromUtf8("bookInfoVertLayout"));
+
+        horizontalLayout->addLayout(bookInfoVertLayout);
+
 
         retranslateUi(sucLogin);
 
@@ -108,7 +129,7 @@ public:
         book_pic_label->setText(QCoreApplication::translate("sucLogin", "Picture", nullptr));
         label_5->setText(QCoreApplication::translate("sucLogin", "Book title", nullptr));
         label_4->setText(QCoreApplication::translate("sucLogin", "Author", nullptr));
-        showBook->setText(QCoreApplication::translate("sucLogin", "Show book", nullptr));
+        showBook->setText(QCoreApplication::translate("sucLogin", " (not implemented", nullptr));
     } // retranslateUi
 
 };
