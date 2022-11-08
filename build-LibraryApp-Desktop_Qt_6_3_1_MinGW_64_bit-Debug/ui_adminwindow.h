@@ -27,13 +27,16 @@ public:
     {
         if (adminWindow->objectName().isEmpty())
             adminWindow->setObjectName(QString::fromUtf8("adminWindow"));
-        adminWindow->resize(400, 300);
+        adminWindow->resize(706, 450);
         label = new QLabel(adminWindow);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(130, 60, 211, 171));
+        label->setGeometry(QRect(150, 90, 381, 181));
+        QFont font;
+        font.setPointSize(20);
+        label->setFont(font);
         pushButton_admin_logout = new QPushButton(adminWindow);
         pushButton_admin_logout->setObjectName(QString::fromUtf8("pushButton_admin_logout"));
-        pushButton_admin_logout->setGeometry(QRect(150, 230, 80, 24));
+        pushButton_admin_logout->setGeometry(QRect(300, 290, 80, 24));
 
         retranslateUi(adminWindow);
 

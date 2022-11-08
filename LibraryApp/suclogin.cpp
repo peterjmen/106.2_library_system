@@ -16,6 +16,7 @@
 QVector<QLabel*> bookCoversList;
 QVector<QTextBrowser*> bookInformation;
 
+
 sucLogin::sucLogin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::sucLogin)
@@ -23,12 +24,8 @@ sucLogin::sucLogin(QWidget *parent) :
     ui->setupUi(this);
 
 //Reads "Books" Fine and generates 2d array with information
- QVector<QVector<QString>> bookCatalogue = fManager.ReadFile("Books", 4);
+    bookCatalogue = fManager.ReadFile("Books", 4);
 
-
-//        //Vectors to hold book pictures and info
-//        QVector<QLabel*> bookCoversList;
-//        QVector<QTextBrowser*> bookInformation;
 
         //Cover pics
 
@@ -78,10 +75,18 @@ sucLogin::~sucLogin()
 
 void sucLogin::on_pushButton_logout_clicked()
 {
+    qDeleteAll(bookCoversList);
+    bookCoversList.clear();
+    qDeleteAll(bookInformation);
+    bookInformation.clear();
     hide();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
 }
+
+
+
+
 
 
 
@@ -111,14 +116,74 @@ void sucLogin::on_pushButton_logout_clicked()
 
 
 
+//void sucLogin::on_searchClear_clicked()
+//{
+
+//    for (int i = 0; i < bookCoversList.length();i++){
+//       bookCoversList[i]->setVisible(false);
+//       bookInformation[i]->setVisible(false);
+//    }
+
+//    //clear vector of book covers and info
+//    qDeleteAll(bookCoversList);
+//    bookCoversList.clear();
+//    qDeleteAll(bookInformation);
+//    bookInformation.clear();
+//}
 
 
+// for (QVector<QString> book: bookCatalogue){
 
-void sucLogin::on_searchClear_clicked()
+void sucLogin::on_bookSearchButton_clicked()
 {
-    for (int i = 0; i < bookCoversList.length();i++){
-       bookCoversList[i]->setVisible(false);
-       bookInformation[i]->setVisible(false);
+    QString searchedText = ui->lineEdit_bookSearchText->text();
+
+
+    for (int i = 0; i < bookCatalogue.length();i++){
+    ui->bookInfoVertLayout->removeWidget(bookInformation[i]);
+    ui->bookInfoVertLayout->removeWidget(bookCoversList[i]);
     }
+
+    //clear vector of book covers and info
+    qDeleteAll(bookCoversList);
+    bookCoversList.clear();
+    qDeleteAll(bookInformation);
+    bookInformation.clear();
+
+
+qDebug() <<searchedText;
+
+ //   bookCatalogue = fManager.ReadFile("Books", 4);
+
+    qDebug() << bookCatalogue.at(0).at(1);
+    qDebug() << "bookCatalogue.length is" << bookCatalogue.length();
+
+    for (int i = 0; i < bookCatalogue.length();i++){
+        qDebug() << "iteration " << i << " titled " << bookCatalogue.at(i).at(1);
+
+          //add book info
+          QTextBrowser* info = new QTextBrowser(this);
+          info->setText(
+              "Title: " + bookCatalogue.at(i).at(1) + "\n" +
+              "Author: " + bookCatalogue.at(i).at(2) + "\n" +
+              "Description: "+ bookCatalogue.at(i).at(3) + "\n"
+              );
+          bookInformation.append(info);
+
+
+          //add book pic
+          QPixmap bookCover(bookCatalogue.at(i).at(0)); //0 because column 1 of pics is 0
+          QLabel* labelPic = new QLabel(this);
+          labelPic->setPixmap(bookCover.scaled(200,100,Qt::KeepAspectRatio));
+          bookCoversList.append(labelPic);
+
+          if (bookCatalogue.at(i).at(1).contains(searchedText)){
+              qDebug() << bookCatalogue.at(i).at(1) << " found";
+          ui->bookCoverVertLayout->addWidget(bookCoversList[i]);
+          ui->bookInfoVertLayout->addWidget(bookInformation[i]);
+          }
+      }
 }
+
+//string.contains
 

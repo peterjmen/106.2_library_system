@@ -44,7 +44,7 @@
     <string>Log Out</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="showBook">
+  <widget class="QPushButton" name="bookSearchButton">
    <property name="geometry">
     <rect>
      <x>520</x>
@@ -54,7 +54,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Search (not implemented)</string>
+    <string>bookSearchButton</string>
    </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
@@ -90,30 +90,22 @@
     </item>
    </layout>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QLineEdit" name="lineEdit_bookSearchText">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>150</x>
      <y>70</y>
-     <width>351</width>
+     <width>361</width>
      <height>31</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="searchClear">
-   <property name="geometry">
-    <rect>
-     <x>700</x>
-     <y>70</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Clear</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>bookSearchButton</tabstop>
+  <tabstop>pushButton_logout</tabstop>
+  <tabstop>lineEdit_bookSearchText</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

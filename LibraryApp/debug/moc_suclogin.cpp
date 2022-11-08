@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_sucLogin_t {
     const uint offsetsAndSize[8];
-    char stringdata0[62];
+    char stringdata0[67];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_sucLogin_t, stringdata0) + ofs), len 
@@ -32,11 +32,11 @@ static const qt_meta_stringdata_sucLogin_t qt_meta_stringdata_sucLogin = {
 QT_MOC_LITERAL(0, 8), // "sucLogin"
 QT_MOC_LITERAL(9, 28), // "on_pushButton_logout_clicked"
 QT_MOC_LITERAL(38, 0), // ""
-QT_MOC_LITERAL(39, 22) // "on_searchClear_clicked"
+QT_MOC_LITERAL(39, 27) // "on_bookSearchButton_clicked"
 
     },
     "sucLogin\0on_pushButton_logout_clicked\0"
-    "\0on_searchClear_clicked"
+    "\0on_bookSearchButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,7 +71,7 @@ void sucLogin::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         (void)_t;
         switch (_id) {
         case 0: _t->on_pushButton_logout_clicked(); break;
-        case 1: _t->on_searchClear_clicked(); break;
+        case 1: _t->on_bookSearchButton_clicked(); break;
         default: ;
         }
     }

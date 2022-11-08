@@ -14,8 +14,8 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -26,13 +26,12 @@ class Ui_sucLogin
 public:
     QLabel *label;
     QPushButton *pushButton_logout;
-    QPushButton *showBook;
+    QPushButton *bookSearchButton;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *bookCoverVertLayout;
     QVBoxLayout *bookInfoVertLayout;
-    QTextEdit *textEdit;
-    QPushButton *searchClear;
+    QLineEdit *lineEdit_bookSearchText;
 
     void setupUi(QDialog *sucLogin)
     {
@@ -48,9 +47,9 @@ public:
         pushButton_logout = new QPushButton(sucLogin);
         pushButton_logout->setObjectName(QString::fromUtf8("pushButton_logout"));
         pushButton_logout->setGeometry(QRect(360, 40, 80, 24));
-        showBook = new QPushButton(sucLogin);
-        showBook->setObjectName(QString::fromUtf8("showBook"));
-        showBook->setGeometry(QRect(520, 70, 171, 31));
+        bookSearchButton = new QPushButton(sucLogin);
+        bookSearchButton->setObjectName(QString::fromUtf8("bookSearchButton"));
+        bookSearchButton->setGeometry(QRect(520, 70, 171, 31));
         horizontalLayoutWidget = new QWidget(sucLogin);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
         horizontalLayoutWidget->setGeometry(QRect(150, 110, 541, 421));
@@ -68,12 +67,11 @@ public:
 
         horizontalLayout->addLayout(bookInfoVertLayout);
 
-        textEdit = new QTextEdit(sucLogin);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(160, 70, 351, 31));
-        searchClear = new QPushButton(sucLogin);
-        searchClear->setObjectName(QString::fromUtf8("searchClear"));
-        searchClear->setGeometry(QRect(700, 70, 91, 31));
+        lineEdit_bookSearchText = new QLineEdit(sucLogin);
+        lineEdit_bookSearchText->setObjectName(QString::fromUtf8("lineEdit_bookSearchText"));
+        lineEdit_bookSearchText->setGeometry(QRect(150, 70, 361, 31));
+        QWidget::setTabOrder(bookSearchButton, pushButton_logout);
+        QWidget::setTabOrder(pushButton_logout, lineEdit_bookSearchText);
 
         retranslateUi(sucLogin);
 
@@ -85,8 +83,7 @@ public:
         sucLogin->setWindowTitle(QCoreApplication::translate("sucLogin", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("sucLogin", "This is the logged window for standard user", nullptr));
         pushButton_logout->setText(QCoreApplication::translate("sucLogin", "Log Out", nullptr));
-        showBook->setText(QCoreApplication::translate("sucLogin", "Search (not implemented)", nullptr));
-        searchClear->setText(QCoreApplication::translate("sucLogin", "Clear", nullptr));
+        bookSearchButton->setText(QCoreApplication::translate("sucLogin", "bookSearchButton", nullptr));
     } // retranslateUi
 
 };
