@@ -26,6 +26,8 @@ private slots:
     void on_pushButton_logout_clicked();
 
 
+    void on_searchClear_clicked();
+
 private:
     Ui::sucLogin *ui;
     FileManager fManager;

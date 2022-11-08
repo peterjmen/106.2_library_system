@@ -12,7 +12,9 @@
 #include <QDebug>
 #include <QTextBrowser>
 
-
+//Vectors to hold book pictures and info
+QVector<QLabel*> bookCoversList;
+QVector<QTextBrowser*> bookInformation;
 
 sucLogin::sucLogin(QWidget *parent) :
     QDialog(parent),
@@ -20,125 +22,51 @@ sucLogin::sucLogin(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
+//Reads "Books" Fine and generates 2d array with information
  QVector<QVector<QString>> bookCatalogue = fManager.ReadFile("Books", 4);
- qDebug() << bookCatalogue.at(0).at(0) << "is at fileContent.at(0).at(0)";
 
 
+//        //Vectors to hold book pictures and info
+//        QVector<QLabel*> bookCoversList;
+//        QVector<QTextBrowser*> bookInformation;
 
-    //generic label test
-        QPixmap myfirstpic("Resources/grudges.jpg");
-//        QPixmap bookImage();//vector 1.0)
-//        int w = ui->book_pic_label->width();
-//        int h = ui->book_pic_label->height();
-        ui->book_pic_label->setPixmap(myfirstpic.scaled(200,100,Qt::KeepAspectRatio));
+        //Cover pics
 
-
-        //previous test
-        //        //generic label test
-        //        QPixmap cappy(bookCatalogue.at(1).at(0));
-        //        ui->book_cover_test->setPixmap(cappy.scaled(100,100,Qt::KeepAspectRatio));
-
-
-        QVector<QLabel*> bookCoversList;
-//        QVector<QLabel*> bookTitleList;
-//        QVector<QLabel*> bookAuthorList;
-//        QVector<QLabel*> bookDescriptionList;
-
-        QVector<QTextBrowser*> newTitleList;
-
-
-
-
-//        QVBoxLayout* vBox = new QVBoxLayout(this);
-//        vBox->addStretch();
-//        vBox->setAlignment(Qt::AlignLeft);
-
-
-        //Cover
         for (int i = 0; i < bookCatalogue.length();i++){
         QPixmap bookCover(bookCatalogue.at(i).at(0)); //0 because column 1 of pics is 0
         QLabel* labelPic = new QLabel(this);
-        labelPic->setPixmap(bookCover.scaled(100,100,Qt::KeepAspectRatio));
+        labelPic->setPixmap(bookCover.scaled(200,100,Qt::KeepAspectRatio));
         bookCoversList.append(labelPic);
-        qDebug() << "iteration " << i;
         ui->bookCoverVertLayout->addWidget(bookCoversList[i]);
-        }
-
-        //Title
-        for (int i = 0; i < bookCatalogue.length();i++){
-
-//            QTextBrowser* info = new QTextBrowser(this);
-//            QString hello = "hello ";
-//            QString how = "how ";
-//            QString goes = "goes";
-//            QString newLine = "\n";
-//            QString all(hello + how + goes + newLine);
-
-//            info->setText(all);
-
-//            ui->bookInfoVertLayout->addWidget(info);
 
 
-            QTextBrowser* info = new QTextBrowser(this);
-//            QString titleTag = "Title: ";
-            info->setText(
-                        "Title: " + bookCatalogue.at(i).at(1) + "\n" +
-                        "Author: " + bookCatalogue.at(i).at(2) + "\n" +
-                        "Description: "+ bookCatalogue.at(i).at(3) + "\n"
-                        );
-            newTitleList.append(info);
-            ui->bookInfoVertLayout->addWidget(info);
+        //Book info
+
+        QTextBrowser* info = new QTextBrowser(this);
+        info->setText(
+            "Title: " + bookCatalogue.at(i).at(1) + "\n" +
+            "Author: " + bookCatalogue.at(i).at(2) + "\n" +
+            "Description: "+ bookCatalogue.at(i).at(3) + "\n"
+            );
+        bookInformation.append(info);
+        ui->bookInfoVertLayout->addWidget(bookInformation[i]);
 
 
 
 
-//        QString titleTag = "Title: ";
-//        QString bookTitleString(titleTag + bookCatalogue.at(i).at(1)); //0 because column 1 of pics is 0
-//        QLabel* bookTitle = new QLabel(this);
-//        bookTitle->setText(bookTitleString);
-//        bookTitleList.append(bookTitle);
-//        qDebug() << "iteration " << i;
-//        ui->bookInfoVertLayout->addWidget(bookTitleList[i]);
+
+            //iteration/entries checker
+            qDebug() << "iteration " << i;
+            if (i == bookCatalogue.length()-1){
+                qDebug() << i+1 << "book entries";
+            }
 
 
-//        //Author
-//        QString authorTag = "Author: ";
-//        QString bookAuthorString(authorTag + bookCatalogue.at(i).at(2)); //0 because column 1 of pics is 0
-//        QLabel* bookAuthor = new QLabel(this);
-//        bookAuthor->setText(bookAuthorString);
-//        bookAuthorList.append(bookAuthor);
-//        qDebug() << "iteration " << i;
-//        ui->bookInfoVertLayout->addWidget(bookAuthorList[i]);
-
-//        //Description
-//        QString descriptionTag = "Description: ";
-//        QString bookDescriptionString(bookCatalogue.at(i).at(3)); //0 because column 1 of pics is 0
-//        QLabel* bookDesription = new QLabel(this);
-//        bookDesription->setText(descriptionTag + bookDescriptionString);
-//        bookDescriptionList.append(bookDesription);
-//        qDebug() << "iteration " << i;
-//        ui->bookInfoVertLayout->addWidget(bookDescriptionList[i]);
         }
 
 
-//        //Description
-//        for (int i = 0; i < bookCatalogue.length();i++){
-//        QString descriptionTag = "Description: ";
-//        QString bookDescriptionString(bookCatalogue.at(i).at(3)); //0 because column 1 of pics is 0
-//        QLabel* bookDesription = new QLabel(this);
-//        bookDesription->setText(descriptionTag + bookDescriptionString);
-//        bookDescriptionList.append(bookDesription);
-//        qDebug() << "iteration " << i;
-//        ui->bookInfoVertLayout->addWidget(bookDescriptionList[i]);
-//        }
 
-
-
-
-
-
-   };
+};
 
 
 
@@ -154,6 +82,7 @@ void sucLogin::on_pushButton_logout_clicked()
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
 }
+
 
 
 ////        // ---book menu ---
@@ -180,4 +109,16 @@ void sucLogin::on_pushButton_logout_clicked()
 //            description = numCols.at(2);
 //            author = numCols.at(3);
 
+
+
+
+
+
+void sucLogin::on_searchClear_clicked()
+{
+    for (int i = 0; i < bookCoversList.length();i++){
+       bookCoversList[i]->setVisible(false);
+       bookInformation[i]->setVisible(false);
+    }
+}
 
