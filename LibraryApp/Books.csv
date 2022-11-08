@@ -1,2 +1,5 @@
-﻿"""Resources/grudges.jpg""",bookName,author,shoes
-"""Resources/cappy.jpg""",bookName2,author2,twoshoes
+﻿Resources/grudges.jpg,bookName,author,shoes
+Resources/cappy.jpg,bookName2,author2,twoshoes
+Resources/jim.jpg,jim,jimbo,beans
+Resources/trent.jpg,trent,rettny,toast
+Resources/rolo.jpg,quok,quokky,squish

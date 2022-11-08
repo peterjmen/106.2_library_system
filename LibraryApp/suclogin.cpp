@@ -27,12 +27,39 @@ sucLogin::sucLogin(QWidget *parent) :
 
 
 
-
+    //generic label test
         QPixmap myfirstpic("Resources/grudges.jpg");
 //        QPixmap bookImage();//vector 1.0)
 //        int w = ui->book_pic_label->width();
 //        int h = ui->book_pic_label->height();
         ui->book_pic_label->setPixmap(myfirstpic.scaled(200,100,Qt::KeepAspectRatio));
+
+
+        //previous test
+        //        //generic label test
+        //        QPixmap cappy(bookCatalogue.at(1).at(0));
+        //        ui->book_cover_test->setPixmap(cappy.scaled(100,100,Qt::KeepAspectRatio));
+
+
+        QVector<QLabel*> bookCoversList;
+        QVBoxLayout* vBox = new QVBoxLayout(this);
+        vBox->addStretch();
+        vBox->setAlignment(Qt::AlignCenter);
+        vBox->setAlignment(Qt::AlignBottom);
+
+        //books searched
+        for (int i = 0; i < bookCatalogue.length();i++){
+        QPixmap bookCover(bookCatalogue.at(i).at(0)); //0 because column 1 of pics is 0
+        QLabel* labelPic = new QLabel(this);
+        labelPic->setPixmap(bookCover.scaled(100,100,Qt::KeepAspectRatio));
+        bookCoversList.append(labelPic);
+        qDebug() << "iteration " << i;
+        vBox->addWidget(bookCoversList[i]);
+}
+
+
+
+
    };
 
 

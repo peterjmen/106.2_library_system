@@ -41,7 +41,7 @@ public:
     {
         if (sucLogin->objectName().isEmpty())
             sucLogin->setObjectName(QString::fromUtf8("sucLogin"));
-        sucLogin->resize(810, 517);
+        sucLogin->resize(810, 869);
         label = new QLabel(sucLogin);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(140, 60, 531, 101));
