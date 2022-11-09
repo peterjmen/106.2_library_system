@@ -1,0 +1,10 @@
+release/adminwindow.o
+release/bookmodal.o
+release/filemanager.o
+release/main.o
+release/mainwindow.o
+release/suclogin.o
+release/moc_adminwindow.o
+release/moc_bookmodal.o
+release/moc_mainwindow.o
+release/moc_suclogin.o

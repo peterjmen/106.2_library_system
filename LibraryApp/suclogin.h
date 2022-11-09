@@ -27,6 +27,7 @@ private slots:
     void on_pushButton_logout_clicked();
 //    void on_searchClear_clicked(); TODO remove
     void on_bookSearchButton_clicked();
+    void buttonPressed();
 
 private:
     Ui::sucLogin *ui;

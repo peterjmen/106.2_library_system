@@ -36,9 +36,9 @@ public:
     QPushButton *pushButton_4;
     QPushButton *bookSearchButton;
     QPushButton *pushButton_logout;
-    QWidget *widget1;
-    QVBoxLayout *bookInfoVertLayout;
     QWidget *layoutWidget;
+    QVBoxLayout *bookInfoVertLayout;
+    QWidget *layoutWidget1;
     QVBoxLayout *bookCoverVertLayout;
 
     void setupUi(QDialog *sucLogin)
@@ -75,7 +75,7 @@ public:
 "color: #858D6F;"));
         horizontalLayoutWidget_2 = new QWidget(widget);
         horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(10, 270, 1041, 231));
+        horizontalLayoutWidget_2->setGeometry(QRect(10, 270, 1041, 191));
         horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_2);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -117,20 +117,18 @@ public:
         pushButton_logout->setSizePolicy(sizePolicy);
         pushButton_logout->setMinimumSize(QSize(500, 0));
         pushButton_logout->setBaseSize(QSize(500, 0));
-        widget1 = new QWidget(widget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(10, 590, 931, 31));
-        bookInfoVertLayout = new QVBoxLayout(widget1);
-        bookInfoVertLayout->setObjectName(QString::fromUtf8("bookInfoVertLayout"));
-        bookInfoVertLayout->setContentsMargins(0, 0, 0, 0);
         layoutWidget = new QWidget(widget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 510, 931, 91));
-        bookCoverVertLayout = new QVBoxLayout(layoutWidget);
+        layoutWidget->setGeometry(QRect(10, 590, 61, 31));
+        bookInfoVertLayout = new QVBoxLayout(layoutWidget);
+        bookInfoVertLayout->setObjectName(QString::fromUtf8("bookInfoVertLayout"));
+        bookInfoVertLayout->setContentsMargins(0, 0, 0, 0);
+        layoutWidget1 = new QWidget(widget);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(10, 630, 61, 91));
+        bookCoverVertLayout = new QVBoxLayout(layoutWidget1);
         bookCoverVertLayout->setObjectName(QString::fromUtf8("bookCoverVertLayout"));
         bookCoverVertLayout->setContentsMargins(0, 0, 0, 0);
-        widget->raise();
-        widget1->raise();
 
         retranslateUi(sucLogin);
 

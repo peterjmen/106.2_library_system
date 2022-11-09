@@ -34,7 +34,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -44,7 +44,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -64,10 +64,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\adminwindow.cpp"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\adminwindow.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/adminwindow.cpp"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/adminwindow.cpp"
 },
 {
     "arguments": [
@@ -104,7 +104,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -114,7 +114,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -134,10 +134,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\filemanager.cpp"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\bookmodal.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/filemanager.cpp"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/bookmodal.cpp"
 },
 {
     "arguments": [
@@ -174,7 +174,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -184,7 +184,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -204,10 +204,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\main.cpp"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\filemanager.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/main.cpp"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/filemanager.cpp"
 },
 {
     "arguments": [
@@ -244,7 +244,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -254,7 +254,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -274,10 +274,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\mainwindow.cpp"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\main.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/mainwindow.cpp"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/main.cpp"
 },
 {
     "arguments": [
@@ -314,7 +314,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -324,7 +324,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -344,10 +344,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\suclogin.cpp"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\mainwindow.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/suclogin.cpp"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -384,7 +384,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -394,7 +394,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -413,11 +413,11 @@
         "-fmacro-backtrace-limit=0",
         "-ferror-limit=1000",
         "-x",
-        "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\adminwindow.h"
+        "c++",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\suclogin.cpp"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/adminwindow.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/suclogin.cpp"
 },
 {
     "arguments": [
@@ -454,7 +454,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -464,7 +464,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -484,10 +484,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\filemanager.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\adminwindow.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/filemanager.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/adminwindow.h"
 },
 {
     "arguments": [
@@ -524,7 +524,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -534,7 +534,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -554,10 +554,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\mainwindow.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\bookmodal.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/mainwindow.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/bookmodal.h"
 },
 {
     "arguments": [
@@ -594,7 +594,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -604,7 +604,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -624,10 +624,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\suclogin.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\filemanager.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/suclogin.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/filemanager.h"
 },
 {
     "arguments": [
@@ -664,7 +664,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -674,7 +674,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -694,10 +694,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_mainwindow.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\mainwindow.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/ui_mainwindow.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/mainwindow.h"
 },
 {
     "arguments": [
@@ -734,7 +734,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -744,7 +744,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -764,10 +764,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_adminwindow.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\suclogin.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/ui_adminwindow.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/suclogin.h"
 },
 {
     "arguments": [
@@ -804,7 +804,7 @@
         "-I",
         "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include",
         "-I",
@@ -814,7 +814,7 @@
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\debug",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
         "-I",
         "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -834,9 +834,219 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Github\\106.2_library_system\\LibraryApp\\ui_suclogin.h"
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\ui_adminwindow.h"
     ],
-    "directory": "C:/Github/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Github/106.2_library_system/LibraryApp/ui_suclogin.h"
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/ui_adminwindow.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++1z",
+        "-Wall",
+        "-Wextra",
+        "-Wextra",
+        "-fexceptions",
+        "-mthreads",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_QML_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQ_CREATOR_RUN",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtWidgets",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtGui",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "D:\\QT\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\ui_suclogin.h"
+    ],
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/ui_suclogin.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++1z",
+        "-Wall",
+        "-Wextra",
+        "-Wextra",
+        "-fexceptions",
+        "-mthreads",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_QML_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQ_CREATOR_RUN",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtWidgets",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtGui",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "D:\\QT\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\ui_mainwindow.h"
+    ],
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/ui_mainwindow.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++1z",
+        "-Wall",
+        "-Wextra",
+        "-Wextra",
+        "-fexceptions",
+        "-mthreads",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_QML_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQ_CREATOR_RUN",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "D:\\QT\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtWidgets",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtGui",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\include\\QtCore",
+        "-I",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\debug",
+        "-I",
+        "D:\\QT\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "D:\\QT\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "D:\\QT\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "C:\\Users\\270122273\\OneDrive - UP Education\\Desktop\\LIB_ASS_106.2\\106.2_library_system\\LibraryApp\\ui_bookmodal.h"
+    ],
+    "directory": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/.qtc_clangd",
+    "file": "C:/Users/270122273/OneDrive - UP Education/Desktop/LIB_ASS_106.2/106.2_library_system/LibraryApp/ui_bookmodal.h"
 }
 ]

@@ -1,6 +1,7 @@
 #include "suclogin.h"
 #include "ui_suclogin.h"
 #include "mainwindow.h"
+#include "bookmodal.h"
 
 
 #include <QLabel>
@@ -16,12 +17,13 @@
 #include <QIcon>
 
 
+
 //Vectors to hold book pictures and info
 QVector<QLabel*> bookCoversList;
 QVector<QTextBrowser*> bookInformation;
 
 
-sucLogin::sucLogin(QWidget *parent) :
+sucLogin::sucLogin(QWidget *parent):
     QDialog(parent),
     ui(new Ui::sucLogin)
 {
@@ -51,6 +53,7 @@ sucLogin::sucLogin(QWidget *parent) :
             );
         bookInformation.append(info);
         ui->bookInfoVertLayout->addWidget(bookInformation[i]);
+
 
 
 
@@ -206,8 +209,11 @@ for(int i = 0; i < (ui->horizontalLayout_3->count()); i++){
         tempBtn->setIcon(icon);
         tempBtn->setIconSize(rect.size());
         tempBtn->setGeometry(rect);
+        tempBtn->connect(tempBtn, SIGNAL(clicked()), this, SLOT(buttonPressed()));
+        tempBtn->setProperty("bookIndex", i);
     }
 }
+
 //for(QPushButton* btn : btns){
 //    qDebug() << "hit";
 //}
@@ -221,6 +227,22 @@ for(int i = 0; i < (ui->horizontalLayout_3->count()); i++){
 //    }
 
 
+}
+
+void sucLogin::buttonPressed(){
+    QPushButton* pButton = qobject_cast<QPushButton*>(sender());
+    if (pButton) // this is the type we expect
+    {
+        qDebug() << "" << pButton->objectName() << "\t" << pButton->property("bookIndex").toInt() << "\t" << bookCatalogue.at(pButton->property("bookIndex").toInt()).size();
+
+
+        BookModal* modal = new BookModal(this);
+
+        modal->bookInfo = bookCatalogue.at(pButton->property("bookIndex").toInt());
+        modal->show();
+        modal->setModal(true);
+        modal->AssignInfo();
+    }
 }
 
 //string.contains
