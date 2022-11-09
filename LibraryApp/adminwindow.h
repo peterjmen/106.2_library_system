@@ -2,7 +2,7 @@
 #define ADMINWINDOW_H
 
 #include <QDialog>
-
+#include <QScrollBar>
 namespace Ui {
 class adminWindow;
 }

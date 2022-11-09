@@ -3,7 +3,8 @@
 
 #include <QDialog>
 #include "filemanager.h"
-
+#include <QScrollBar>
+#include <QDialog>
 namespace Ui {
 class sucLogin;
 }
@@ -31,7 +32,7 @@ private:
     Ui::sucLogin *ui;
     FileManager fManager;
     QVector<QVector<QString>> bookCatalogue;
-
+    void Temp();
 };
 
 #endif // SUCLOGIN_H

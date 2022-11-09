@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     adminwindow.cpp \
+    bookmodal.cpp \
     filemanager.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     adminwindow.h \
+    bookmodal.h \
     filemanager.h \
     mainwindow.h \
     suclogin.h
 
 FORMS += \
     adminwindow.ui \
+    bookmodal.ui \
     mainwindow.ui \
     suclogin.ui
 

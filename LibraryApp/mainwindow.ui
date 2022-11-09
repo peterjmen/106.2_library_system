@@ -87,6 +87,9 @@ color :#CED2BA;</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="accessibleName">
+      <string>LoginBtns</string>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: #CED2BA;
 border-radius: 1px;
@@ -106,11 +109,17 @@ color: rgb(255, 255, 255);</string>
        <height>41</height>
       </rect>
      </property>
+     <property name="accessibleName">
+      <string>LoginBtns</string>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: #CED2BA;
+      <string notr="true">[accessibleName = &quot;LoginBtns&quot;]{
+
+background-color: #CED2BA;
 border-radius : 1px;
 font: 300 12pt &quot;Segoe UI Light&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+}</string>
      </property>
      <property name="text">
       <string>Register</string>

@@ -6,105 +6,202 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>810</width>
-    <height>545</height>
+    <width>1074</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>0</x>
      <y>-30</y>
-     <width>531</width>
-     <height>101</height>
+     <width>1171</width>
+     <height>731</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
+   <property name="styleSheet">
+    <string notr="true">background-color: #CED2BA;</string>
    </property>
-   <property name="text">
-    <string>This is the logged window for standard user</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_logout">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>40</y>
-     <width>80</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Log Out</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="bookSearchButton">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>70</y>
-     <width>171</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>bookSearchButton</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>110</y>
-     <width>541</width>
-     <height>421</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <property name="spacing">
-     <number>2</number>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>301</width>
+      <height>81</height>
+     </rect>
     </property>
-    <property name="leftMargin">
-     <number>10</number>
+    <property name="font">
+     <font>
+      <family>Sitka Banner</family>
+      <pointsize>54</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
     </property>
-    <property name="topMargin">
-     <number>10</number>
+    <property name="styleSheet">
+     <string notr="true">font: 700 54pt &quot;Sitka Banner&quot;;
+color: #858D6F;</string>
     </property>
-    <property name="rightMargin">
-     <number>10</number>
+    <property name="text">
+     <string>Catalogue</string>
     </property>
-    <property name="bottomMargin">
-     <number>10</number>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_bookSearchText">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
     </property>
-    <item>
-     <layout class="QVBoxLayout" name="bookCoverVertLayout"/>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
-    </item>
-   </layout>
+    <property name="styleSheet">
+     <string notr="true">border-size:1.2px; 
+border-color:white;
+border-style: solid;
+background-color: #AAB095;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 25px &quot;Sitka Banner&quot;;
+color: #858D6F;</string>
+    </property>
+    <property name="text">
+     <string>Trending</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>1041</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="bookSearchButton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #858D6F;
+border-radius: 1px;
+font: 700 11pt &quot;Segoe UI&quot;;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>GO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_logout">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>40</y>
+      <width>500</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>250</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Log Out</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>931</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>931</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="bookCoverVertLayout"/>
+   </widget>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_bookSearchText">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>70</y>
-     <width>361</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
+  <zorder>widget</zorder>
+  <zorder></zorder>
  </widget>
  <tabstops>
   <tabstop>bookSearchButton</tabstop>
-  <tabstop>pushButton_logout</tabstop>
-  <tabstop>lineEdit_bookSearchText</tabstop>
  </tabstops>
  <resources/>
  <connections/>

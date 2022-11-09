@@ -11,15 +11,12 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGroupBox>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,17 +25,16 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QGroupBox *groupBox;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QLineEdit *lineEdit_username;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *label_2;
-    QLineEdit *lineEdit_password;
+    QWidget *widget;
+    QLabel *label_pic;
+    QLabel *label_3;
+    QLabel *label_4;
     QPushButton *pushButton_login;
     QPushButton *pushButton_register;
-    QLabel *label_pic;
+    QLineEdit *lineEdit_username;
+    QLabel *label_2;
+    QLabel *label;
+    QLineEdit *lineEdit_password;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -46,62 +42,73 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(805, 618);
+        MainWindow->resize(891, 580);
+        MainWindow->setStyleSheet(QString::fromUtf8("this-> rgb(60, 121, 90);"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        groupBox = new QGroupBox(centralwidget);
-        groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(170, 50, 531, 341));
-        verticalLayout = new QVBoxLayout(groupBox);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(groupBox);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        horizontalLayout->addWidget(label);
-
-        lineEdit_username = new QLineEdit(groupBox);
-        lineEdit_username->setObjectName(QString::fromUtf8("lineEdit_username"));
-
-        horizontalLayout->addWidget(lineEdit_username);
-
-
-        verticalLayout->addLayout(horizontalLayout);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_2 = new QLabel(groupBox);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        horizontalLayout_2->addWidget(label_2);
-
-        lineEdit_password = new QLineEdit(groupBox);
-        lineEdit_password->setObjectName(QString::fromUtf8("lineEdit_password"));
-        lineEdit_password->setEchoMode(QLineEdit::Password);
-
-        horizontalLayout_2->addWidget(lineEdit_password);
-
-
-        verticalLayout->addLayout(horizontalLayout_2);
-
-        pushButton_login = new QPushButton(groupBox);
-        pushButton_login->setObjectName(QString::fromUtf8("pushButton_login"));
-
-        verticalLayout->addWidget(pushButton_login);
-
-        pushButton_register = new QPushButton(groupBox);
-        pushButton_register->setObjectName(QString::fromUtf8("pushButton_register"));
-
-        verticalLayout->addWidget(pushButton_register);
-
-        label_pic = new QLabel(centralwidget);
+        widget = new QWidget(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(-10, -30, 1351, 951));
+        widget->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
+        label_pic = new QLabel(widget);
         label_pic->setObjectName(QString::fromUtf8("label_pic"));
-        label_pic->setGeometry(QRect(20, 80, 101, 171));
+        label_pic->setGeometry(QRect(930, 140, 101, 171));
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(20, 200, 291, 81));
+        label_3->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 54pt \"Sitka Banner\";\n"
+"color : #CED2BA;"));
+        label_4 = new QLabel(widget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(20, 270, 231, 31));
+        label_4->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 20pt \"Sitka Banner\";\n"
+"color :#CED2BA;"));
+        pushButton_login = new QPushButton(widget);
+        pushButton_login->setObjectName(QString::fromUtf8("pushButton_login"));
+        pushButton_login->setGeometry(QRect(20, 440, 191, 41));
+        pushButton_login->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
+"border-radius: 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: rgb(255, 255, 255);"));
+        pushButton_register = new QPushButton(widget);
+        pushButton_register->setObjectName(QString::fromUtf8("pushButton_register"));
+        pushButton_register->setGeometry(QRect(230, 440, 191, 41));
+        pushButton_register->setStyleSheet(QString::fromUtf8("[accessibleName = \"LoginBtns\"]{\n"
+"\n"
+"background-color: #CED2BA;\n"
+"border-radius : 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: rgb(255, 255, 255);\n"
+"}"));
+        lineEdit_username = new QLineEdit(widget);
+        lineEdit_username->setObjectName(QString::fromUtf8("lineEdit_username"));
+        lineEdit_username->setGeometry(QRect(20, 320, 401, 41));
+        lineEdit_username->setStyleSheet(QString::fromUtf8("border-color: #CED2BA;\n"
+"border-width : 1.2px;\n"
+"border-style:solid;"));
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(20, 370, 241, 16));
+        label_2->setStyleSheet(QString::fromUtf8("font: 300 12pt \"Segoe UI Light\";\n"
+"color : #CED2BA ;"));
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(20, 300, 81, 20));
+        label->setStyleSheet(QString::fromUtf8("font: 300 12pt \"Segoe UI Light\";\n"
+"color : #CED2BA;"));
+        lineEdit_password = new QLineEdit(widget);
+        lineEdit_password->setObjectName(QString::fromUtf8("lineEdit_password"));
+        lineEdit_password->setGeometry(QRect(20, 390, 401, 41));
+        lineEdit_password->setStyleSheet(QString::fromUtf8("border-color: #CED2BA;\n"
+"border-width : 1.2px;\n"
+"border-style:solid;"));
+        lineEdit_password->setEchoMode(QLineEdit::Password);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 805, 21));
+        menubar->setGeometry(QRect(0, 0, 891, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -115,12 +122,21 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("MainWindow", "SignIn", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "UserName", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
-        pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
-        pushButton_register->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
         label_pic->setText(QCoreApplication::translate("MainWindow", "grudges is here", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "KIA ORA ", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Lets Get Started ", nullptr));
+#if QT_CONFIG(accessibility)
+        pushButton_login->setAccessibleName(QCoreApplication::translate("MainWindow", "LoginBtns", nullptr));
+#endif // QT_CONFIG(accessibility)
+        pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
+#if QT_CONFIG(accessibility)
+        pushButton_register->setAccessibleName(QCoreApplication::translate("MainWindow", "LoginBtns", nullptr));
+#endif // QT_CONFIG(accessibility)
+        pushButton_register->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
+        lineEdit_username->setText(QString());
+        label_2->setText(QCoreApplication::translate("MainWindow", "Password  ", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Username", nullptr));
+        lineEdit_password->setText(QString());
     } // retranslateUi
 
 };

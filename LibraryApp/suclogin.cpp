@@ -12,6 +12,10 @@
 #include <QDebug>
 #include <QTextBrowser>
 
+#include <QPixmap>
+#include <QIcon>
+
+
 //Vectors to hold book pictures and info
 QVector<QLabel*> bookCoversList;
 QVector<QTextBrowser*> bookInformation;
@@ -62,7 +66,7 @@ sucLogin::sucLogin(QWidget *parent) :
         }
 
 
-
+Temp();
 };
 
 
@@ -183,6 +187,40 @@ qDebug() <<searchedText;
           ui->bookInfoVertLayout->addWidget(bookInformation[i]);
           }
       }
+}
+
+// makes the buttons pictures for the landing page;
+void sucLogin::Temp(){
+qDebug() << "Entered Temp";
+
+QPixmap map(bookCatalogue[0][0]);
+QRect rect = map.rect();
+QVector<QPushButton*> btns;
+for(int i = 0; i < (ui->horizontalLayout_3->count()); i++){
+    if(QPushButton* tempBtn = dynamic_cast<QPushButton*>(ui->horizontalLayout_3->itemAt(i)->widget())){
+        btns.push_back(tempBtn);
+
+
+        QPixmap map(bookCatalogue.at(i).at(0));
+        QIcon icon(map);
+        tempBtn->setIcon(icon);
+        tempBtn->setIconSize(rect.size());
+        tempBtn->setGeometry(rect);
+    }
+}
+//for(QPushButton* btn : btns){
+//    qDebug() << "hit";
+//}
+
+//    QVector<QObject*>objPtrs = ui->horizontalLayout_3->children();
+//    for(QObject* obj : objPtrs){
+//        if(dynamic_cast<QPushButton*>(obj))
+//        {
+//            qDebug() << "hit";
+//        }
+//    }
+
+
 }
 
 //string.contains
