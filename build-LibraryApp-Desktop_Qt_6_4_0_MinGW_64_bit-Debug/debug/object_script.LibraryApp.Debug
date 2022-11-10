@@ -1,0 +1,11 @@
+debug/adminwindow.o
+debug/bookmodal.o
+debug/filemanager.o
+debug/main.o
+debug/mainwindow.o
+debug/suclogin.o
+debug/qrc_QtResources.o
+debug/moc_adminwindow.o
+debug/moc_bookmodal.o
+debug/moc_mainwindow.o
+debug/moc_suclogin.o
