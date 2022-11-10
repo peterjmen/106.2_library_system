@@ -1,6 +1,7 @@
 #include "suclogin.h"
 #include "ui_suclogin.h"
 #include "mainwindow.h"
+#include "bookmodal.h"
 
 
 #include <QLabel>
@@ -15,11 +16,11 @@
 
 
 //Vectors to hold book pictures and info
-QVector<QLabel*> bookCoversList;
+QVector<QPushButton*> bookCoversList;
 QVector<QTextBrowser*> bookInformation;
 QVector<QPushButton*> reserveBookButtonVector; //button
 QString iterationAsString;
-QVector<QString> listOfReservedBooks;
+//QVector<QString> listOfReservedBooks;
 
 
 sucLogin::sucLogin(QWidget *parent) :
@@ -28,23 +29,26 @@ sucLogin::sucLogin(QWidget *parent) :
 {
     ui->setupUi(this);
 
-//    QVBoxLayout* lay = new QVBoxLayout(this);
-//    for (int i = 0; i < total; ++i) {
-
-//    }
-//    ui->scrollContents->setLayout(ui->bookInfoVertLayout);
 
 //Reads "Books" Fine and generates 2d array with information
-    bookCatalogue = fManager.ReadFile("Books", 4);
+    bookCatalogue = fManager.ReadFile("Books", 5);
+
+//    QVBoxLayout* displayReservedList = new QVBoxLayout(this);
 
     ui->scrollContents->setLayout(ui->horizontalLayout);
+    ui->scrollAreaReservedBooks_Area->setLayout(ui->reservedBooks);
+    ui->yourReservedBooks_scrollArea->setLayout(ui->yourReservedBooksList);
         //Cover pics
         // when using resource folder    :/images/Resources/grudges.jpg
 
         for (int i = 0; i < bookCatalogue.length();i++){
         QPixmap bookCover(bookCatalogue.at(i).at(0)); //0 because column 1 of pics is 0
-        QLabel* labelPic = new QLabel(this);
-        labelPic->setPixmap(bookCover.scaled(84,125/*Qt::KeepAspectRatio*/));
+        QPushButton* labelPic = new QPushButton(this);
+        QPixmap map(bookCover.scaled(84,125/*Qt::KeepAspectRatio*/));
+        labelPic->setFixedSize(84,125);
+        labelPic->setIconSize(QSize(84,125));
+        labelPic->setIcon(map);
+        labelPic->connect(labelPic, SIGNAL(clicked()), this, SLOT(targetButtonPressed()));
         bookCoversList.append(labelPic);
         ui->bookCoverVertLayout->addWidget(bookCoversList[i]);
 
@@ -67,30 +71,20 @@ sucLogin::sucLogin(QWidget *parent) :
                 qDebug() << i+1 << "book entries";
             }
 
-            QString titleAttachedToButton = bookCatalogue.at(i).at(1);
 
-
+         //add buttons
             //cast i into string
             iterationAsString = QString::number(i);
-            //add buttons
-            QPushButton* reserveBook = new QPushButton("Reserve book " + iterationAsString);
+            QPushButton* reserveBook = new QPushButton("Reserve book '" + bookCatalogue.at(i).at(1) + "' (CatIndex: " + iterationAsString + ")");
             reserveBook->setProperty("bookIndex", i);
-            int index = reserveBook->property("bookIndex").toInt();
-            qDebug() << "book " << bookCatalogue.at(i).at(1) << "has the index of " << index;
-//            connect(reserveBook, SIGNAL(clicked()), this, SLOT(show_index()));
+//            int index = reserveBook->property("bookIndex").toInt();
+            qDebug() << "book " << bookCatalogue.at(i).at(1) << "has the index of " << reserveBook->property("bookIndex");
 
-
-            //lambda function
-            connect(reserveBook, &QPushButton::clicked, [index, titleAttachedToButton]() {
-                qDebug() << "book with index " << index << " with title " << titleAttachedToButton << " was added to the list";
-                listOfReservedBooks.append(titleAttachedToButton);
-                qDebug() << listOfReservedBooks << "is the list of reserved books";
-//                QLabel* displayedReservedBook = new QLabel(titleAttachedToButton);
-//                Ui::sucLogin::reservedBooksLayout.addWidget(displayedReservedBook);
-            });
+            connect(reserveBook, SIGNAL(clicked()), this, SLOT(show_index()));
 
             reserveBookButtonVector.append(reserveBook);
             ui->bookOptions->addWidget(reserveBookButtonVector[i]);
+
         }
 
 
@@ -118,53 +112,6 @@ void sucLogin::on_pushButton_logout_clicked()
 }
 
 
-
-
-
-
-
-////        // ---book menu ---
-//        QHBoxLayout* hBox = new QHBoxLayout(this);
-//        QVBoxLayout* vBox = new QVBoxLayout();
-//        QLabel* cover = new QLabel();
-
-
-//        QWidget* title;
-//        QWidget* description;
-//        QWidget* author;
-
-
-
-//        hBox->addWidget(title);
-//        vBox->addWidget(description);
-//        vBox->addWidget(author);
-
-
-
-//        for(int i = 0; i < 4; i++){
-//            cover = numCols.at(0);
-//            title = numCols.at(1);
-//            description = numCols.at(2);
-//            author = numCols.at(3);
-
-
-
-//void sucLogin::on_searchClear_clicked()
-//{
-
-//    for (int i = 0; i < bookCoversList.length();i++){
-//       bookCoversList[i]->setVisible(false);
-//       bookInformation[i]->setVisible(false);
-//    }
-
-//    //clear vector of book covers and info
-//    qDeleteAll(bookCoversList);
-//    bookCoversList.clear();
-//    qDeleteAll(bookInformation);
-//    bookInformation.clear();
-//}
-
-
 // for (QVector<QString> book: bookCatalogue){
 
 void sucLogin::on_bookSearchButton_clicked()
@@ -176,6 +123,9 @@ void sucLogin::on_bookSearchButton_clicked()
     for (int i = 0; i < bookCatalogue.length();i++){
     ui->bookInfoVertLayout->removeWidget(bookInformation[i]);
     ui->bookInfoVertLayout->removeWidget(bookCoversList[i]);
+    ui->bookInfoVertLayout->removeWidget(reserveBookButtonVector[i]);
+
+
     }
 
     //clear vector of book covers and info
@@ -210,22 +160,35 @@ qDebug() <<searchedText;
 
           //add book pic
           QPixmap bookCover(bookCatalogue.at(i).at(0)); //0 because column 1 of pics is 0
-          QLabel* labelPic = new QLabel(this);
-          labelPic->setPixmap(bookCover.scaled(84,125/*,*Qt::KeepAspectRatio)*/));
+          QPushButton* labelPic = new QPushButton(this);
+          QPixmap map(bookCover.scaled(84,125/*Qt::KeepAspectRatio*/));
+          labelPic->setFixedSize(84,125);
+          labelPic->setIconSize(QSize(84,125));
+          labelPic->setIcon(map);
+          labelPic->connect(labelPic, SIGNAL(clicked()), this, SLOT(targetButtonPressed()));
           bookCoversList.append(labelPic);
 
 
           //add buttons
-          //cast i into string
-          iterationAsString = QString::number(i);
-          QPushButton* reserveBook = new QPushButton("Reserve book " + iterationAsString);
-          reserveBookButtonVector.append(reserveBook);
+
+             //cast i into string
+             iterationAsString = QString::number(i);
+             QPushButton* reserveBook = new QPushButton("Reserve book '" + bookCatalogue.at(i).at(1) + "' (CatIndex: " + iterationAsString + ")");
+             reserveBook->setProperty("bookIndex", i);
+ //            int index = reserveBook->property("bookIndex").toInt();
+             qDebug() << "book " << bookCatalogue.at(i).at(1) << "has the index of " << reserveBook->property("bookIndex");
+             connect(reserveBook, SIGNAL(clicked()), this, SLOT(show_index()));
+             reserveBookButtonVector.append(reserveBook);
+
+
 
           if (bookCatalogue.at(i).at(1).contains(searchedText)){
               qDebug() << bookCatalogue.at(i).at(1) << " found";
           ui->bookCoverVertLayout->addWidget(bookCoversList[i]);
           ui->bookInfoVertLayout->addWidget(bookInformation[i]);
           ui->bookOptions->addWidget(reserveBookButtonVector[i]);
+
+
           }
       }
 }
@@ -234,4 +197,34 @@ qDebug() <<searchedText;
 
 void sucLogin::show_index(){
     qDebug() << "book reserve button clicked";
+
+
+    QPushButton* pButton = qobject_cast<QPushButton*>(sender());
+    if (pButton) // this is the type we expect
+    {
+        int bookIndexNum = pButton->property("bookIndex").toInt();
+        // recognize buttonText here
+        qDebug() << bookIndexNum;
+        QLabel* reservedBookListItem = new QLabel(bookCatalogue.at(bookIndexNum).at(1));
+        ui->reservedBooks->addWidget(reservedBookListItem);
+
+        QLabel* dashboardReservedBookListItem = new QLabel(bookCatalogue.at(bookIndexNum).at(1));
+        ui->yourReservedBooksList->addWidget(dashboardReservedBookListItem);
+    }
+}
+
+void sucLogin::targetButtonPressed(){
+    QPushButton* pButton = qobject_cast<QPushButton*>(sender());
+    if (pButton) // this is the type we expect
+    {
+        qDebug() << "" << pButton->objectName() << "\t" << pButton->property("bookIndex").toInt() << "\t" << bookCatalogue.at(pButton->property("bookIndex").toInt()).size();
+
+
+        BookModal* modal = new BookModal(this);
+
+        modal->bookInfo = bookCatalogue.at(pButton->property("bookIndex").toInt());
+        modal->show();
+        modal->setModal(true);
+        modal->AssignInfo();
+    }
 }

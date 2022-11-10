@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "filemanager.h"
 
+
 namespace Ui {
 class sucLogin;
 }
@@ -27,12 +28,13 @@ private slots:
 //    void on_searchClear_clicked(); TODO remove
     void on_bookSearchButton_clicked();
     void show_index();
+    void targetButtonPressed();
 
 private:
     Ui::sucLogin *ui;
     FileManager fManager;
     QVector<QVector<QString>> bookCatalogue;
-
+    void btnSetup();
 };
 
 #endif // SUCLOGIN_H

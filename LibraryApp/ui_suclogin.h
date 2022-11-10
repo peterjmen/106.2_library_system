@@ -31,6 +31,12 @@ public:
     QWidget *tab;
     QLabel *label;
     QPushButton *pushButton_logout;
+    QScrollArea *yourReservedBooks;
+    QWidget *yourReservedBooks_scrollArea;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *yourReservedBooksList;
+    QLabel *welcomeLabel;
+    QLabel *loggedInUsernameLabel;
     QWidget *tab_2;
     QPushButton *bookSearchButton;
     QLineEdit *lineEdit_bookSearchText;
@@ -41,9 +47,11 @@ public:
     QVBoxLayout *bookCoverVertLayout;
     QVBoxLayout *bookInfoVertLayout;
     QVBoxLayout *bookOptions;
+    QScrollArea *scrollAreaReservedBooks;
+    QWidget *scrollAreaReservedBooks_Area;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *reservedBooks;
-    QLabel *reservedBooksLayout;
+    QLabel *label_2;
 
     void setupUi(QDialog *sucLogin)
     {
@@ -58,13 +66,35 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         label = new QLabel(tab);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(100, 20, 531, 101));
+        label->setGeometry(QRect(130, 10, 531, 101));
         QFont font;
         font.setPointSize(20);
         label->setFont(font);
         pushButton_logout = new QPushButton(tab);
         pushButton_logout->setObjectName(QString::fromUtf8("pushButton_logout"));
-        pushButton_logout->setGeometry(QRect(310, 130, 80, 24));
+        pushButton_logout->setGeometry(QRect(700, 470, 80, 24));
+        yourReservedBooks = new QScrollArea(tab);
+        yourReservedBooks->setObjectName(QString::fromUtf8("yourReservedBooks"));
+        yourReservedBooks->setGeometry(QRect(460, 190, 231, 141));
+        yourReservedBooks->setWidgetResizable(true);
+        yourReservedBooks_scrollArea = new QWidget();
+        yourReservedBooks_scrollArea->setObjectName(QString::fromUtf8("yourReservedBooks_scrollArea"));
+        yourReservedBooks_scrollArea->setGeometry(QRect(0, 0, 229, 139));
+        verticalLayoutWidget = new QWidget(yourReservedBooks_scrollArea);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(9, 19, 211, 111));
+        yourReservedBooksList = new QVBoxLayout(verticalLayoutWidget);
+        yourReservedBooksList->setObjectName(QString::fromUtf8("yourReservedBooksList"));
+        yourReservedBooksList->setContentsMargins(0, 0, 0, 0);
+        yourReservedBooks->setWidget(yourReservedBooks_scrollArea);
+        welcomeLabel = new QLabel(tab);
+        welcomeLabel->setObjectName(QString::fromUtf8("welcomeLabel"));
+        welcomeLabel->setGeometry(QRect(160, 90, 141, 101));
+        welcomeLabel->setFont(font);
+        loggedInUsernameLabel = new QLabel(tab);
+        loggedInUsernameLabel->setObjectName(QString::fromUtf8("loggedInUsernameLabel"));
+        loggedInUsernameLabel->setGeometry(QRect(360, 90, 341, 101));
+        loggedInUsernameLabel->setFont(font);
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -105,17 +135,23 @@ public:
         horizontalLayout->addLayout(bookOptions);
 
         scrollArea->setWidget(scrollContents);
-        verticalLayoutWidget_2 = new QWidget(tab_2);
+        scrollAreaReservedBooks = new QScrollArea(tab_2);
+        scrollAreaReservedBooks->setObjectName(QString::fromUtf8("scrollAreaReservedBooks"));
+        scrollAreaReservedBooks->setGeometry(QRect(260, 370, 321, 131));
+        scrollAreaReservedBooks->setWidgetResizable(true);
+        scrollAreaReservedBooks_Area = new QWidget();
+        scrollAreaReservedBooks_Area->setObjectName(QString::fromUtf8("scrollAreaReservedBooks_Area"));
+        scrollAreaReservedBooks_Area->setGeometry(QRect(0, 0, 319, 129));
+        verticalLayoutWidget_2 = new QWidget(scrollAreaReservedBooks_Area);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(219, 400, 441, 80));
+        verticalLayoutWidget_2->setGeometry(QRect(20, 20, 271, 91));
         reservedBooks = new QVBoxLayout(verticalLayoutWidget_2);
         reservedBooks->setObjectName(QString::fromUtf8("reservedBooks"));
         reservedBooks->setContentsMargins(0, 0, 0, 0);
-        reservedBooksLayout = new QLabel(verticalLayoutWidget_2);
-        reservedBooksLayout->setObjectName(QString::fromUtf8("reservedBooksLayout"));
-
-        reservedBooks->addWidget(reservedBooksLayout);
-
+        scrollAreaReservedBooks->setWidget(scrollAreaReservedBooks_Area);
+        label_2 = new QLabel(tab_2);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(150, 380, 101, 20));
         tabWidget->addTab(tab_2, QString());
 
         horizontalLayout_2->addWidget(tabWidget);
@@ -138,9 +174,11 @@ public:
         sucLogin->setWindowTitle(QCoreApplication::translate("sucLogin", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("sucLogin", "This is the logged window for standard user", nullptr));
         pushButton_logout->setText(QCoreApplication::translate("sucLogin", "Log Out", nullptr));
+        welcomeLabel->setText(QCoreApplication::translate("sucLogin", "Welcome:", nullptr));
+        loggedInUsernameLabel->setText(QCoreApplication::translate("sucLogin", "username goe shere", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("sucLogin", "Account", nullptr));
         bookSearchButton->setText(QCoreApplication::translate("sucLogin", "bookSearchButton", nullptr));
-        reservedBooksLayout->setText(QCoreApplication::translate("sucLogin", "Reserved books", nullptr));
+        label_2->setText(QCoreApplication::translate("sucLogin", "Book reserved list", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("sucLogin", "Catalogue", nullptr));
     } // retranslateUi
 
