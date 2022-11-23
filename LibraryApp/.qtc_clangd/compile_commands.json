@@ -1184,10 +1184,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\Ella\\Desktop\\LIB_ASS\\106.2_library_system\\LIB app ready\\106.2_library_system\\LibraryApp\\ui_admintest.h"
+        "C:\\Users\\Ella\\Desktop\\LIB_ASS\\106.2_library_system\\LIB app ready\\106.2_library_system\\LibraryApp\\ui_bookmodal.h"
     ],
     "directory": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/ui_admintest.h"
+    "file": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/ui_bookmodal.h"
 },
 {
     "arguments": [
@@ -1254,9 +1254,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\Ella\\Desktop\\LIB_ASS\\106.2_library_system\\LIB app ready\\106.2_library_system\\LibraryApp\\ui_bookmodal.h"
+        "C:\\Users\\Ella\\Desktop\\LIB_ASS\\106.2_library_system\\LIB app ready\\106.2_library_system\\LibraryApp\\ui_admintest.h"
     ],
     "directory": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/.qtc_clangd",
-    "file": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/ui_bookmodal.h"
+    "file": "C:/Users/Ella/Desktop/LIB_ASS/106.2_library_system/LIB app ready/106.2_library_system/LibraryApp/ui_admintest.h"
 }
 ]

@@ -95,3 +95,6 @@ userID,reservedRecordArray.at(i).at(1),date reserved,date due,Status,Catalog Ind
 6,The Thursday Murder Club,23/11/2022,30/11/2022,On-Loan,4
 6,The Year of the Locust,23/11/2022,30/11/2022,On-Loan,3
 6,Book Title,23/11/2022,30/11/2022,On-Loan,0
+17,The Perfect Crime,23/11/2022,30/11/2022,On-Loan,1
+17,The Year of the Locust,23/11/2022,30/11/2022,On-Loan,3
+17,The Thursday Murder Club,23/11/2022,30/11/2022,On-Loan,4
