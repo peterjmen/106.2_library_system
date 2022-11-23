@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.3.1
+** Created by: Qt User Interface Compiler version 6.4.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -41,65 +41,62 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(891, 580);
+            MainWindow->setObjectName("MainWindow");
+        MainWindow->resize(774, 542);
         MainWindow->setStyleSheet(QString::fromUtf8("this-> rgb(60, 121, 90);"));
         centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        centralwidget->setObjectName("centralwidget");
         widget = new QWidget(centralwidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setObjectName("widget");
         widget->setGeometry(QRect(-10, -30, 1351, 951));
         widget->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
         label_pic = new QLabel(widget);
-        label_pic->setObjectName(QString::fromUtf8("label_pic"));
+        label_pic->setObjectName("label_pic");
         label_pic->setGeometry(QRect(930, 140, 101, 171));
         label_3 = new QLabel(widget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(20, 200, 291, 81));
         label_3->setStyleSheet(QString::fromUtf8("\n"
 "font: 700 54pt \"Sitka Banner\";\n"
 "color : #CED2BA;"));
         label_4 = new QLabel(widget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setObjectName("label_4");
         label_4->setGeometry(QRect(20, 270, 231, 31));
         label_4->setStyleSheet(QString::fromUtf8("\n"
 "font: 700 20pt \"Sitka Banner\";\n"
 "color :#CED2BA;"));
         pushButton_login = new QPushButton(widget);
-        pushButton_login->setObjectName(QString::fromUtf8("pushButton_login"));
+        pushButton_login->setObjectName("pushButton_login");
         pushButton_login->setGeometry(QRect(20, 440, 191, 41));
         pushButton_login->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
 "border-radius: 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
 "color: rgb(255, 255, 255);"));
         pushButton_register = new QPushButton(widget);
-        pushButton_register->setObjectName(QString::fromUtf8("pushButton_register"));
+        pushButton_register->setObjectName("pushButton_register");
         pushButton_register->setGeometry(QRect(230, 440, 191, 41));
-        pushButton_register->setStyleSheet(QString::fromUtf8("[accessibleName = \"LoginBtns\"]{\n"
-"\n"
-"background-color: #CED2BA;\n"
+        pushButton_register->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
 "border-radius : 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
-"color: rgb(255, 255, 255);\n"
-"}"));
+"color: rgb(255, 255, 255);"));
         lineEdit_username = new QLineEdit(widget);
-        lineEdit_username->setObjectName(QString::fromUtf8("lineEdit_username"));
+        lineEdit_username->setObjectName("lineEdit_username");
         lineEdit_username->setGeometry(QRect(20, 320, 401, 41));
         lineEdit_username->setStyleSheet(QString::fromUtf8("border-color: #CED2BA;\n"
 "border-width : 1.2px;\n"
 "border-style:solid;"));
         label_2 = new QLabel(widget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(20, 370, 241, 16));
         label_2->setStyleSheet(QString::fromUtf8("font: 300 12pt \"Segoe UI Light\";\n"
 "color : #CED2BA ;"));
         label = new QLabel(widget);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName("label");
         label->setGeometry(QRect(20, 300, 81, 20));
         label->setStyleSheet(QString::fromUtf8("font: 300 12pt \"Segoe UI Light\";\n"
 "color : #CED2BA;"));
         lineEdit_password = new QLineEdit(widget);
-        lineEdit_password->setObjectName(QString::fromUtf8("lineEdit_password"));
+        lineEdit_password->setObjectName("lineEdit_password");
         lineEdit_password->setGeometry(QRect(20, 390, 401, 41));
         lineEdit_password->setStyleSheet(QString::fromUtf8("border-color: #CED2BA;\n"
 "border-width : 1.2px;\n"
@@ -107,11 +104,11 @@ public:
         lineEdit_password->setEchoMode(QLineEdit::Password);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 891, 22));
+        menubar->setObjectName("menubar");
+        menubar->setGeometry(QRect(0, 0, 774, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
@@ -125,13 +122,7 @@ public:
         label_pic->setText(QCoreApplication::translate("MainWindow", "grudges is here", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "KIA ORA ", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "Lets Get Started ", nullptr));
-#if QT_CONFIG(accessibility)
-        pushButton_login->setAccessibleName(QCoreApplication::translate("MainWindow", "LoginBtns", nullptr));
-#endif // QT_CONFIG(accessibility)
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
-#if QT_CONFIG(accessibility)
-        pushButton_register->setAccessibleName(QCoreApplication::translate("MainWindow", "LoginBtns", nullptr));
-#endif // QT_CONFIG(accessibility)
         pushButton_register->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
         lineEdit_username->setText(QString());
         label_2->setText(QCoreApplication::translate("MainWindow", "Password  ", nullptr));

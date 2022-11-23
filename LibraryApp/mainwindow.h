@@ -1,11 +1,16 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <QScrollBar>
+
 #include <QMainWindow>
+#include <QDate>
+
 
 #include "suclogin.h" //and created instances in private
 #include "filemanager.h" //and created instances in private
 #include "adminwindow.h"
+#include "admintest.h"
+
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +24,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    // ** getter for QString loggedInUserName;
+    QString getloggedInUserName(){
+        return loggedInUserName;
+    }
+
+    // ** getter for int loggedInUserID;
+    int getloggedInUserID(){
+        return loggedInUserID;
+    }
+
 private slots:
     void on_pushButton_login_clicked();
 
@@ -28,8 +43,11 @@ private:
     Ui::MainWindow *ui;
     sucLogin *suclogin;
     adminWindow *adminwindow;
+    adminTest *admintest;
     FileManager fManager;
     bool signedIn = false;
+    QString loggedInUserName;
+    int loggedInUserID;
 };
 #endif // MAINWINDOW_H
 

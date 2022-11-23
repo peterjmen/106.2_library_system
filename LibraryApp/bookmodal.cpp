@@ -21,28 +21,21 @@ BookModal::BookModal(QWidget *parent) :
     ui(new Ui::BookModal)
 {
     ui->setupUi(this);
-    labels.push_back(ui->Image);
-    labels.push_back(ui->Title);
-    labels.push_back(ui->Author);
-    labels.push_back(ui->Description);
 
-    qDebug() << "" << bookInfo.size();
-
+    Picture.push_back(ui->Image);
+    Title.push_back(ui->Title);
+    Author.push_back(ui->Author);
+    Description.push_back(ui->Description);
 
 
-
-
-    //0 = image dir
-    //1 = Title
-    //2 = Author
-    //3 = description
 }
 
 void BookModal::AssignInfo(){
-        labels.at(0)->setPixmap(bookInfo.at(0));
-        for(int i = 1; i < labels.size(); i++){
-            labels.at(i)->setText(bookInfo.at(i));
-        }
+       Picture[0]->setPixmap(modalBookCat.at(modalBookIndex.toInt()).at(0));
+       Title[0]->setText(modalBookCat.at(modalBookIndex.toInt()).at(1));
+       Author[0]->setText(modalBookCat.at(modalBookIndex.toInt()).at(2));
+       Description[0]->setText(modalBookCat.at(modalBookIndex.toInt()).at(3));
+
 }
 
 

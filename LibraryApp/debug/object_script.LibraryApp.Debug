@@ -1,9 +1,12 @@
+debug/admintest.o
 debug/adminwindow.o
 debug/bookmodal.o
 debug/filemanager.o
 debug/main.o
 debug/mainwindow.o
 debug/suclogin.o
+debug/qrc_QtResources.o
+debug/moc_admintest.o
 debug/moc_adminwindow.o
 debug/moc_bookmodal.o
 debug/moc_mainwindow.o

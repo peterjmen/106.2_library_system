@@ -3,8 +3,8 @@
 
 #include <QDialog>
 #include "filemanager.h"
-#include <QScrollBar>
-#include <QDialog>
+
+
 namespace Ui {
 class sucLogin;
 }
@@ -21,19 +21,23 @@ public:
     void WriteFile(QString fileName, QVector<QString> fileContent);
     bool CheckValidUser(QString username, QString fileName);
     bool nameFound = false;
+    QString userID;
 
 
 private slots:
     void on_pushButton_logout_clicked();
-//    void on_searchClear_clicked(); TODO remove
     void on_bookSearchButton_clicked();
-    void buttonPressed();
+    void reserveBookClicked();
+    void bookPicClicked();
+    void returnBookClicked();
+
 
 private:
     Ui::sucLogin *ui;
     FileManager fManager;
     QVector<QVector<QString>> bookCatalogue;
-    void Temp();
+    QVector<QVector<QString>> reservedRecordArray;
+    void btnSetup();
 };
 
 #endif // SUCLOGIN_H

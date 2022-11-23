@@ -1,30 +1,30 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "adminwindow.h"
+#include "admintest.h"
+
+
 
 #include <QMessageBox>
 #include <QPixmap>
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
+#include <QDate>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap myfirstpic("Resources/grudges.jpg");
-    int w = ui->label_pic->width();
-    int h = ui->label_pic->height();
-    ui->label_pic->setPixmap(myfirstpic.scaled(w,h,Qt::KeepAspectRatio));
-//    ui->pushButton_signUp.connect(ui->pushButton_signUp, SIGNAL(clicked()), this,SLOT(on_pushButton_signUp_clicked()));
-
 }
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
 
 
 void MainWindow::on_pushButton_login_clicked()
@@ -43,11 +43,15 @@ void MainWindow::on_pushButton_login_clicked()
             adminwindow->show();
             signedIn = true;
 
-        } else {
+        } else if(username == "test" && password == "test"){
+            QMessageBox::information(this, "Admin test logged in", "Proceed to test page");
+            hide();
+            admintest = new adminTest(this);
+            admintest->show();
+            signedIn = true;
+        }
 
-
-            //TODO remove debug
-            qDebug() << fileContent.at(0).at(0) << "is at fileContent.at(0).at(0)";
+        else {
 
 }
 
@@ -55,6 +59,17 @@ void MainWindow::on_pushButton_login_clicked()
                 if (username == fileContent.at(i).at(0)){
                     if(password == fileContent.at(i).at(1)){
                        QMessageBox::information(this, "Login", "Username and Password is correct");
+
+
+                       //stores username & id as variables if sucessful
+                       //availible through methodsgetloggedInUserName() + getloggedInUserID() from class
+                       loggedInUserName = fileContent.at(i).at(0);
+                       if (loggedInUserName == ""){
+                               loggedInUserName = "default";
+                    }
+                          loggedInUserID = i;
+
+                       //then closes main window and opens up sucessful login window
                        hide();
                        suclogin = new sucLogin(this);
                        suclogin->show();
@@ -71,21 +86,6 @@ void MainWindow::on_pushButton_login_clicked()
             }
         }
 
-
-
-
-
-
-//    if(username == "test" && password == "test"){
-//        QMessageBox::information(this, "Login", "Username and Password is correct");
-//        hide();
-//        suclogin = new sucLogin(this);
-//        suclogin->show();
-
-//    } else {
-//        QMessageBox::warning(this, "Login", "Username and Password is not correct");
-//    }
-//}
 
 
 void MainWindow::on_pushButton_register_clicked()

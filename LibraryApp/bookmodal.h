@@ -4,6 +4,8 @@
 #include <QDialog>
 #include <QString>
 #include <QLabel>
+#include <QTextBrowser>
+#include <QVector>
 
 namespace Ui {
 class BookModal;
@@ -16,12 +18,16 @@ class BookModal : public QDialog
 public:
     explicit BookModal(QWidget *parent = nullptr);
     ~BookModal();
-    QVector<QString> bookInfo;
+    QString modalBookIndex;
     void AssignInfo();
+    QVector<QVector<QString>> modalBookCat;
 
 private:
     Ui::BookModal *ui;
-    QVector<QLabel*> labels;
+    QVector<QLabel*> Picture;
+    QVector<QLabel*> Title;
+    QVector<QLabel*> Author;
+    QVector<QTextBrowser*> Description;
 };
 
 #endif // BOOKMODAL_H

@@ -32,7 +32,7 @@ void FileManager::WriteFile(QString fileName, QVector<QString> fileContent){
     }
     file.close();
     if(!file.isOpen()){
-        qDebug() << "Filed closed - write";
+//        qDebug() << "Filed closed - write";
     }
 
 
@@ -87,12 +87,7 @@ QVector<QVector<QString>> FileManager::ReadFile(QString fileName, int numCols){
 
             for(int i = 0; i < numCols; i++){
             if (i == numCols-1){
-
-                //TODO remove debugs
-                qDebug() << "Reached iteraton " << i+1; //as start is 0
                 columns.append(rows); //adds content of row to columns vector
-                qDebug() << "String in this row :" << qUtf8Printable(stringOfFile);
-                qDebug() << "Length of row " << qUtf8Printable(QString::number(rows.size()));
                 rows.clear(); //clears content of row before it goes onto next row so doesn't duplicate
             }
         }
