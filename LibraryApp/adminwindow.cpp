@@ -430,7 +430,22 @@ void adminWindow::deleteUserClicked() { // add functionality
   // displays a message box with 2 options
 
     QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(this, "Edit popup", "Delete this user?",
+    reply = QMessageBox::warning(this, "Edit popup", "Delete this user?",
+                                  QMessageBox::Yes|QMessageBox::No);
+    if (reply == QMessageBox::Yes) {
+      qDebug() << "Yes was clicked";
+    } else {
+      qDebug() << "No was clicked";
+    }
+
+};
+
+void adminWindow::on_addUserButton_clicked() { // add functionality
+
+  // displays a message box with 2 options
+
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this, "Add popup", "Add a new user?",
                                   QMessageBox::Yes|QMessageBox::No);
     if (reply == QMessageBox::Yes) {
       qDebug() << "Yes was clicked";
@@ -469,6 +484,7 @@ void adminWindow::deleteBookClicked() { // add functionality
     }
 
 };
+
 
 
 void adminWindow::on_addBookButton_clicked() { // add functionality

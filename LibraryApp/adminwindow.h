@@ -31,6 +31,7 @@ private slots:
 
     void editUserClicked();
     void deleteUserClicked();
+    void on_addUserButton_clicked();
 
 private:
     Ui::adminWindow *ui;
