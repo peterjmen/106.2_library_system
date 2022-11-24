@@ -31,8 +31,312 @@ color: #ffffff;
 </string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Catalogue</string>
+      </attribute>
+      <widget class="QPushButton" name="bookSearchButton">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>120</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#858D6F ;
+border-radius : 1px;
+font: 300 12pt &quot;Segoe UI Light&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_bookSearchText">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>651</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QscrollArea{
+font: 300 12pt &quot;Segoe UI Light&quot;;
+color: #ffffff;
+border-style: none;
+
+}
+
+QScrollBar:vertical {
+	border: none;
+    Background-color: #CED2BA;
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: #858D6F;
+	min-height: 30px;
+
+}
+QScrollBar::handle:vertical:hover{	
+	background-color:#858D6F;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #858D6F;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: #858D6F;
+	height: 15px;
+
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:rgb(206, 210, 186);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(206, 210, 186);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: #858D6F;
+	height: 15px;
+
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(206, 210, 186);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(206, 210, 186);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>649</width>
+          <height>349</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>641</width>
+           <height>321</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="bookCoverVertLayout">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="bookQuantityVertLayout"/>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="bookOptions"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QScrollArea" name="scrollAreaReservedBooks">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>240</y>
+         <width>321</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px solid lightgray;
+font: 300 12pt &quot;Segoe UI Light&quot;;
+color : #fffffF;
+</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaReservedBooks_Area">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>321</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>271</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="reservedBooks"/>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>200</y>
+         <width>371</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 20pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Books you reserved this session :</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>640</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 50pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Find Books </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 20pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Enter title and click search below </string>
+       </property>
+      </widget>
+      <zorder>bookSearchButton</zorder>
+      <zorder>scrollArea</zorder>
+      <zorder>scrollAreaReservedBooks</zorder>
+      <zorder>label_2</zorder>
+      <zorder>widget_2</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_5</zorder>
+      <zorder>lineEdit_bookSearchText</zorder>
+     </widget>
      <widget class="QWidget" name="tab">
       <attribute name="title">
        <string>Account</string>
@@ -770,310 +1074,6 @@ color: #CED2BA;
       <zorder>loggedInUsernameID</zorder>
       <zorder>scrollArea_2</zorder>
       <zorder>label_6</zorder>
-     </widget>
-     <widget class="QWidget" name="tab_2">
-      <attribute name="title">
-       <string>Catalogue</string>
-      </attribute>
-      <widget class="QPushButton" name="bookSearchButton">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>120</y>
-         <width>171</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:#858D6F ;
-border-radius : 1px;
-font: 300 12pt &quot;Segoe UI Light&quot;;
-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Search</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_bookSearchText">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>361</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QScrollArea" name="scrollArea">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>180</y>
-         <width>651</width>
-         <height>351</height>
-        </rect>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QscrollArea{
-font: 300 12pt &quot;Segoe UI Light&quot;;
-color: #ffffff;
-border-style: none;
-
-}
-
-QScrollBar:vertical {
-	border: none;
-    Background-color: #CED2BA;
-    width: 14px;
-    margin: 15px 0 15px 0;
-	border-radius: 0px;
- }
-
-/*  HANDLE BAR VERTICAL */
-QScrollBar::handle:vertical {	
-	background-color: #858D6F;
-	min-height: 30px;
-
-}
-QScrollBar::handle:vertical:hover{	
-	background-color:#858D6F;
-}
-QScrollBar::handle:vertical:pressed {	
-	background-color: #858D6F;
-}
-
-/* BTN TOP - SCROLLBAR */
-QScrollBar::sub-line:vertical {
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-
-	subcontrol-position: top;
-	subcontrol-origin: margin;
-}
-QScrollBar::sub-line:vertical:hover {	
-	background-color:rgb(206, 210, 186);
-}
-QScrollBar::sub-line:vertical:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* BTN BOTTOM - SCROLLBAR */
-QScrollBar::add-line:vertical {
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-
-	subcontrol-position: bottom;
-	subcontrol-origin: margin;
-}
-QScrollBar::add-line:vertical:hover {	
-	background-color: rgb(206, 210, 186);
-}
-QScrollBar::add-line:vertical:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* RESET ARROW */
-QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
-	background: none;
-}
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-	background: none;
-}
-</string>
-       </property>
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="scrollContents">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>649</width>
-          <height>349</height>
-         </rect>
-        </property>
-        <widget class="QWidget" name="horizontalLayoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>10</y>
-           <width>641</width>
-           <height>321</height>
-          </rect>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <property name="spacing">
-           <number>2</number>
-          </property>
-          <property name="leftMargin">
-           <number>10</number>
-          </property>
-          <property name="topMargin">
-           <number>10</number>
-          </property>
-          <property name="rightMargin">
-           <number>10</number>
-          </property>
-          <property name="bottomMargin">
-           <number>10</number>
-          </property>
-          <item>
-           <layout class="QVBoxLayout" name="bookCoverVertLayout">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <property name="bottomMargin">
-             <number>0</number>
-            </property>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
-            <property name="leftMargin">
-             <number>5</number>
-            </property>
-            <property name="topMargin">
-             <number>5</number>
-            </property>
-            <property name="rightMargin">
-             <number>5</number>
-            </property>
-            <property name="bottomMargin">
-             <number>5</number>
-            </property>
-            <item>
-             <layout class="QVBoxLayout" name="bookQuantityVertLayout"/>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="bookOptions"/>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </widget>
-      <widget class="QScrollArea" name="scrollAreaReservedBooks">
-       <property name="geometry">
-        <rect>
-         <x>700</x>
-         <y>240</y>
-         <width>321</width>
-         <height>301</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border: 0px solid lightgray;
-font: 300 12pt &quot;Segoe UI Light&quot;;
-color : #fffffF;
-</string>
-       </property>
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="scrollAreaReservedBooks_Area">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>321</width>
-          <height>301</height>
-         </rect>
-        </property>
-        <widget class="QWidget" name="verticalLayoutWidget_2">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>20</y>
-           <width>271</width>
-           <height>281</height>
-          </rect>
-         </property>
-         <layout class="QVBoxLayout" name="reservedBooks"/>
-        </widget>
-       </widget>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>700</x>
-         <y>200</y>
-         <width>371</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-font: 700 20pt &quot;Sitka Banner&quot;;
-color :#858D6F;</string>
-       </property>
-       <property name="text">
-        <string>Books you reserved this session :</string>
-       </property>
-      </widget>
-      <widget class="QWidget" name="widget_2" native="true">
-       <property name="geometry">
-        <rect>
-         <x>910</x>
-         <y>640</y>
-         <width>120</width>
-         <height>80</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>341</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-font: 700 50pt &quot;Sitka Banner&quot;;
-color :#858D6F;</string>
-       </property>
-       <property name="text">
-        <string>Find Books </string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>80</y>
-         <width>381</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-font: 700 20pt &quot;Sitka Banner&quot;;
-color :#858D6F;</string>
-       </property>
-       <property name="text">
-        <string>Enter title and click search below </string>
-       </property>
-      </widget>
-      <zorder>bookSearchButton</zorder>
-      <zorder>scrollArea</zorder>
-      <zorder>scrollAreaReservedBooks</zorder>
-      <zorder>label_2</zorder>
-      <zorder>widget_2</zorder>
-      <zorder>label_3</zorder>
-      <zorder>label_5</zorder>
-      <zorder>lineEdit_bookSearchText</zorder>
      </widget>
     </widget>
    </item>
