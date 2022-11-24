@@ -28,11 +28,16 @@ private slots:
     void bookPicClicked();
     void deleteBookClicked();
     void on_addBookButton_clicked();
+
+    void editUserClicked();
+    void deleteUserClicked();
+
 private:
     Ui::adminWindow *ui;
     FileManager fManager;
     QVector<QVector<QString>> bookCatalogue;
     QVector<QVector<QString>> reservedRecordArray;
+     QVector<QVector<QString>> accountArray;
     void btnSetup();
 };
 

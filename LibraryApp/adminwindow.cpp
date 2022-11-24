@@ -31,6 +31,8 @@ QVector < QTextBrowser * > allUserNameAdmin;
 QVector < QTextBrowser * > allUserIDAdmin;
 QVector < QTextBrowser * > allUserPassAdmin;
 QVector < QTextBrowser * > bookTitleAdmin;
+QVector < QPushButton * > editUserButtonVectorAdmin; //button for editing users
+QVector < QPushButton * > deleteUserButtonVectorAdmin; //button for deleting users
 
 
 adminWindow::adminWindow(QWidget *parent) :
@@ -50,10 +52,12 @@ adminWindow::adminWindow(QWidget *parent) :
 
     reservedRecordArray = fManager.ReadFile("Reserved_books_file", 6);
 
+    accountArray = fManager.ReadFile("accountInformation", 4);
+
     // connects scroll area's with layout boxes
-    ui -> catalogue_scrollArea -> setLayout(ui -> catalogueLayout);
-    ui -> accounts_scrollArea -> setLayout(ui -> accountsVertLayout);
-    ui -> notifScrollArea -> setLayout(ui -> horizontalLayout_3);
+    ui -> scrollContents -> setLayout(ui -> horizontalLayout);
+    ui -> scrollContents_2 -> setLayout(ui -> horizontalLayout_2);
+
 
     //Cover pics
     // if using resource folder instead, path is    :/images/Resources/grudges.jpg
@@ -140,106 +144,97 @@ adminWindow::adminWindow(QWidget *parent) :
 
     }
 
-    ///*creating array for books reserved books to display in dashboard-----------------------------------------------------------------------------------------------------------
+
+    ///*USER ACCOUNT TABLE-----------------------------------------------------------------------------------------------------------
+
+    for(int j = 0; j < accountArray.length(); j++){
+
+    //user ID numbers
+    // adds book info columns 1,2 + 3 into a string and displays it in a text browser box
+    QTextBrowser * thisID = new QTextBrowser(this);
+    thisID -> setMaximumHeight(125);
+    thisID -> setText(
+      "ID: " + accountArray.at(j).at(3)
+    );
+    allUserIDAdmin.append(thisID);
+    ui -> userIDList -> addWidget(allUserIDAdmin[j]);
 
 
-    for(int j = 0; j < reservedRecordArray.length(); j++){
+    //user names
+    // adds book info columns 1,2 + 3 into a string and displays it in a text browser box
+    QTextBrowser * thisUser = new QTextBrowser(this);
+    thisUser -> setMaximumHeight(125);
+    thisUser -> setText(
+      "Username: " + accountArray.at(j).at(0) + "\n"
+    );
+    allUserNameAdmin.append(thisUser);
+    ui -> usernameList -> addWidget(allUserNameAdmin[j]);
+
+
+    //user passwords
+    // adds book info columns 1,2 + 3 into a string and displays it in a text browser box
+    QTextBrowser * thisPass = new QTextBrowser(this);
+    thisPass -> setMaximumHeight(125);
+    thisPass -> setText(
+      "Password: " + accountArray.at(j).at(1) + "\n"
+    );
+    allUserPassAdmin.append(thisPass);
+    ui -> userPasswordList -> addWidget(allUserPassAdmin[j]);
+
+
+    //add edit user button
+    //cast i into string
+    QString iterationAsStringEditUser = QString::number(j);
+    QPushButton * editUser = new QPushButton("Edit User: " + accountArray.at(j).at(3));
+    editUser -> setProperty("bookIndex", j);
+    editUser -> setStyleSheet("background-color:#858D6F; color: rgb(255, 255, 255);");
 
 
 
-        // adds book info columns 1,2 + 3 into a string and displays it in a text browser box
-        QTextBrowser * bookTitle = new QTextBrowser(this);
-        bookTitle -> setMaximumHeight(125);
-        bookTitle -> setText(
-          "" + reservedRecordArray.at(j).at(1)
-        );
-        bookTitleAdmin.append(bookTitle);
-        ui -> allReservedBooksList -> addWidget(bookTitleAdmin[j]);
+
+    connect(editUser, SIGNAL(clicked()), this, SLOT(editUserClicked()));
+
+    editUserButtonVectorAdmin.append(editUser);
+    ui -> userEditButtons -> addWidget(editUserButtonVectorAdmin[j]);
+    if (accountArray.at(j).at(2).toInt() <= 0) {
+      QSizePolicy sp_retain = editUser -> sizePolicy();
+      sp_retain.setRetainSizeWhenHidden(true);
+      editUser -> setSizePolicy(sp_retain);
+      editUser -> setStyleSheet("background-color:#CED2BA ; color: rgb(255, 255, 255);");
+    }
+
+
+    //end of edit button
+
+
+    //add edit delete button
+    //cast i into string
+    QString iterationAsStringDeleteUser = QString::number(j);
+    QPushButton * deleteUser = new QPushButton("Delete User: " + accountArray.at(j).at(3));
+    deleteUser -> setProperty("bookIndex", j);
+    deleteUser -> setStyleSheet("background-color:#858D6F; color: rgb(255, 255, 255);");
+
+
+
+
+    connect(deleteUser, SIGNAL(clicked()), this, SLOT(deleteUserClicked()));
+
+    deleteUserButtonVectorAdmin.append(deleteUser);
+    ui -> userDeleteButtons -> addWidget(deleteUserButtonVectorAdmin[j]);
+    if (accountArray.at(j).at(2).toInt() <= 0) {
+      QSizePolicy sp_retain = deleteUser -> sizePolicy();
+      sp_retain.setRetainSizeWhenHidden(true);
+      deleteUser -> setSizePolicy(sp_retain);
+      deleteUser -> setStyleSheet("background-color:#CED2BA ; color: rgb(255, 255, 255);");
+    }
+
+
+    //end of edit button
+
+
 
 
 }
-
-
-
-
-//           //QLabel with date reserved
-//           QLabel * dateReserved = new QLabel(reservedRecordArray.at(i).at(2));
-//           dateReservedVectorAdmin.append(dateReserved);
-//           ui -> allReservedBooksListReservedDate -> addWidget(dateReservedVectorAdmin[dateReservedVectorAdmin.length() - 1]);
-
-//           //QLabel with datedue
-//           QLabel * dueDate = new QLabel(reservedRecordArray.at(i).at(3));
-//           dueDateReservedVectorAdmin.append(dueDate);
-//           ui -> allReservedBooksListDueDate -> addWidget(dueDateReservedVectorAdmin[dueDateReservedVectorAdmin.length() - 1]);
-
-//           //QLabel status⬇
-//           QLabel * bookStatus = new QLabel(reservedRecordArray.at(i).at(4));
-//           bookStatus -> setProperty("statusLabelNumber", dueDateReservedVectorAdmin.length() - 1);
-
-//           //check book status and change to due/on loan/due soon
-
-//           QDate reservedDateToCompare = QDate::currentDate();
-//           QDate dueDateToCompare = QDate::fromString(reservedRecordArray.at(i).at(3), "dd/MM/yyyy");
-
-//           if (reservedDateToCompare.daysTo(dueDateToCompare) < 1 && reservedRecordArray.at(i).at(4) != "Returned") {
-//             bookStatus -> setAutoFillBackground(true);
-//             bookStatus -> setStyleSheet("background-color: red");
-//             reservedRecordArray[i][4] = "Overdue";
-//             bookStatus -> setText("Overdue");
-//           } else if (reservedDateToCompare.daysTo(dueDateToCompare) < 3 && reservedRecordArray.at(i).at(4) != "Returned") {
-//             bookStatus -> setAutoFillBackground(true);
-//             bookStatus -> setStyleSheet("background-color: yellow");
-//             reservedRecordArray[i][4] = "Due-Soon";
-//             bookStatus -> setText("Due-soon");
-//           } else if (reservedRecordArray.at(i).at(4) == "Returned") {
-//             bookStatus -> setAutoFillBackground(true);
-//             bookStatus -> setStyleSheet("background-color: green");
-//           } else if (reservedDateToCompare.daysTo(dueDateToCompare) >= 3 && reservedRecordArray.at(i).at(4) != "Returned") {
-//             reservedRecordArray[i][4] = "On-Loan";
-//             bookStatus -> setText("On-Loan");
-//           } else {
-//             reservedRecordArray[i][4] = "Anomolie";
-//           }
-
-//           dashboardookStatusVectorAdmin.append(bookStatus);
-//           ui -> allReservedBooksListStatus -> addWidget(dashboardookStatusVectorAdmin[dashboardookStatusVectorAdmin.length() - 1]);
-//           //⬆QLabel status*/
-
-
-//           //Qlabel with users ID number
-//           QLabel * recordedUserID = new QLabel(reservedRecordArray.at(i).at(0));
-//           allUserIDAdmin.append(recordedUserID);
-//           ui -> allReservedBooksListUserID -> addWidget(allUserIDAdmin[allUserIDAdmin.length() - 1]);
-
-
-//      }
-
-
-//       //update reserved books file with any changes
-//           QVector < QString > changes;
-//           QString oldFileToDelete = "Reserved_books_file.csv";
-//           // creates  file with namenew_...
-//           QString newFileWithEdits = "Reserved_books_file_changed";
-//           QString newFileWithEdits_csv = "Reserved_books_file_changed.csv";
-//           QFile file(newFileWithEdits);
-
-//           for (int i = 0; i < reservedRecordArray.length(); i++) {
-//             for (int j = 0; j < 6; j++) {
-//               changes.append(reservedRecordArray.at(i).at(j));
-//             }
-//             fManager.WriteFile(newFileWithEdits, changes);
-//             changes.clear();
-//           }
-
-//           QFile::remove(oldFileToDelete);
-//           QFile::rename(newFileWithEdits_csv, oldFileToDelete);
-
-
-
-
-
-
-
 
 
 };
@@ -262,10 +257,6 @@ void adminWindow::on_pushButton_admin_logout_clicked() {
     ui -> bookQuantityVertLayout -> removeWidget(bookQuantityVertLayoutVectorAdmin[i]);
   }
 
-  for (int i = 0; i < userReservedBooksVectorAdmin.length(); i++) {
-    ui -> allReservedBooksList -> removeWidget(userReservedBooksVectorAdmin[i]);
-    ui -> allReservedBooksList -> removeWidget(dateReservedVectorAdmin[i]);
-  }
 
   qDeleteAll(bookCoversListAdmin);
   bookCoversListAdmin.clear();
@@ -417,6 +408,37 @@ void adminWindow::on_bookSearchButtonAdmin_clicked() {
 
 }
 
+
+
+void adminWindow::editUserClicked() { // add functionality
+
+  // displays a message box with 2 options
+
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this, "Edit popup", "Edit this user",
+                                  QMessageBox::Yes|QMessageBox::No);
+    if (reply == QMessageBox::Yes) {
+      qDebug() << "Yes was clicked";
+    } else {
+      qDebug() << "No was clicked";
+    }
+
+};
+
+void adminWindow::deleteUserClicked() { // add functionality
+
+  // displays a message box with 2 options
+
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this, "Edit popup", "Delete this user?",
+                                  QMessageBox::Yes|QMessageBox::No);
+    if (reply == QMessageBox::Yes) {
+      qDebug() << "Yes was clicked";
+    } else {
+      qDebug() << "No was clicked";
+    }
+
+};
 
 void adminWindow::editBookClicked() { // add functionality
 
