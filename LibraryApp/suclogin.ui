@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1221</width>
+    <width>1088</width>
     <height>646</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
       <string notr="true">background-color: #CED2BA;
 font: 300 12pt &quot;Segoe UI Light&quot;;
 border-color: #858D6F;
-color: #ffffff;
+
 
 
 
@@ -31,7 +31,7 @@ color: #ffffff;
 </string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -40,11 +40,17 @@ color: #ffffff;
       <widget class="QPushButton" name="pushButton_logout">
        <property name="geometry">
         <rect>
-         <x>1070</x>
-         <y>500</y>
-         <width>80</width>
-         <height>24</height>
+         <x>1090</x>
+         <y>550</y>
+         <width>91</width>
+         <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #858D6F;
+border-radius: 1px;
+font: 300 12pt &quot;Segoe UI Light&quot;;
+color: #CED2BA;</string>
        </property>
        <property name="text">
         <string>Log Out</string>
@@ -103,190 +109,6 @@ color : #858D6F;
         <string>ID: &lt;Id number goe shere&gt;</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>590</x>
-         <y>70</y>
-         <width>471</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-font: 700 20pt &quot;Sitka Banner&quot;;
-color :#858D6F;
-</string>
-       </property>
-       <property name="text">
-        <string>Most Popular Books (top 5)</string>
-       </property>
-      </widget>
-      <widget class="QScrollArea" name="recc_genre">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>320</y>
-         <width>591</width>
-         <height>171</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-QScrollBar{
-	border: none;
-    Background-color: #CED2BA;
-    width: 14px;
-    margin: 15px 0 15px 0;
-	border-radius: 0px;
- }
-
-/*  HANDLE BAR VERTICAL */
-QScrollBar::handle{	
-	background-color: #858D6F;
-	min-height: 30px;
-
-}
-QScrollBar::handle:hover{	
-	background-color:#858D6F;
-}
-QScrollBar::handle:pressed {	
-	background-color: #858D6F;
-}
-
-/* BTN TOP - SCROLLBAR */
-QScrollBar::sub-line {
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	subcontrol-position: top;
-	subcontrol-origin: margin;
-}
-QScrollBar::sub-line:hover {	
-	background-color:rgb(206, 210, 186);
-}
-QScrollBar::sub-line:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* BTN BOTTOM - SCROLLBAR */
-QScrollBar::add-line:{
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-	subcontrol-position: bottom;
-	subcontrol-origin: margin;
-}
-QScrollBar::add-line:hover {	
-	background-color: rgb(206, 210, 186);
-}
-QScrollBar::add-line:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* RESET ARROW */
-QScrollBar::up-arrow, QScrollBar::down-arrow: {
-	background: none;
-}
-QScrollBar::add-page, QScrollBar::sub-page: {
-	background: none;
-}
-</string>
-       </property>
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="recc_genre_scrollArea">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>589</width>
-          <height>169</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QScrollBar:vertical {
-	border: none;
-    Background-color: #CED2BA;
-    width: 14px;
-    margin: 15px 0 15px 0;
-	border-radius: 0px;
- }
-
-/*  HANDLE BAR VERTICAL */
-QScrollBar::handle:vertical {	
-	background-color: #858D6F;
-	min-height: 30px;
-
-}
-QScrollBar::handle:vertical:hover{	
-	background-color:#858D6F;
-}
-QScrollBar::handle:vertical:pressed {	
-	background-color: #858D6F;
-}
-
-/* BTN TOP - SCROLLBAR */
-QScrollBar::sub-line:vertical {
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	subcontrol-position: top;
-	subcontrol-origin: margin;
-}
-QScrollBar::sub-line:vertical:hover {	
-	background-color:rgb(206, 210, 186);
-}
-QScrollBar::sub-line:vertical:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* BTN BOTTOM - SCROLLBAR */
-QScrollBar::add-line:vertical {
-	border: none;
-	background-color: #858D6F;
-	height: 15px;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-	subcontrol-position: bottom;
-	subcontrol-origin: margin;
-}
-QScrollBar::add-line:vertical:hover {	
-	background-color: rgb(206, 210, 186);
-}
-QScrollBar::add-line:vertical:pressed {	
-	background-color: rgb(206, 210, 186);
-}
-
-/* RESET ARROW */
-QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
-	background: none;
-}
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-	background: none;
-}
-</string>
-        </property>
-        <widget class="QWidget" name="horizontalLayoutWidget_3">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>571</width>
-           <height>151</height>
-          </rect>
-         </property>
-         <layout class="QHBoxLayout" name="reccomended_genre_window"/>
-        </widget>
-       </widget>
-      </widget>
       <widget class="QScrollArea" name="scrollArea_2">
        <property name="geometry">
         <rect>
@@ -311,37 +133,112 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
           <height>171</height>
          </rect>
         </property>
-        <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <widget class="QLabel" name="loggedInUsernameID_2">
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>10</y>
-           <width>571</width>
-           <height>151</height>
+           <y>20</y>
+           <width>341</width>
+           <height>31</height>
           </rect>
          </property>
-         <layout class="QHBoxLayout" name="reccomended_books_window"/>
+         <property name="font">
+          <font>
+           <family>Segoe UI Light</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 300 16pt &quot;Segoe UI Light&quot;;
+color : #858D6F;
+</string>
+         </property>
+         <property name="text">
+          <string>you still need to check the books out</string>
+         </property>
         </widget>
-       </widget>
-      </widget>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>290</y>
-         <width>471</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
+        <widget class="QLabel" name="loggedInUsernameID_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>431</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI Light</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 300 16pt &quot;Segoe UI Light&quot;;
+color : #858D6F;
+</string>
+         </property>
+         <property name="text">
+          <string>when you are picking them up, this just ensures </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="loggedInUsernameID_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>431</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI Light</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 300 16pt &quot;Segoe UI Light&quot;;
+color : #858D6F;
+</string>
+         </property>
+         <property name="text">
+          <string>they will be saved for you </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="loggedInUsernameLabel_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>-10</y>
+           <width>431</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Banner</family>
+           <pointsize>20</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
 font: 700 20pt &quot;Sitka Banner&quot;;
 color :#858D6F;
 </string>
-       </property>
-       <property name="text">
-        <string>Books Recomended For You </string>
-       </property>
+         </property>
+         <property name="text">
+          <string>Reminder </string>
+         </property>
+        </widget>
+       </widget>
       </widget>
       <widget class="QWidget" name="widget_3" native="true">
        <property name="geometry">
@@ -764,12 +661,9 @@ color: #CED2BA;
       </widget>
       <zorder>widget_3</zorder>
       <zorder>pushButton_logout</zorder>
-      <zorder>label_4</zorder>
-      <zorder>recc_genre</zorder>
       <zorder>loggedInUsernameLabel</zorder>
       <zorder>loggedInUsernameID</zorder>
       <zorder>scrollArea_2</zorder>
-      <zorder>label_6</zorder>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
@@ -992,8 +886,8 @@ color : #fffffF;
         <widget class="QWidget" name="verticalLayoutWidget_2">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>20</y>
+           <x>0</x>
+           <y>0</y>
            <width>271</width>
            <height>281</height>
           </rect>
@@ -1074,6 +968,196 @@ color :#858D6F;</string>
       <zorder>label_3</zorder>
       <zorder>label_5</zorder>
       <zorder>lineEdit_bookSearchText</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Recomended</string>
+      </attribute>
+      <widget class="QWidget" name="horizontalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>571</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="reccomended_books_window"/>
+      </widget>
+      <widget class="QScrollArea" name="recc_genre">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>390</y>
+         <width>581</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: none;</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="recc_genre_scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>581</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QScrollBar:vertical {
+	border: none;
+    Background-color: #CED2BA;
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: #858D6F;
+	min-height: 30px;
+
+}
+QScrollBar::handle:vertical:hover{	
+	background-color:#858D6F;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #858D6F;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: #858D6F;
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:rgb(206, 210, 186);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(206, 210, 186);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: #858D6F;
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(206, 210, 186);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(206, 210, 186);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+</string>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>551</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="reccomended_genre_window"/>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>681</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 50pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Our Recomendations </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>631</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 20pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>What we think you would like based off your account data </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>751</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 18pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Most Popular books (Top 5)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>350</y>
+         <width>751</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 700 18pt &quot;Sitka Banner&quot;;
+color :#858D6F;</string>
+       </property>
+       <property name="text">
+        <string>Books we think you might enjoy based off of previous picks </string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </item>

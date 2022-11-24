@@ -108,7 +108,7 @@ sucLogin::sucLogin(QWidget * parent):
         QSizePolicy sp_retain = reserveBook -> sizePolicy();
         sp_retain.setRetainSizeWhenHidden(true);
         reserveBook -> setSizePolicy(sp_retain);
-        reserveBook -> setStyleSheet("background-color:#CED2BA ; color: rgb(255, 255, 255);");
+
 
 
 

@@ -91,7 +91,7 @@ color :#CED2BA;</string>
       <string notr="true">background-color: #CED2BA;
 border-radius: 1px;
 font: 300 12pt &quot;Segoe UI Light&quot;;
-color: rgb(255, 255, 255);</string>
+color: #858D6F;</string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: #CED2BA;
 border-radius : 1px;
 font: 300 12pt &quot;Segoe UI Light&quot;;
-color: rgb(255, 255, 255);</string>
+color: #858D6F;</string>
      </property>
      <property name="text">
       <string>Register</string>

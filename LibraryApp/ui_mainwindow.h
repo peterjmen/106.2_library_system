@@ -71,14 +71,14 @@ public:
         pushButton_login->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
 "border-radius: 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
-"color: rgb(255, 255, 255);"));
+"color: #858D6F;"));
         pushButton_register = new QPushButton(widget);
         pushButton_register->setObjectName("pushButton_register");
         pushButton_register->setGeometry(QRect(230, 440, 191, 41));
         pushButton_register->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
 "border-radius : 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
-"color: rgb(255, 255, 255);"));
+"color: #858D6F;"));
         lineEdit_username = new QLineEdit(widget);
         lineEdit_username->setObjectName("lineEdit_username");
         lineEdit_username->setGeometry(QRect(20, 320, 401, 41));

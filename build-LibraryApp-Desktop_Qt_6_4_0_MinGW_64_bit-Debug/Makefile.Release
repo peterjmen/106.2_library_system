@@ -421,6 +421,9 @@ release/moc_adminwindow.cpp: ../LibraryApp/adminwindow.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
 		../../../Qt/6.4.0/mingw_64/include/QtGui/QTransform \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
+		../LibraryApp/filemanager.h \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QVector \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/qvector.h \
 		release/moc_predefs.h \
 		../../../Qt/6.4.0/mingw_64/bin/moc.exe
 	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Github/106.2_library_system/build-LibraryApp-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Github/106.2_library_system/LibraryApp -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\LibraryApp\adminwindow.h -o release\moc_adminwindow.cpp
@@ -1235,6 +1238,9 @@ release/adminwindow.o: ../LibraryApp/adminwindow.cpp ../LibraryApp/adminwindow.h
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
 		../../../Qt/6.4.0/mingw_64/include/QtGui/QTransform \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
+		../LibraryApp/filemanager.h \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QVector \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/qvector.h \
 		../LibraryApp/ui_adminwindow.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QVariant \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
@@ -1260,26 +1266,53 @@ release/adminwindow.o: ../LibraryApp/adminwindow.cpp ../LibraryApp/adminwindow.h
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qlayout.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		../../../Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
+		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QScrollArea \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qscrollarea.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QTabWidget \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
 		../LibraryApp/mainwindow.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QDate \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		../LibraryApp/suclogin.h \
-		../LibraryApp/filemanager.h \
-		../../../Qt/6.4.0/mingw_64/include/QtCore/QVector \
-		../../../Qt/6.4.0/mingw_64/include/QtCore/qvector.h \
-		../LibraryApp/admintest.h
+		../LibraryApp/admintest.h \
+		../LibraryApp/bookmodal.h \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QString \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QTextBrowser \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qtextbrowser.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qtextedit.h \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QBoxLayout \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QFile \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/qfiledevice.h \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		../../../Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminwindow.o ..\LibraryApp\adminwindow.cpp
 
 release/bookmodal.o: ../LibraryApp/bookmodal.cpp ../LibraryApp/bookmodal.h \

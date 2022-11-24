@@ -32,16 +32,12 @@ public:
     QPushButton *pushButton_logout;
     QLabel *loggedInUsernameLabel;
     QLabel *loggedInUsernameID;
-    QLabel *label_4;
-    QScrollArea *recc_genre;
-    QWidget *recc_genre_scrollArea;
-    QWidget *horizontalLayoutWidget_3;
-    QHBoxLayout *reccomended_genre_window;
     QScrollArea *scrollArea_2;
     QWidget *scrollAreaWidgetContents;
-    QWidget *horizontalLayoutWidget_2;
-    QHBoxLayout *reccomended_books_window;
-    QLabel *label_6;
+    QLabel *loggedInUsernameID_2;
+    QLabel *loggedInUsernameID_3;
+    QLabel *loggedInUsernameID_4;
+    QLabel *loggedInUsernameLabel_2;
     QWidget *widget_3;
     QWidget *widget;
     QLabel *label;
@@ -76,12 +72,23 @@ public:
     QWidget *widget_2;
     QLabel *label_3;
     QLabel *label_5;
+    QWidget *tab_3;
+    QWidget *horizontalLayoutWidget_4;
+    QHBoxLayout *reccomended_books_window;
+    QScrollArea *recc_genre;
+    QWidget *recc_genre_scrollArea;
+    QWidget *horizontalLayoutWidget_5;
+    QHBoxLayout *reccomended_genre_window;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
 
     void setupUi(QDialog *sucLogin)
     {
         if (sucLogin->objectName().isEmpty())
             sucLogin->setObjectName("sucLogin");
-        sucLogin->resize(1221, 646);
+        sucLogin->resize(1088, 646);
         sucLogin->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
         horizontalLayout_2 = new QHBoxLayout(sucLogin);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
@@ -90,7 +97,7 @@ public:
         tabWidget->setStyleSheet(QString::fromUtf8("background-color: #CED2BA;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
 "border-color: #858D6F;\n"
-"color: #ffffff;\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -100,7 +107,11 @@ public:
         tab->setObjectName("tab");
         pushButton_logout = new QPushButton(tab);
         pushButton_logout->setObjectName("pushButton_logout");
-        pushButton_logout->setGeometry(QRect(1070, 500, 80, 24));
+        pushButton_logout->setGeometry(QRect(1090, 550, 91, 31));
+        pushButton_logout->setStyleSheet(QString::fromUtf8("background-color: #858D6F;\n"
+"border-radius: 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: #CED2BA;"));
         loggedInUsernameLabel = new QLabel(tab);
         loggedInUsernameLabel->setObjectName("loggedInUsernameLabel");
         loggedInUsernameLabel->setGeometry(QRect(10, 10, 431, 41));
@@ -126,156 +137,6 @@ public:
         loggedInUsernameID->setStyleSheet(QString::fromUtf8("font: 300 16pt \"Segoe UI Light\";\n"
 "color : #858D6F;\n"
 ""));
-        label_4 = new QLabel(tab);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(590, 70, 471, 31));
-        label_4->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color :#858D6F;\n"
-""));
-        recc_genre = new QScrollArea(tab);
-        recc_genre->setObjectName("recc_genre");
-        recc_genre->setGeometry(QRect(580, 320, 591, 171));
-        recc_genre->setStyleSheet(QString::fromUtf8("\n"
-"QScrollBar{\n"
-"	border: none;\n"
-"    Background-color: #CED2BA;\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
-"	border-radius: 0px;\n"
-" }\n"
-"\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle{	\n"
-"	background-color: #858D6F;\n"
-"	min-height: 30px;\n"
-"\n"
-"}\n"
-"QScrollBar::handle:hover{	\n"
-"	background-color:#858D6F;\n"
-"}\n"
-"QScrollBar::handle:pressed {	\n"
-"	background-color: #858D6F;\n"
-"}\n"
-"\n"
-"/* BTN TOP - SCROLLBAR */\n"
-"QScrollBar::sub-line {\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-top-left-radius: 7px;\n"
-"	border-top-right-radius: 7px;\n"
-"	subcontrol-position: top;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::sub-line:hover {	\n"
-"	background-color:rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::sub-line:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* BTN BOTTOM - SCROLLBAR */\n"
-"QScrollBar::add-line:{\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-bottom-left-radius:"
-                        " 7px;\n"
-"	border-bottom-right-radius: 7px;\n"
-"	subcontrol-position: bottom;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::add-line:hover {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::add-line:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* RESET ARROW */\n"
-"QScrollBar::up-arrow, QScrollBar::down-arrow: {\n"
-"	background: none;\n"
-"}\n"
-"QScrollBar::add-page, QScrollBar::sub-page: {\n"
-"	background: none;\n"
-"}\n"
-""));
-        recc_genre->setWidgetResizable(true);
-        recc_genre_scrollArea = new QWidget();
-        recc_genre_scrollArea->setObjectName("recc_genre_scrollArea");
-        recc_genre_scrollArea->setGeometry(QRect(0, 0, 589, 169));
-        recc_genre_scrollArea->setStyleSheet(QString::fromUtf8("QScrollBar:vertical {\n"
-"	border: none;\n"
-"    Background-color: #CED2BA;\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
-"	border-radius: 0px;\n"
-" }\n"
-"\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle:vertical {	\n"
-"	background-color: #858D6F;\n"
-"	min-height: 30px;\n"
-"\n"
-"}\n"
-"QScrollBar::handle:vertical:hover{	\n"
-"	background-color:#858D6F;\n"
-"}\n"
-"QScrollBar::handle:vertical:pressed {	\n"
-"	background-color: #858D6F;\n"
-"}\n"
-"\n"
-"/* BTN TOP - SCROLLBAR */\n"
-"QScrollBar::sub-line:vertical {\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-top-left-radius: 7px;\n"
-"	border-top-right-radius: 7px;\n"
-"	subcontrol-position: top;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::sub-line:vertical:hover {	\n"
-"	background-color:rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::sub-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* BTN BOTTOM - SCROLLBAR */\n"
-"QScrollBar::add-line:vertical {\n"
-"	border: none;\n"
-"	backgrou"
-                        "nd-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-bottom-left-radius: 7px;\n"
-"	border-bottom-right-radius: 7px;\n"
-"	subcontrol-position: bottom;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::add-line:vertical:hover {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::add-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* RESET ARROW */\n"
-"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
-"	background: none;\n"
-"}\n"
-"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
-"	background: none;\n"
-"}\n"
-""));
-        horizontalLayoutWidget_3 = new QWidget(recc_genre_scrollArea);
-        horizontalLayoutWidget_3->setObjectName("horizontalLayoutWidget_3");
-        horizontalLayoutWidget_3->setGeometry(QRect(10, 10, 571, 151));
-        reccomended_genre_window = new QHBoxLayout(horizontalLayoutWidget_3);
-        reccomended_genre_window->setObjectName("reccomended_genre_window");
-        reccomended_genre_window->setContentsMargins(0, 0, 0, 0);
-        recc_genre->setWidget(recc_genre_scrollArea);
         scrollArea_2 = new QScrollArea(tab);
         scrollArea_2->setObjectName("scrollArea_2");
         scrollArea_2->setGeometry(QRect(580, 100, 591, 171));
@@ -284,20 +145,36 @@ public:
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 591, 171));
-        horizontalLayoutWidget_2 = new QWidget(scrollAreaWidgetContents);
-        horizontalLayoutWidget_2->setObjectName("horizontalLayoutWidget_2");
-        horizontalLayoutWidget_2->setGeometry(QRect(10, 10, 571, 151));
-        reccomended_books_window = new QHBoxLayout(horizontalLayoutWidget_2);
-        reccomended_books_window->setObjectName("reccomended_books_window");
-        reccomended_books_window->setContentsMargins(0, 0, 0, 0);
-        scrollArea_2->setWidget(scrollAreaWidgetContents);
-        label_6 = new QLabel(tab);
-        label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(580, 290, 471, 21));
-        label_6->setStyleSheet(QString::fromUtf8("\n"
+        loggedInUsernameID_2 = new QLabel(scrollAreaWidgetContents);
+        loggedInUsernameID_2->setObjectName("loggedInUsernameID_2");
+        loggedInUsernameID_2->setGeometry(QRect(10, 20, 341, 31));
+        loggedInUsernameID_2->setFont(font1);
+        loggedInUsernameID_2->setStyleSheet(QString::fromUtf8("font: 300 16pt \"Segoe UI Light\";\n"
+"color : #858D6F;\n"
+""));
+        loggedInUsernameID_3 = new QLabel(scrollAreaWidgetContents);
+        loggedInUsernameID_3->setObjectName("loggedInUsernameID_3");
+        loggedInUsernameID_3->setGeometry(QRect(10, 50, 431, 31));
+        loggedInUsernameID_3->setFont(font1);
+        loggedInUsernameID_3->setStyleSheet(QString::fromUtf8("font: 300 16pt \"Segoe UI Light\";\n"
+"color : #858D6F;\n"
+""));
+        loggedInUsernameID_4 = new QLabel(scrollAreaWidgetContents);
+        loggedInUsernameID_4->setObjectName("loggedInUsernameID_4");
+        loggedInUsernameID_4->setGeometry(QRect(10, 80, 431, 31));
+        loggedInUsernameID_4->setFont(font1);
+        loggedInUsernameID_4->setStyleSheet(QString::fromUtf8("font: 300 16pt \"Segoe UI Light\";\n"
+"color : #858D6F;\n"
+""));
+        loggedInUsernameLabel_2 = new QLabel(scrollAreaWidgetContents);
+        loggedInUsernameLabel_2->setObjectName("loggedInUsernameLabel_2");
+        loggedInUsernameLabel_2->setGeometry(QRect(10, -10, 431, 41));
+        loggedInUsernameLabel_2->setFont(font);
+        loggedInUsernameLabel_2->setStyleSheet(QString::fromUtf8("\n"
 "font: 700 20pt \"Sitka Banner\";\n"
 "color :#858D6F;\n"
 ""));
+        scrollArea_2->setWidget(scrollAreaWidgetContents);
         widget_3 = new QWidget(tab);
         widget_3->setObjectName("widget_3");
         widget_3->setGeometry(QRect(10, 100, 561, 411));
@@ -473,12 +350,9 @@ public:
         tabWidget->addTab(tab, QString());
         widget_3->raise();
         pushButton_logout->raise();
-        label_4->raise();
-        recc_genre->raise();
         loggedInUsernameLabel->raise();
         loggedInUsernameID->raise();
         scrollArea_2->raise();
-        label_6->raise();
         tab_2 = new QWidget();
         tab_2->setObjectName("tab_2");
         bookSearchButton = new QPushButton(tab_2);
@@ -616,7 +490,7 @@ public:
         scrollAreaReservedBooks_Area->setGeometry(QRect(0, 0, 321, 301));
         verticalLayoutWidget_2 = new QWidget(scrollAreaReservedBooks_Area);
         verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(20, 20, 271, 281));
+        verticalLayoutWidget_2->setGeometry(QRect(0, 0, 271, 281));
         reservedBooks = new QVBoxLayout(verticalLayoutWidget_2);
         reservedBooks->setObjectName("reservedBooks");
         reservedBooks->setContentsMargins(0, 0, 0, 0);
@@ -651,6 +525,118 @@ public:
         label_3->raise();
         label_5->raise();
         lineEdit_bookSearchText->raise();
+        tab_3 = new QWidget();
+        tab_3->setObjectName("tab_3");
+        horizontalLayoutWidget_4 = new QWidget(tab_3);
+        horizontalLayoutWidget_4->setObjectName("horizontalLayoutWidget_4");
+        horizontalLayoutWidget_4->setGeometry(QRect(10, 180, 571, 151));
+        reccomended_books_window = new QHBoxLayout(horizontalLayoutWidget_4);
+        reccomended_books_window->setObjectName("reccomended_books_window");
+        reccomended_books_window->setContentsMargins(0, 0, 0, 0);
+        recc_genre = new QScrollArea(tab_3);
+        recc_genre->setObjectName("recc_genre");
+        recc_genre->setGeometry(QRect(10, 390, 581, 171));
+        recc_genre->setStyleSheet(QString::fromUtf8("border-style: none;"));
+        recc_genre->setWidgetResizable(true);
+        recc_genre_scrollArea = new QWidget();
+        recc_genre_scrollArea->setObjectName("recc_genre_scrollArea");
+        recc_genre_scrollArea->setGeometry(QRect(0, 0, 581, 171));
+        recc_genre_scrollArea->setStyleSheet(QString::fromUtf8("QScrollBar:vertical {\n"
+"	border: none;\n"
+"    Background-color: #CED2BA;\n"
+"    width: 14px;\n"
+"    margin: 15px 0 15px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+"\n"
+"/*  HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {	\n"
+"	background-color: #858D6F;\n"
+"	min-height: 30px;\n"
+"\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{	\n"
+"	background-color:#858D6F;\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {	\n"
+"	background-color: #858D6F;\n"
+"}\n"
+"\n"
+"/* BTN TOP - SCROLLBAR */\n"
+"QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"	background-color: #858D6F;\n"
+"	height: 15px;\n"
+"	border-top-left-radius: 7px;\n"
+"	border-top-right-radius: 7px;\n"
+"	subcontrol-position: top;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:hover {	\n"
+"	background-color:rgb(206, 210, 186);\n"
+"}\n"
+"QScrollBar::sub-line:vertical:pressed {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"\n"
+"/* BTN BOTTOM - SCROLLBAR */\n"
+"QScrollBar::add-line:vertical {\n"
+"	border: none;\n"
+"	backgrou"
+                        "nd-color: #858D6F;\n"
+"	height: 15px;\n"
+"	border-bottom-left-radius: 7px;\n"
+"	border-bottom-right-radius: 7px;\n"
+"	subcontrol-position: bottom;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::add-line:vertical:hover {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"QScrollBar::add-line:vertical:pressed {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"	background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"	background: none;\n"
+"}\n"
+""));
+        horizontalLayoutWidget_5 = new QWidget(recc_genre_scrollArea);
+        horizontalLayoutWidget_5->setObjectName("horizontalLayoutWidget_5");
+        horizontalLayoutWidget_5->setGeometry(QRect(10, 10, 551, 151));
+        reccomended_genre_window = new QHBoxLayout(horizontalLayoutWidget_5);
+        reccomended_genre_window->setObjectName("reccomended_genre_window");
+        reccomended_genre_window->setContentsMargins(0, 0, 0, 0);
+        recc_genre->setWidget(recc_genre_scrollArea);
+        label_8 = new QLabel(tab_3);
+        label_8->setObjectName("label_8");
+        label_8->setGeometry(QRect(10, 30, 681, 51));
+        label_8->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 50pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        label_9 = new QLabel(tab_3);
+        label_9->setObjectName("label_9");
+        label_9->setGeometry(QRect(10, 80, 631, 31));
+        label_9->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 20pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        label_10 = new QLabel(tab_3);
+        label_10->setObjectName("label_10");
+        label_10->setGeometry(QRect(10, 140, 751, 31));
+        label_10->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 18pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        label_11 = new QLabel(tab_3);
+        label_11->setObjectName("label_11");
+        label_11->setGeometry(QRect(10, 350, 751, 31));
+        label_11->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 18pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        tabWidget->addTab(tab_3, QString());
 
         horizontalLayout_2->addWidget(tabWidget);
 
@@ -660,7 +646,7 @@ public:
 
         retranslateUi(sucLogin);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(sucLogin);
@@ -672,8 +658,10 @@ public:
         pushButton_logout->setText(QCoreApplication::translate("sucLogin", "Log Out", nullptr));
         loggedInUsernameLabel->setText(QCoreApplication::translate("sucLogin", "Welcome User : <insert user here>", nullptr));
         loggedInUsernameID->setText(QCoreApplication::translate("sucLogin", "ID: <Id number goe shere>", nullptr));
-        label_4->setText(QCoreApplication::translate("sucLogin", "Most Popular Books (top 5)", nullptr));
-        label_6->setText(QCoreApplication::translate("sucLogin", "Books Recomended For You ", nullptr));
+        loggedInUsernameID_2->setText(QCoreApplication::translate("sucLogin", "you still need to check the books out", nullptr));
+        loggedInUsernameID_3->setText(QCoreApplication::translate("sucLogin", "when you are picking them up, this just ensures ", nullptr));
+        loggedInUsernameID_4->setText(QCoreApplication::translate("sucLogin", "they will be saved for you ", nullptr));
+        loggedInUsernameLabel_2->setText(QCoreApplication::translate("sucLogin", "Reminder ", nullptr));
         label->setText(QCoreApplication::translate("sucLogin", "My Books", nullptr));
         label_7->setText(QCoreApplication::translate("sucLogin", "My Books ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("sucLogin", "Account", nullptr));
@@ -682,6 +670,11 @@ public:
         label_3->setText(QCoreApplication::translate("sucLogin", "Find Books ", nullptr));
         label_5->setText(QCoreApplication::translate("sucLogin", "Enter title and click search below ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("sucLogin", "Catalogue", nullptr));
+        label_8->setText(QCoreApplication::translate("sucLogin", "Our Recomendations ", nullptr));
+        label_9->setText(QCoreApplication::translate("sucLogin", "What we think you would like based off your account data ", nullptr));
+        label_10->setText(QCoreApplication::translate("sucLogin", "Most Popular books (Top 5)", nullptr));
+        label_11->setText(QCoreApplication::translate("sucLogin", "Books we think you might enjoy based off of previous picks ", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("sucLogin", "Recomended", nullptr));
     } // retranslateUi
 
 };

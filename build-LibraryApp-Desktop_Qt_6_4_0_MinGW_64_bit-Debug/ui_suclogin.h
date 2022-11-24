@@ -28,6 +28,26 @@ class Ui_sucLogin
 public:
     QHBoxLayout *horizontalLayout_2;
     QTabWidget *tabWidget;
+    QWidget *tab_2;
+    QPushButton *bookSearchButton;
+    QLineEdit *lineEdit_bookSearchText;
+    QScrollArea *scrollArea;
+    QWidget *scrollContents;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *bookCoverVertLayout;
+    QVBoxLayout *bookInfoVertLayout;
+    QHBoxLayout *horizontalLayout_4;
+    QVBoxLayout *bookQuantityVertLayout;
+    QVBoxLayout *bookOptions;
+    QScrollArea *scrollAreaReservedBooks;
+    QWidget *scrollAreaReservedBooks_Area;
+    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *reservedBooks;
+    QLabel *label_2;
+    QWidget *widget_2;
+    QLabel *label_3;
+    QLabel *label_5;
     QWidget *tab;
     QPushButton *pushButton_logout;
     QLabel *loggedInUsernameLabel;
@@ -56,26 +76,6 @@ public:
     QVBoxLayout *yourReservedBooksListStatus;
     QVBoxLayout *yourReservedBooksListReturnButton;
     QLabel *label_7;
-    QWidget *tab_2;
-    QPushButton *bookSearchButton;
-    QLineEdit *lineEdit_bookSearchText;
-    QScrollArea *scrollArea;
-    QWidget *scrollContents;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QVBoxLayout *bookCoverVertLayout;
-    QVBoxLayout *bookInfoVertLayout;
-    QHBoxLayout *horizontalLayout_4;
-    QVBoxLayout *bookQuantityVertLayout;
-    QVBoxLayout *bookOptions;
-    QScrollArea *scrollAreaReservedBooks;
-    QWidget *scrollAreaReservedBooks_Area;
-    QWidget *verticalLayoutWidget_2;
-    QVBoxLayout *reservedBooks;
-    QLabel *label_2;
-    QWidget *widget_2;
-    QLabel *label_3;
-    QLabel *label_5;
 
     void setupUi(QDialog *sucLogin)
     {
@@ -96,6 +96,178 @@ public:
 "\n"
 "\n"
 ""));
+        tab_2 = new QWidget();
+        tab_2->setObjectName("tab_2");
+        bookSearchButton = new QPushButton(tab_2);
+        bookSearchButton->setObjectName("bookSearchButton");
+        bookSearchButton->setGeometry(QRect(380, 120, 171, 31));
+        bookSearchButton->setStyleSheet(QString::fromUtf8("background-color:#858D6F ;\n"
+"border-radius : 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: rgb(255, 255, 255);"));
+        lineEdit_bookSearchText = new QLineEdit(tab_2);
+        lineEdit_bookSearchText->setObjectName("lineEdit_bookSearchText");
+        lineEdit_bookSearchText->setGeometry(QRect(10, 120, 361, 31));
+        scrollArea = new QScrollArea(tab_2);
+        scrollArea->setObjectName("scrollArea");
+        scrollArea->setGeometry(QRect(20, 180, 651, 351));
+        scrollArea->setAutoFillBackground(false);
+        scrollArea->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: #ffffff;\n"
+"border-style: none;\n"
+"\n"
+"}\n"
+"\n"
+"QScrollBar:vertical {\n"
+"	border: none;\n"
+"    Background-color: #CED2BA;\n"
+"    width: 14px;\n"
+"    margin: 15px 0 15px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+"\n"
+"/*  HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {	\n"
+"	background-color: #858D6F;\n"
+"	min-height: 30px;\n"
+"\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{	\n"
+"	background-color:#858D6F;\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {	\n"
+"	background-color: #858D6F;\n"
+"}\n"
+"\n"
+"/* BTN TOP - SCROLLBAR */\n"
+"QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"	background-color: #858D6F;\n"
+"	height: 15px;\n"
+"\n"
+"	subcontrol-position: top;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:hover {	\n"
+"	background-color:rgb(206, 210, 186);\n"
+"}\n"
+"QScrollBar::sub-line:vertical:pressed {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"\n"
+"/* BTN BOTTOM - SCROLLBAR */\n"
+"QScrollBar::"
+                        "add-line:vertical {\n"
+"	border: none;\n"
+"	background-color: #858D6F;\n"
+"	height: 15px;\n"
+"\n"
+"	subcontrol-position: bottom;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::add-line:vertical:hover {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"QScrollBar::add-line:vertical:pressed {	\n"
+"	background-color: rgb(206, 210, 186);\n"
+"}\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"	background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"	background: none;\n"
+"}\n"
+""));
+        scrollArea->setWidgetResizable(true);
+        scrollContents = new QWidget();
+        scrollContents->setObjectName("scrollContents");
+        scrollContents->setGeometry(QRect(0, 0, 649, 349));
+        horizontalLayoutWidget = new QWidget(scrollContents);
+        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
+        horizontalLayoutWidget->setGeometry(QRect(0, 10, 641, 321));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setSpacing(2);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(10, 10, 10, 10);
+        bookCoverVertLayout = new QVBoxLayout();
+        bookCoverVertLayout->setObjectName("bookCoverVertLayout");
+        bookCoverVertLayout->setContentsMargins(-1, 0, -1, 0);
+
+        horizontalLayout->addLayout(bookCoverVertLayout);
+
+        bookInfoVertLayout = new QVBoxLayout();
+        bookInfoVertLayout->setObjectName("bookInfoVertLayout");
+
+        horizontalLayout->addLayout(bookInfoVertLayout);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        horizontalLayout_4->setContentsMargins(5, 5, 5, 5);
+        bookQuantityVertLayout = new QVBoxLayout();
+        bookQuantityVertLayout->setObjectName("bookQuantityVertLayout");
+
+        horizontalLayout_4->addLayout(bookQuantityVertLayout);
+
+        bookOptions = new QVBoxLayout();
+        bookOptions->setObjectName("bookOptions");
+
+        horizontalLayout_4->addLayout(bookOptions);
+
+
+        horizontalLayout->addLayout(horizontalLayout_4);
+
+        scrollArea->setWidget(scrollContents);
+        scrollAreaReservedBooks = new QScrollArea(tab_2);
+        scrollAreaReservedBooks->setObjectName("scrollAreaReservedBooks");
+        scrollAreaReservedBooks->setGeometry(QRect(700, 240, 321, 301));
+        scrollAreaReservedBooks->setStyleSheet(QString::fromUtf8("border: 0px solid lightgray;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color : #fffffF;\n"
+""));
+        scrollAreaReservedBooks->setWidgetResizable(true);
+        scrollAreaReservedBooks_Area = new QWidget();
+        scrollAreaReservedBooks_Area->setObjectName("scrollAreaReservedBooks_Area");
+        scrollAreaReservedBooks_Area->setGeometry(QRect(0, 0, 321, 301));
+        verticalLayoutWidget_2 = new QWidget(scrollAreaReservedBooks_Area);
+        verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
+        verticalLayoutWidget_2->setGeometry(QRect(20, 20, 271, 281));
+        reservedBooks = new QVBoxLayout(verticalLayoutWidget_2);
+        reservedBooks->setObjectName("reservedBooks");
+        reservedBooks->setContentsMargins(0, 0, 0, 0);
+        scrollAreaReservedBooks->setWidget(scrollAreaReservedBooks_Area);
+        label_2 = new QLabel(tab_2);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(700, 200, 371, 31));
+        label_2->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 20pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        widget_2 = new QWidget(tab_2);
+        widget_2->setObjectName("widget_2");
+        widget_2->setGeometry(QRect(910, 640, 120, 80));
+        label_3 = new QLabel(tab_2);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(10, 30, 341, 51));
+        label_3->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 50pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        label_5 = new QLabel(tab_2);
+        label_5->setObjectName("label_5");
+        label_5->setGeometry(QRect(10, 80, 381, 31));
+        label_5->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 20pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        tabWidget->addTab(tab_2, QString());
+        bookSearchButton->raise();
+        scrollArea->raise();
+        scrollAreaReservedBooks->raise();
+        label_2->raise();
+        widget_2->raise();
+        label_3->raise();
+        label_5->raise();
+        lineEdit_bookSearchText->raise();
         tab = new QWidget();
         tab->setObjectName("tab");
         pushButton_logout = new QPushButton(tab);
@@ -479,178 +651,6 @@ public:
         loggedInUsernameID->raise();
         scrollArea_2->raise();
         label_6->raise();
-        tab_2 = new QWidget();
-        tab_2->setObjectName("tab_2");
-        bookSearchButton = new QPushButton(tab_2);
-        bookSearchButton->setObjectName("bookSearchButton");
-        bookSearchButton->setGeometry(QRect(380, 120, 171, 31));
-        bookSearchButton->setStyleSheet(QString::fromUtf8("background-color:#858D6F ;\n"
-"border-radius : 1px;\n"
-"font: 300 12pt \"Segoe UI Light\";\n"
-"color: rgb(255, 255, 255);"));
-        lineEdit_bookSearchText = new QLineEdit(tab_2);
-        lineEdit_bookSearchText->setObjectName("lineEdit_bookSearchText");
-        lineEdit_bookSearchText->setGeometry(QRect(10, 120, 361, 31));
-        scrollArea = new QScrollArea(tab_2);
-        scrollArea->setObjectName("scrollArea");
-        scrollArea->setGeometry(QRect(20, 180, 651, 351));
-        scrollArea->setAutoFillBackground(false);
-        scrollArea->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
-"font: 300 12pt \"Segoe UI Light\";\n"
-"color: #ffffff;\n"
-"border-style: none;\n"
-"\n"
-"}\n"
-"\n"
-"QScrollBar:vertical {\n"
-"	border: none;\n"
-"    Background-color: #CED2BA;\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
-"	border-radius: 0px;\n"
-" }\n"
-"\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle:vertical {	\n"
-"	background-color: #858D6F;\n"
-"	min-height: 30px;\n"
-"\n"
-"}\n"
-"QScrollBar::handle:vertical:hover{	\n"
-"	background-color:#858D6F;\n"
-"}\n"
-"QScrollBar::handle:vertical:pressed {	\n"
-"	background-color: #858D6F;\n"
-"}\n"
-"\n"
-"/* BTN TOP - SCROLLBAR */\n"
-"QScrollBar::sub-line:vertical {\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"\n"
-"	subcontrol-position: top;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::sub-line:vertical:hover {	\n"
-"	background-color:rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::sub-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* BTN BOTTOM - SCROLLBAR */\n"
-"QScrollBar::"
-                        "add-line:vertical {\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"\n"
-"	subcontrol-position: bottom;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::add-line:vertical:hover {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::add-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* RESET ARROW */\n"
-"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
-"	background: none;\n"
-"}\n"
-"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
-"	background: none;\n"
-"}\n"
-""));
-        scrollArea->setWidgetResizable(true);
-        scrollContents = new QWidget();
-        scrollContents->setObjectName("scrollContents");
-        scrollContents->setGeometry(QRect(0, 0, 649, 349));
-        horizontalLayoutWidget = new QWidget(scrollContents);
-        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(0, 10, 641, 321));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setSpacing(2);
-        horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(10, 10, 10, 10);
-        bookCoverVertLayout = new QVBoxLayout();
-        bookCoverVertLayout->setObjectName("bookCoverVertLayout");
-        bookCoverVertLayout->setContentsMargins(-1, 0, -1, 0);
-
-        horizontalLayout->addLayout(bookCoverVertLayout);
-
-        bookInfoVertLayout = new QVBoxLayout();
-        bookInfoVertLayout->setObjectName("bookInfoVertLayout");
-
-        horizontalLayout->addLayout(bookInfoVertLayout);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName("horizontalLayout_4");
-        horizontalLayout_4->setContentsMargins(5, 5, 5, 5);
-        bookQuantityVertLayout = new QVBoxLayout();
-        bookQuantityVertLayout->setObjectName("bookQuantityVertLayout");
-
-        horizontalLayout_4->addLayout(bookQuantityVertLayout);
-
-        bookOptions = new QVBoxLayout();
-        bookOptions->setObjectName("bookOptions");
-
-        horizontalLayout_4->addLayout(bookOptions);
-
-
-        horizontalLayout->addLayout(horizontalLayout_4);
-
-        scrollArea->setWidget(scrollContents);
-        scrollAreaReservedBooks = new QScrollArea(tab_2);
-        scrollAreaReservedBooks->setObjectName("scrollAreaReservedBooks");
-        scrollAreaReservedBooks->setGeometry(QRect(700, 240, 321, 301));
-        scrollAreaReservedBooks->setStyleSheet(QString::fromUtf8("border: 0px solid lightgray;\n"
-"font: 300 12pt \"Segoe UI Light\";\n"
-"color : #fffffF;\n"
-""));
-        scrollAreaReservedBooks->setWidgetResizable(true);
-        scrollAreaReservedBooks_Area = new QWidget();
-        scrollAreaReservedBooks_Area->setObjectName("scrollAreaReservedBooks_Area");
-        scrollAreaReservedBooks_Area->setGeometry(QRect(0, 0, 321, 301));
-        verticalLayoutWidget_2 = new QWidget(scrollAreaReservedBooks_Area);
-        verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(20, 20, 271, 281));
-        reservedBooks = new QVBoxLayout(verticalLayoutWidget_2);
-        reservedBooks->setObjectName("reservedBooks");
-        reservedBooks->setContentsMargins(0, 0, 0, 0);
-        scrollAreaReservedBooks->setWidget(scrollAreaReservedBooks_Area);
-        label_2 = new QLabel(tab_2);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(700, 200, 371, 31));
-        label_2->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color :#858D6F;"));
-        widget_2 = new QWidget(tab_2);
-        widget_2->setObjectName("widget_2");
-        widget_2->setGeometry(QRect(910, 640, 120, 80));
-        label_3 = new QLabel(tab_2);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(10, 30, 341, 51));
-        label_3->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 50pt \"Sitka Banner\";\n"
-"color :#858D6F;"));
-        label_5 = new QLabel(tab_2);
-        label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(10, 80, 381, 31));
-        label_5->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color :#858D6F;"));
-        tabWidget->addTab(tab_2, QString());
-        bookSearchButton->raise();
-        scrollArea->raise();
-        scrollAreaReservedBooks->raise();
-        label_2->raise();
-        widget_2->raise();
-        label_3->raise();
-        label_5->raise();
-        lineEdit_bookSearchText->raise();
 
         horizontalLayout_2->addWidget(tabWidget);
 
@@ -660,7 +660,7 @@ public:
 
         retranslateUi(sucLogin);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(sucLogin);
@@ -669,6 +669,11 @@ public:
     void retranslateUi(QDialog *sucLogin)
     {
         sucLogin->setWindowTitle(QCoreApplication::translate("sucLogin", "Dialog", nullptr));
+        bookSearchButton->setText(QCoreApplication::translate("sucLogin", "Search", nullptr));
+        label_2->setText(QCoreApplication::translate("sucLogin", "Books you reserved this session :", nullptr));
+        label_3->setText(QCoreApplication::translate("sucLogin", "Find Books ", nullptr));
+        label_5->setText(QCoreApplication::translate("sucLogin", "Enter title and click search below ", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("sucLogin", "Catalogue", nullptr));
         pushButton_logout->setText(QCoreApplication::translate("sucLogin", "Log Out", nullptr));
         loggedInUsernameLabel->setText(QCoreApplication::translate("sucLogin", "Welcome User : <insert user here>", nullptr));
         loggedInUsernameID->setText(QCoreApplication::translate("sucLogin", "ID: <Id number goe shere>", nullptr));
@@ -677,11 +682,6 @@ public:
         label->setText(QCoreApplication::translate("sucLogin", "My Books", nullptr));
         label_7->setText(QCoreApplication::translate("sucLogin", "My Books ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("sucLogin", "Account", nullptr));
-        bookSearchButton->setText(QCoreApplication::translate("sucLogin", "Search", nullptr));
-        label_2->setText(QCoreApplication::translate("sucLogin", "Books you reserved this session :", nullptr));
-        label_3->setText(QCoreApplication::translate("sucLogin", "Find Books ", nullptr));
-        label_5->setText(QCoreApplication::translate("sucLogin", "Enter title and click search below ", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("sucLogin", "Catalogue", nullptr));
     } // retranslateUi
 
 };
