@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1088</width>
-    <height>646</height>
+    <width>1106</width>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@ border-color: #858D6F;
 </string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -40,8 +40,8 @@ border-color: #858D6F;
       <widget class="QPushButton" name="pushButton_logout">
        <property name="geometry">
         <rect>
-         <x>1090</x>
-         <y>550</y>
+         <x>980</x>
+         <y>520</y>
          <width>91</width>
          <height>31</height>
         </rect>
@@ -630,7 +630,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <layout class="QVBoxLayout" name="yourReservedBooksListStatus"/>
               </item>
               <item>
-               <layout class="QVBoxLayout" name="yourReservedBooksListReturnButton"/>
+               <layout class="QVBoxLayout" name="yourReservedBooksListReturnButton">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+               </layout>
               </item>
              </layout>
             </item>
@@ -803,7 +807,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <property name="spacing">
-           <number>2</number>
+           <number>6</number>
           </property>
           <property name="leftMargin">
            <number>10</number>
@@ -831,26 +835,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
            <layout class="QVBoxLayout" name="bookInfoVertLayout"/>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
-            <property name="leftMargin">
-             <number>5</number>
-            </property>
-            <property name="topMargin">
-             <number>5</number>
-            </property>
-            <property name="rightMargin">
-             <number>5</number>
-            </property>
-            <property name="bottomMargin">
-             <number>5</number>
-            </property>
-            <item>
-             <layout class="QVBoxLayout" name="bookQuantityVertLayout"/>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="bookOptions"/>
-            </item>
-           </layout>
+           <layout class="QVBoxLayout" name="bookQuantityVertLayout"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="bookOptions"/>
           </item>
          </layout>
         </widget>
@@ -889,7 +877,7 @@ color : #fffffF;
            <x>0</x>
            <y>0</y>
            <width>271</width>
-           <height>281</height>
+           <height>191</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="reservedBooks"/>

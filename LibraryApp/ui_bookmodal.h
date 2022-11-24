@@ -32,6 +32,7 @@ public:
     QLabel *Title;
     QLabel *Author;
     QTextBrowser *Description;
+    QLabel *SeriesLinkCode;
 
     void setupUi(QDialog *BookModal)
     {
@@ -49,7 +50,7 @@ public:
         widget->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
         verticalLayoutWidget = new QWidget(widget);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(20, 50, 171, 211));
+        verticalLayoutWidget->setGeometry(QRect(40, 50, 111, 181));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -70,7 +71,10 @@ public:
 "font: 15pt \"Sitka Text\";"));
         Description = new QTextBrowser(widget);
         Description->setObjectName("Description");
-        Description->setGeometry(QRect(200, 150, 411, 251));
+        Description->setGeometry(QRect(200, 150, 411, 211));
+        SeriesLinkCode = new QLabel(widget);
+        SeriesLinkCode->setObjectName("SeriesLinkCode");
+        SeriesLinkCode->setGeometry(QRect(40, 250, 111, 51));
         widget->raise();
         buttonBox->raise();
 
@@ -93,6 +97,7 @@ public:
 "hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Lorem Ipsummm</p></body></html>", nullptr));
+        SeriesLinkCode->setText(QCoreApplication::translate("BookModal", "Series Link Code", nullptr));
     } // retranslateUi
 
 };

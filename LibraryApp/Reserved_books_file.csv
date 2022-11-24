@@ -28,74 +28,15 @@ userID,reservedRecordArray.at(i).at(1),date reserved,date due,Overdue,Catalog In
 0,The Thursday Murder Club,17/11/2022,22/11/2022,Overdue,4
 0,The Girl on the Train,17/11/2022,23/11/2022,Overdue,5
 6,Crime and Punishment,19/11/2022,26/11/2022,Returned,2
-6,Grudges dislies you most,19/11/2022,26/11/2022,Returned,15
-6,The Orphans,19/11/2022,26/11/2022,Returned,7
-6,Grudges dislikes you more,19/11/2022,26/11/2022,Returned,14
-6,Grudges dislikes you,19/11/2022,26/11/2022,Returned,13
-6,Grudges dislies you most,19/11/2022,26/11/2022,Returned,15
-6,I Am Pilgrim,19/11/2022,26/11/2022,Returned,12
-6,Fire & Blood,19/11/2022,26/11/2022,Returned,11
-12,The Perfect Crime,19/11/2022,26/11/2022,Due-Soon,1
-12,Fire & Blood,19/11/2022,26/11/2022,Due-Soon,11
-13,The Thursday Murder Club,19/11/2022,26/11/2022,Returned,4
-13,It Starts With Us,19/11/2022,26/11/2022,Due-Soon,6
-13,Grudges dislies you most,19/11/2022,26/11/2022,Due-Soon,15
-13,Grudges dislikes you more,19/11/2022,26/11/2022,Due-Soon,14
-13,Grudges dislikes you,19/11/2022,26/11/2022,Due-Soon,13
-6,The Perfect Crime,21/11/2022,28/11/2022,Returned,1
-6,Grudges dislies you most,21/11/2022,28/11/2022,Returned,15
-6,Book Title,21/11/2022,28/11/2022,Returned,0
-6,Crime and Punishment,22/11/2022,29/11/2022,Returned,2
-6,The Year of the Locust,22/11/2022,29/11/2022,Returned,3
-6,The Thursday Murder Club,22/11/2022,29/11/2022,Returned,4
-6,The Girl on the Train,22/11/2022,29/11/2022,Returned,5
-16,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-16,The Year of the Locust,22/11/2022,29/11/2022,Returned,3
-16,The Thursday Murder Club,22/11/2022,29/11/2022,Returned,4
-16,Tarquin the Honest,22/11/2022,29/11/2022,Returned,9
-16,The Atlas Paradox,22/11/2022,29/11/2022,Returned,8
-16,Fire & Blood,22/11/2022,29/11/2022,Returned,11
-16,I Am Pilgrim,22/11/2022,29/11/2022,Returned,12
-16,Grudges dislikes you more,22/11/2022,29/11/2022,Returned,14
-16,The Orphans,22/11/2022,29/11/2022,Returned,7
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Crime and Punishment,22/11/2022,29/11/2022,Returned,2
-6,The Thursday Murder Club,22/11/2022,29/11/2022,Returned,4
-6,The Year of the Locust,22/11/2022,29/11/2022,Returned,3
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Crime and Punishment,22/11/2022,29/11/2022,Returned,2
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Crime and Punishment,22/11/2022,29/11/2022,Returned,2
-6,Fire & Blood,22/11/2022,29/11/2022,Returned,11
-6,The Girl on the Train,22/11/2022,29/11/2022,Returned,5
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Thursday Murder Club,22/11/2022,29/11/2022,Returned,4
-6,The Year of the Locust,22/11/2022,29/11/2022,Returned,3
-6,Tarquin the Honest,22/11/2022,29/11/2022,Returned,9
-6,The Girl on the Train,22/11/2022,29/11/2022,Returned,5
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Crime and Punishment,22/11/2022,29/11/2022,Returned,2
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-6,Book Title,22/11/2022,29/11/2022,Returned,0
-6,The Orphans,22/11/2022,29/11/2022,Returned,7
-6,The Perfect Crime,22/11/2022,29/11/2022,Returned,1
-16,Crime and Punishment,22/11/2022,29/11/2022,On-Loan,2
-16,The Girl on the Train,22/11/2022,29/11/2022,On-Loan,5
-16,It Starts With Us,22/11/2022,29/11/2022,On-Loan,6
-6,The Thursday Murder Club,23/11/2022,30/11/2022,On-Loan,4
-6,The Year of the Locust,23/11/2022,30/11/2022,On-Loan,3
-6,Book Title,23/11/2022,30/11/2022,On-Loan,0
-17,The Perfect Crime,23/11/2022,30/11/2022,On-Loan,1
-17,The Year of the Locust,23/11/2022,30/11/2022,On-Loan,3
-17,The Thursday Murder Club,23/11/2022,30/11/2022,On-Loan,4
+6,Their desert night of scandal,25/11/2022,02/12/2022,On-Loan,16
+6,Unwrapping his New York innocent,25/11/2022,02/12/2022,On-Loan,17
+6,Nine months after that night,25/11/2022,02/12/2022,On-Loan,15
+6,Righteous Prey,25/11/2022,02/12/2022,On-Loan,14
+6,I Am Pilgrim,25/11/2022,02/12/2022,On-Loan,12
+6,Fire & Blood,25/11/2022,02/12/2022,On-Loan,11
+6,Tarquin the Honest,25/11/2022,02/12/2022,On-Loan,9
+6,The Orphans,25/11/2022,02/12/2022,On-Loan,7
+6,The Girl on the Train,25/11/2022,02/12/2022,On-Loan,5
+6,The Year of the Locust,25/11/2022,02/12/2022,On-Loan,3
+6,The last girl to die,25/11/2022,02/12/2022,On-Loan,0
 6,The Perfect Crime,25/11/2022,02/12/2022,On-Loan,1

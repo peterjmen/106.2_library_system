@@ -104,10 +104,11 @@ sucLogin::sucLogin(QWidget * parent):
 
       reserveBookButtonVector.append(reserveBook);
       ui -> bookOptions -> addWidget(reserveBookButtonVector[i]);
-      if (bookCatalogue.at(i).at(5).toInt() <= 0) {
+      if (bookCatalogue.at(i).at(5).toInt() < 1) {
         QSizePolicy sp_retain = reserveBook -> sizePolicy();
         sp_retain.setRetainSizeWhenHidden(true);
         reserveBook -> setSizePolicy(sp_retain);
+        reserveBook -> hide();
 
 
 
@@ -464,6 +465,7 @@ void sucLogin::on_bookSearchButton_clicked() {
     QString iterationAsString = QString::number(i);
     QPushButton * reserveBook = new QPushButton("Reserve book \n" + bookCatalogue.at(i).at(1) );
     reserveBook -> setProperty("bookIndex", i);
+    reserveBook -> setStyleSheet("background-color:#858D6F; color: rgb(255, 255, 255);");
 
     connect(reserveBook, SIGNAL(clicked()), this, SLOT(reserveBookClicked()));
     reserveBookButtonVector.append(reserveBook);
@@ -474,6 +476,7 @@ void sucLogin::on_bookSearchButton_clicked() {
       sp_retain.setRetainSizeWhenHidden(true);
       reserveBook -> setSizePolicy(sp_retain);
       reserveBook -> setStyleSheet("background-color: #CED2BA ; color: rgb(255, 255, 255);");
+      reserveBook -> hide();
     }
     //reserve button section over
 
@@ -557,6 +560,7 @@ void sucLogin::reserveBookClicked() {
       int bookIndexNum = pButton -> property("bookIndex").toInt();
       //Creates label displaying book title wich is added to dashboard
       QLabel * reservedBookListItem = new QLabel(bookCatalogue.at(bookIndexNum).at(1));
+      reservedBookListItem -> setStyleSheet("background-color: #CED2BA ; color: rgb(0, 0, 0);");
       ui -> reservedBooks -> addWidget(reservedBookListItem);
 
       //Creates vector to store reservation details to write to book reservation csv

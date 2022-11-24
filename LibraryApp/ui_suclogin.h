@@ -61,7 +61,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *bookCoverVertLayout;
     QVBoxLayout *bookInfoVertLayout;
-    QHBoxLayout *horizontalLayout_4;
     QVBoxLayout *bookQuantityVertLayout;
     QVBoxLayout *bookOptions;
     QScrollArea *scrollAreaReservedBooks;
@@ -88,7 +87,7 @@ public:
     {
         if (sucLogin->objectName().isEmpty())
             sucLogin->setObjectName("sucLogin");
-        sucLogin->resize(1088, 646);
+        sucLogin->resize(1106, 615);
         sucLogin->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
         horizontalLayout_2 = new QHBoxLayout(sucLogin);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
@@ -107,7 +106,7 @@ public:
         tab->setObjectName("tab");
         pushButton_logout = new QPushButton(tab);
         pushButton_logout->setObjectName("pushButton_logout");
-        pushButton_logout->setGeometry(QRect(1090, 550, 91, 31));
+        pushButton_logout->setGeometry(QRect(980, 520, 91, 31));
         pushButton_logout->setStyleSheet(QString::fromUtf8("background-color: #858D6F;\n"
 "border-radius: 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
@@ -332,6 +331,7 @@ public:
         horizontalLayout_3->addLayout(yourReservedBooksListStatus);
 
         yourReservedBooksListReturnButton = new QVBoxLayout();
+        yourReservedBooksListReturnButton->setSpacing(6);
         yourReservedBooksListReturnButton->setObjectName("yourReservedBooksListReturnButton");
 
         horizontalLayout_3->addLayout(yourReservedBooksListReturnButton);
@@ -446,7 +446,7 @@ public:
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
         horizontalLayoutWidget->setGeometry(QRect(0, 10, 641, 321));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setSpacing(2);
+        horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(10, 10, 10, 10);
         bookCoverVertLayout = new QVBoxLayout();
@@ -460,21 +460,15 @@ public:
 
         horizontalLayout->addLayout(bookInfoVertLayout);
 
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName("horizontalLayout_4");
-        horizontalLayout_4->setContentsMargins(5, 5, 5, 5);
         bookQuantityVertLayout = new QVBoxLayout();
         bookQuantityVertLayout->setObjectName("bookQuantityVertLayout");
 
-        horizontalLayout_4->addLayout(bookQuantityVertLayout);
+        horizontalLayout->addLayout(bookQuantityVertLayout);
 
         bookOptions = new QVBoxLayout();
         bookOptions->setObjectName("bookOptions");
 
-        horizontalLayout_4->addLayout(bookOptions);
-
-
-        horizontalLayout->addLayout(horizontalLayout_4);
+        horizontalLayout->addLayout(bookOptions);
 
         scrollArea->setWidget(scrollContents);
         scrollAreaReservedBooks = new QScrollArea(tab_2);
@@ -490,7 +484,7 @@ public:
         scrollAreaReservedBooks_Area->setGeometry(QRect(0, 0, 321, 301));
         verticalLayoutWidget_2 = new QWidget(scrollAreaReservedBooks_Area);
         verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(0, 0, 271, 281));
+        verticalLayoutWidget_2->setGeometry(QRect(0, 0, 271, 191));
         reservedBooks = new QVBoxLayout(verticalLayoutWidget_2);
         reservedBooks->setObjectName("reservedBooks");
         reservedBooks->setContentsMargins(0, 0, 0, 0);
@@ -646,7 +640,7 @@ public:
 
         retranslateUi(sucLogin);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(sucLogin);

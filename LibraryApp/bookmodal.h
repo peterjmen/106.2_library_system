@@ -27,6 +27,7 @@ private:
     QVector<QLabel*> Picture;
     QVector<QLabel*> Title;
     QVector<QLabel*> Author;
+    QVector<QLabel*> SeriesLinkCode;
     QVector<QTextBrowser*> Description;
 };
 
