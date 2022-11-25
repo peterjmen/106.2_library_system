@@ -1,3 +1,6 @@
+release/adminAddUser.o
+release/adminDeleteUser.o
+release/adminEditUser.o
 release/admintest.o
 release/adminwindow.o
 release/bookmodal.o
@@ -6,6 +9,7 @@ release/main.o
 release/mainwindow.o
 release/suclogin.o
 release/qrc_QtResources.o
+release/moc_adminAddUser.o
 release/moc_admintest.o
 release/moc_adminwindow.o
 release/moc_bookmodal.o

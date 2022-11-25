@@ -1,7 +1,9 @@
 #include "adminwindow.h"
+
 #include "ui_adminwindow.h"
 #include "mainwindow.h"
 #include "bookmodal.h"
+
 
 #include <QLabel>
 #include <QBoxLayout>
@@ -449,6 +451,11 @@ void adminWindow::on_addUserButton_clicked() { // add functionality
                                   QMessageBox::Yes|QMessageBox::No);
     if (reply == QMessageBox::Yes) {
       qDebug() << "Yes was clicked";
+
+      hide();
+      adminAddUser* adminadduser = new adminAddUser();
+      adminadduser -> show();
+      close();
     } else {
       qDebug() << "No was clicked";
     }

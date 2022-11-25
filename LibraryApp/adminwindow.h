@@ -2,11 +2,17 @@
 #define ADMINWINDOW_H
 
 #include <QDialog>
+
+
 #include "filemanager.h"
+
+
+
 
 namespace Ui {
 class adminWindow;
 }
+
 
 class adminWindow : public QDialog
 {
@@ -20,6 +26,7 @@ public:
       bool CheckValidUser(QString username, QString fileName);
       bool nameFound = false;
       QString userID;
+
 
 private slots:
     void on_pushButton_admin_logout_clicked();
@@ -40,6 +47,12 @@ private:
     QVector<QVector<QString>> reservedRecordArray;
      QVector<QVector<QString>> accountArray;
     void btnSetup();
+
+
+
+
+
+
 };
 
 #endif // ADMINWINDOW_H

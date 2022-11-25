@@ -9,6 +9,9 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminAddUser.cpp \
+    adminDeleteUser.cpp \
+    adminEditUser.cpp \
     admintest.cpp \
     adminwindow.cpp \
     bookmodal.cpp \
@@ -18,6 +21,9 @@ SOURCES += \
     suclogin.cpp
 
 HEADERS += \
+    adminAddUser.h \
+    adminDeleteUser.h \
+    adminEditUser.h \
     admintest.h \
     adminwindow.h \
     bookmodal.h \
@@ -26,6 +32,9 @@ HEADERS += \
     suclogin.h
 
 FORMS += \
+    adminAddUser.ui \
+    adminDeleteUser.ui \
+    adminEditUser.ui \
     admintest.ui \
     adminwindow.ui \
     bookmodal.ui \

@@ -1,3 +1,6 @@
+debug/adminAddUser.o
+debug/adminDeleteUser.o
+debug/adminEditUser.o
 debug/admintest.o
 debug/adminwindow.o
 debug/bookmodal.o
@@ -6,6 +9,7 @@ debug/main.o
 debug/mainwindow.o
 debug/suclogin.o
 debug/qrc_QtResources.o
+debug/moc_adminAddUser.o
 debug/moc_admintest.o
 debug/moc_adminwindow.o
 debug/moc_bookmodal.o

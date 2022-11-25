@@ -9,6 +9,8 @@
 #include "filemanager.h" //and created instances in private
 #include "adminwindow.h"
 #include "admintest.h"
+#include "adminAddUser.h"
+
 
 
 
@@ -34,6 +36,9 @@ public:
         return loggedInUserID;
     }
 
+  adminAddUser *adminadduser;
+  adminWindow *adminwindow;
+
 private slots:
     void on_pushButton_login_clicked();
 
@@ -42,12 +47,17 @@ private slots:
 private:
     Ui::MainWindow *ui;
     sucLogin *suclogin;
-    adminWindow *adminwindow;
+
     adminTest *admintest;
     FileManager fManager;
     bool signedIn = false;
     QString loggedInUserName;
     int loggedInUserID;
+
+
+
 };
+
+
 #endif // MAINWINDOW_H
 
