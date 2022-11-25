@@ -15,6 +15,8 @@
 #include <QPushButton>
 #include <QMessageBox>
 
+#include <QApplication>
+#include <QProcess>
 
 //Vectors to hold book pictures and info
 QVector < QPushButton * > bookCoversListAdmin;
@@ -35,7 +37,6 @@ QVector < QTextBrowser * > allUserPassAdmin;
 QVector < QTextBrowser * > bookTitleAdmin;
 QVector < QPushButton * > editUserButtonVectorAdmin; //button for editing users
 QVector < QPushButton * > deleteUserButtonVectorAdmin; //button for deleting users
-
 
 adminWindow::adminWindow(QWidget *parent) :
     QDialog(parent),
@@ -213,7 +214,7 @@ adminWindow::adminWindow(QWidget *parent) :
     //cast i into string
     QString iterationAsStringDeleteUser = QString::number(j);
     QPushButton * deleteUser = new QPushButton("Delete User: " + accountArray.at(j).at(3));
-    deleteUser -> setProperty("bookIndex", j);
+    deleteUser -> setProperty("deleteIndex", j);
     deleteUser -> setStyleSheet("background-color:#858D6F; color: rgb(255, 255, 255);");
 
 
@@ -231,8 +232,7 @@ adminWindow::adminWindow(QWidget *parent) :
     }
 
 
-    //end of edit button
-
+    //end of delete button
 
 
 
@@ -428,6 +428,8 @@ void adminWindow::editUserClicked() { // add functionality
 };
 
 void adminWindow::deleteUserClicked() { // add functionality
+    QPushButton * pButton = qobject_cast < QPushButton * > (sender());
+
 
   // displays a message box with 2 options
 
@@ -436,9 +438,44 @@ void adminWindow::deleteUserClicked() { // add functionality
                                   QMessageBox::Yes|QMessageBox::No);
     if (reply == QMessageBox::Yes) {
       qDebug() << "Yes was clicked";
+
+     int userToDelete = pButton ->  property("deleteUser").toInt();
+     qDebug() << property("deleteUser").toString();
+     QString nilString = "nil";
+      //update reserved books file with andy changes
+      QVector < QString > changes;
+      QString oldFileToDelete = "accountInformation.csv";
+      // creates  file with namenew_...
+      QString newFileWithEdits = "accountInformation_changed";
+      QString newFileWithEdits_csv = "accountInformation_changed.csv";
+      QFile file(newFileWithEdits);
+
+      for (int i = 0; i < accountArray.length(); i++) {
+        for (int j = 0; j < 4; j++) {
+           if(i == userToDelete && j == 0){
+               changes.append(nilString);
+           }else if(i == userToDelete && j == 1){
+               changes.append(nilString);
+           } else{
+          changes.append(accountArray.at(i).at(j));
+           }
+        }
+        fManager.WriteFile(newFileWithEdits, changes);
+        changes.clear();
+      }
+
+      QFile::remove(oldFileToDelete);
+      QFile::rename(newFileWithEdits_csv, oldFileToDelete);
+
+
+
     } else {
       qDebug() << "No was clicked";
     }
+
+
+
+
 
 };
 

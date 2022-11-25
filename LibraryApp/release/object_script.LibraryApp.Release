@@ -1,5 +1,4 @@
 release/adminAddUser.o
-release/adminDeleteUser.o
 release/adminEditUser.o
 release/admintest.o
 release/adminwindow.o

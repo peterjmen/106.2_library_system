@@ -10,7 +10,6 @@ CONFIG += c++17
 
 SOURCES += \
     adminAddUser.cpp \
-    adminDeleteUser.cpp \
     adminEditUser.cpp \
     admintest.cpp \
     adminwindow.cpp \
@@ -22,7 +21,6 @@ SOURCES += \
 
 HEADERS += \
     adminAddUser.h \
-    adminDeleteUser.h \
     adminEditUser.h \
     admintest.h \
     adminwindow.h \
@@ -33,7 +31,6 @@ HEADERS += \
 
 FORMS += \
     adminAddUser.ui \
-    adminDeleteUser.ui \
     adminEditUser.ui \
     admintest.ui \
     adminwindow.ui \

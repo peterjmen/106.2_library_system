@@ -13,7 +13,8 @@
 #include <QTextBrowser>
 #include <QPushButton>
 #include <QMessageBox>
-
+#include <QApplication>
+#include <QProcess>
 
 adminAddUser::adminAddUser(QWidget *parent)
     : QDialog(parent)
@@ -37,6 +38,13 @@ void adminAddUser::on_pushButton_cancel_clicked()
 
     //closes sucLogin window and re-opens mainwindow fresh
     hide();
+
+
+    QString program = qApp->arguments()[0];
+    QStringList arguments = qApp->arguments().mid(1); // remove the 1st argument - the program name
+    qApp->quit();
+    QProcess::startDetached(program, arguments);
+
     adminWindow * mainWindow = new adminWindow();
     mainWindow -> show();
     close();

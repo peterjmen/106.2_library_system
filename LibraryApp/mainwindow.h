@@ -18,6 +18,9 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+extern int globalUserID;
+
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -38,6 +41,8 @@ public:
 
   adminAddUser *adminadduser;
   adminWindow *adminwindow;
+
+
 
 private slots:
     void on_pushButton_login_clicked();

@@ -48,7 +48,7 @@ private:
      QVector<QVector<QString>> accountArray;
     void btnSetup();
 
-
+  adminWindow *adminwindow;
 
 
 
