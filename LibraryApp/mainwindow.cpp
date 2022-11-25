@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_login_clicked()
     QString password = ui->lineEdit_password->text();
 
 
-    QVector<QVector<QString>> fileContent = fManager.ReadFile("accountInformation", 3);
+    QVector<QVector<QString>> fileContent = fManager.ReadFile("accountInformation", 4);
 
 
         if(username == "admin" && password == "admin"){
@@ -43,12 +43,15 @@ void MainWindow::on_pushButton_login_clicked()
             adminwindow->show();
             signedIn = true;
 
-        } else if(username == "test" && password == "test"){
-            QMessageBox::information(this, "Admin test logged in", "Proceed to test page");
-            hide();
-            admintest = new adminTest(this);
-            admintest->show();
-            signedIn = true;
+        } else if(username == "nil" && password == "nil"){
+            QMessageBox::warning(this, "Error", "Reserved name");
+
+            return;
+        }else if(username == "" || password == "") {
+            QMessageBox::warning(this, "Error", "Please enter a username and password.");
+
+            return;
+
         }
 
         else {
@@ -90,13 +93,19 @@ void MainWindow::on_pushButton_login_clicked()
 
 void MainWindow::on_pushButton_register_clicked()
 {
+
+    QVector<QVector<QString>> fileContent = fManager.ReadFile("accountInformation", 4);
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
-
+    int newID = fileContent.length();
+    QString userID = QString::number(newID);
     QVector<QString> content;
+
+    if(username != "" && password != ""){
     content.append(username);
     content.append(password);
     content.append("1"); //1 for access level 1
+    content.append(userID);
 
     if(fManager.CheckValidUser(username, "accountInformation")){
         fManager.WriteFile("accountInformation", content);
@@ -114,6 +123,13 @@ void MainWindow::on_pushButton_register_clicked()
         box.setWindowTitle("Sign-up failed");
         box.setStandardButtons(QMessageBox::Ok);
         box.exec();
+    }
+    }else {
+
+        QMessageBox::warning(this, "Error", "Please enter a username and password.");
+
+        return;
+
     }
 }
 

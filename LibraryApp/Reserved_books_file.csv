@@ -28,7 +28,7 @@ userID,reservedRecordArray.at(i).at(1),date reserved,date due,Overdue,Catalog In
 0,The Thursday Murder Club,17/11/2022,22/11/2022,Overdue,4
 0,The Girl on the Train,17/11/2022,23/11/2022,Overdue,5
 6,Crime and Punishment,19/11/2022,26/11/2022,Returned,2
-6,Their desert night of scandal,25/11/2022,02/12/2022,On-Loan,16
+6,Their desert night of scandal,25/11/2022,02/12/2022,Returned,16
 6,Unwrapping his New York innocent,25/11/2022,02/12/2022,On-Loan,17
 6,Nine months after that night,25/11/2022,02/12/2022,On-Loan,15
 6,Righteous Prey,25/11/2022,02/12/2022,On-Loan,14

@@ -32,62 +32,121 @@ public:
     QWidget *widget_4;
     QWidget *widget_5;
     QLabel *label_2;
-    QScrollArea *accounts_scrollArea;
-    QWidget *horizont;
-    QWidget *verticalLayoutWidget_8;
-    QVBoxLayout *accountsVertLayout;
-    QHBoxLayout *horizontalLayout_5;
-    QVBoxLayout *userIDList;
+    QScrollArea *scrollArea_2;
+    QWidget *scrollContents_2;
+    QWidget *horizontalLayoutWidget_3;
+    QHBoxLayout *horizontalLayout_2;
     QVBoxLayout *usernameList;
     QVBoxLayout *userPasswordList;
-    QLabel *label_8;
+    QHBoxLayout *horizontalLayout_7;
+    QVBoxLayout *userIDList;
+    QVBoxLayout *userEditButtons;
+    QVBoxLayout *userDeleteButtons;
+    QLabel *label_9;
+    QPushButton *addUserButton;
     QLabel *label_4;
     QWidget *tab_2;
     QPushButton *bookSearchButtonAdmin;
     QLineEdit *lineEdit_bookSearchText;
-    QScrollArea *catalogue_scrollArea;
-    QWidget *catalogueVertLayout;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *catalogueLayout;
-    QVBoxLayout *bookCoverVertLayout;
-    QVBoxLayout *bookInfoVertLayout;
-    QHBoxLayout *horizontalLayout_4;
-    QVBoxLayout *bookQuantityVertLayout;
-    QVBoxLayout *bookEditVertLayout;
-    QVBoxLayout *bookDeleteVertLayout;
     QWidget *widget_2;
     QLabel *label_3;
     QLabel *label_5;
     QPushButton *addBookButton;
-    QWidget *tab;
-    QLabel *loggedInUsernameLabel;
-    QWidget *widget_3;
-    QWidget *widget;
-    QLabel *label;
-    QScrollArea *notifScrollArea;
-    QWidget *catalogueVertLayout_3;
+    QScrollArea *scrollArea;
+    QWidget *scrollContents;
     QWidget *horizontalLayoutWidget_2;
-    QHBoxLayout *horizontalLayout_3;
-    QVBoxLayout *allBookCovers;
-    QVBoxLayout *allReservedBooksList;
-    QVBoxLayout *allReservedBooksListReservedDate;
-    QVBoxLayout *allReservedBooksListDueDate;
-    QVBoxLayout *allReservedBooksListStatus;
-    QVBoxLayout *allReservedBooksUserName;
-    QVBoxLayout *allReservedBooksListUserID;
-    QLabel *label_7;
-    QLabel *label_9;
-    QLabel *label_10;
-    QLabel *label_11;
-    QLabel *label_12;
-    QLabel *label_13;
-    QLabel *label_14;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *bookCoverVertLayout;
+    QVBoxLayout *bookInfoVertLayout;
+    QHBoxLayout *horizontalLayout_6;
+    QVBoxLayout *bookQuantityVertLayout;
+    QVBoxLayout *bookEditVertLayout;
+    QVBoxLayout *bookDeleteVertLayout;
+    QWidget *layoutWidget;
+    QVBoxLayout *usernameList_2;
 
     void setupUi(QDialog *adminWindow)
     {
         if (adminWindow->objectName().isEmpty())
             adminWindow->setObjectName("adminWindow");
         adminWindow->resize(1204, 626);
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(245, 244, 255, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        QBrush brush2(QColor(255, 255, 255, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
+        QBrush brush3(QColor(250, 249, 255, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
+        QBrush brush4(QColor(122, 122, 127, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
+        QBrush brush5(QColor(163, 163, 170, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette.setBrush(QPalette::Active, QPalette::BrightText, brush2);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush2);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush3);
+        QBrush brush6(QColor(255, 255, 220, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush6);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        QBrush brush7(QColor(208, 208, 208, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush7);
+        QBrush brush8(QColor(64, 65, 66, 255));
+        brush8.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush8);
+        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
+        QBrush brush9(QColor(227, 227, 227, 255));
+        brush9.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush9);
+        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush8);
+        QBrush brush10(QColor(160, 160, 160, 255));
+        brush10.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush10);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush7);
+        QBrush brush11(QColor(255, 51, 51, 255));
+        brush11.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush11);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush7);
+        QBrush brush12(QColor(46, 47, 48, 255));
+        brush12.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush12);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush12);
+        QBrush brush13(QColor(105, 105, 105, 255));
+        brush13.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush13);
+        QBrush brush14(QColor(53, 54, 55, 255));
+        brush14.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush14);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush7);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush14);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush7);
+        adminWindow->setPalette(palette);
         adminWindow->setStyleSheet(QString::fromUtf8("background-color: #858D6F;"));
         tabWidget = new QTabWidget(adminWindow);
         tabWidget->setObjectName("tabWidget");
@@ -102,16 +161,16 @@ public:
         tab_3->setObjectName("tab_3");
         pushButton_admin_logout = new QPushButton(tab_3);
         pushButton_admin_logout->setObjectName("pushButton_admin_logout");
-        pushButton_admin_logout->setGeometry(QRect(1100, 30, 80, 24));
+        pushButton_admin_logout->setGeometry(QRect(1120, 10, 80, 24));
         widget_4 = new QWidget(tab_3);
         widget_4->setObjectName("widget_4");
-        widget_4->setGeometry(QRect(10, 70, 1151, 441));
+        widget_4->setGeometry(QRect(10, 70, 1191, 441));
         widget_4->setStyleSheet(QString::fromUtf8("background-color:#858D6F; \n"
 "border-style:none  ;\n"
 ""));
         widget_5 = new QWidget(widget_4);
         widget_5->setObjectName("widget_5");
-        widget_5->setGeometry(QRect(10, 50, 1101, 341));
+        widget_5->setGeometry(QRect(10, 80, 1151, 341));
         widget_5->setStyleSheet(QString::fromUtf8("\n"
 "\n"
 "\n"
@@ -123,172 +182,11 @@ public:
 "font: 700 20pt \"Sitka Banner\";\n"
 "color :#CED2BA;\n"
 ""));
-        accounts_scrollArea = new QScrollArea(widget_5);
-        accounts_scrollArea->setObjectName("accounts_scrollArea");
-        accounts_scrollArea->setGeometry(QRect(10, 10, 1101, 331));
-        QPalette palette;
-        QBrush brush(QColor(0, 0, 0, 255));
-        brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        QBrush brush1(QColor(206, 210, 186, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Active, QPalette::Text, brush);
-        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Active, QPalette::Base, brush1);
-        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Active, QPalette::PlaceholderText, brush);
-#endif
-        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Base, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush);
-#endif
-        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Text, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush);
-#endif
-        accounts_scrollArea->setPalette(palette);
-        accounts_scrollArea->setAutoFillBackground(false);
-        accounts_scrollArea->setStyleSheet(QString::fromUtf8("\n"
-"QScrollBar:vertical {\n"
-"	border: none;\n"
-"    Background-color: #CED2BA;\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
-"	border-radius: 0px;\n"
-" }\n"
-"\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle:vertical {	\n"
-"	background-color: #858D6F;\n"
-"	min-height: 30px;\n"
-"\n"
-"}\n"
-"QScrollBar::handle:vertical:hover{	\n"
-"	background-color:#858D6F;\n"
-"}\n"
-"QScrollBar::handle:vertical:pressed {	\n"
-"	background-color: #858D6F;\n"
-"}\n"
-"\n"
-"/* BTN TOP - SCROLLBAR */\n"
-"QScrollBar::sub-line:vertical {\n"
-"	border: none;\n"
-"	background-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-top-left-radius: 7px;\n"
-"	border-top-right-radius: 7px;\n"
-"	subcontrol-position: top;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::sub-line:vertical:hover {	\n"
-"	background-color:rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::sub-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* BTN BOTTOM - SCROLLBAR */\n"
-"QScrollBar::add-line:vertical {\n"
-"	border: none;\n"
-"	bac"
-                        "kground-color: #858D6F;\n"
-"	height: 15px;\n"
-"	border-bottom-left-radius: 7px;\n"
-"	border-bottom-right-radius: 7px;\n"
-"	subcontrol-position: bottom;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::add-line:vertical:hover {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"QScrollBar::add-line:vertical:pressed {	\n"
-"	background-color: rgb(206, 210, 186);\n"
-"}\n"
-"\n"
-"/* RESET ARROW */\n"
-"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
-"	background: none;\n"
-"}\n"
-"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
-"	background: none;\n"
-"}\n"
-""));
-        accounts_scrollArea->setWidgetResizable(true);
-        horizont = new QWidget();
-        horizont->setObjectName("horizont");
-        horizont->setGeometry(QRect(0, 0, 1101, 331));
-        verticalLayoutWidget_8 = new QWidget(horizont);
-        verticalLayoutWidget_8->setObjectName("verticalLayoutWidget_8");
-        verticalLayoutWidget_8->setGeometry(QRect(10, 10, 1061, 311));
-        accountsVertLayout = new QVBoxLayout(verticalLayoutWidget_8);
-        accountsVertLayout->setObjectName("accountsVertLayout");
-        accountsVertLayout->setContentsMargins(5, 5, 5, 5);
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName("horizontalLayout_5");
-        horizontalLayout_5->setContentsMargins(5, 5, 5, 5);
-        userIDList = new QVBoxLayout();
-        userIDList->setObjectName("userIDList");
-
-        horizontalLayout_5->addLayout(userIDList);
-
-        usernameList = new QVBoxLayout();
-        usernameList->setObjectName("usernameList");
-        usernameList->setSizeConstraint(QLayout::SetNoConstraint);
-
-        horizontalLayout_5->addLayout(usernameList);
-
-        userPasswordList = new QVBoxLayout();
-        userPasswordList->setObjectName("userPasswordList");
-
-        horizontalLayout_5->addLayout(userPasswordList);
-
-
-        accountsVertLayout->addLayout(horizontalLayout_5);
-
-        accounts_scrollArea->setWidget(horizont);
-        label_8 = new QLabel(widget_4);
-        label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(20, 20, 471, 21));
-        label_8->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_4 = new QLabel(tab_3);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(20, 10, 671, 51));
-        label_4->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 50pt \"Sitka Banner\";\n"
-"color :#858D6F;"));
-        tabWidget->addTab(tab_3, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName("tab_2");
-        bookSearchButtonAdmin = new QPushButton(tab_2);
-        bookSearchButtonAdmin->setObjectName("bookSearchButtonAdmin");
-        bookSearchButtonAdmin->setGeometry(QRect(380, 120, 171, 31));
-        bookSearchButtonAdmin->setStyleSheet(QString::fromUtf8("background-color:#858D6F ;\n"
-"border-radius : 1px;\n"
-"font: 300 12pt \"Segoe UI Light\";\n"
-"color: rgb(255, 255, 255);"));
-        lineEdit_bookSearchText = new QLineEdit(tab_2);
-        lineEdit_bookSearchText->setObjectName("lineEdit_bookSearchText");
-        lineEdit_bookSearchText->setGeometry(QRect(10, 120, 361, 31));
-        catalogue_scrollArea = new QScrollArea(tab_2);
-        catalogue_scrollArea->setObjectName("catalogue_scrollArea");
-        catalogue_scrollArea->setGeometry(QRect(20, 180, 1151, 351));
-        catalogue_scrollArea->setAutoFillBackground(false);
-        catalogue_scrollArea->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
+        scrollArea_2 = new QScrollArea(widget_5);
+        scrollArea_2->setObjectName("scrollArea_2");
+        scrollArea_2->setGeometry(QRect(0, 10, 1151, 351));
+        scrollArea_2->setAutoFillBackground(false);
+        scrollArea_2->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
 "color: #ffffff;\n"
 "border-style: none;\n"
@@ -357,50 +255,113 @@ public:
 "	background: none;\n"
 "}\n"
 ""));
-        catalogue_scrollArea->setWidgetResizable(true);
-        catalogueVertLayout = new QWidget();
-        catalogueVertLayout->setObjectName("catalogueVertLayout");
-        catalogueVertLayout->setGeometry(QRect(0, 0, 1149, 349));
-        horizontalLayoutWidget = new QWidget(catalogueVertLayout);
-        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(0, 10, 1121, 321));
-        catalogueLayout = new QHBoxLayout(horizontalLayoutWidget);
-        catalogueLayout->setSpacing(2);
-        catalogueLayout->setObjectName("catalogueLayout");
-        catalogueLayout->setContentsMargins(10, 10, 10, 10);
-        bookCoverVertLayout = new QVBoxLayout();
-        bookCoverVertLayout->setObjectName("bookCoverVertLayout");
-        bookCoverVertLayout->setContentsMargins(-1, 0, -1, 0);
+        scrollArea_2->setWidgetResizable(true);
+        scrollContents_2 = new QWidget();
+        scrollContents_2->setObjectName("scrollContents_2");
+        scrollContents_2->setGeometry(QRect(0, 0, 1151, 351));
+        horizontalLayoutWidget_3 = new QWidget(scrollContents_2);
+        horizontalLayoutWidget_3->setObjectName("horizontalLayoutWidget_3");
+        horizontalLayoutWidget_3->setGeometry(QRect(10, 0, 1101, 321));
+        horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_3);
+        horizontalLayout_2->setSpacing(2);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(10, 10, 10, 10);
+        usernameList = new QVBoxLayout();
+        usernameList->setObjectName("usernameList");
 
-        catalogueLayout->addLayout(bookCoverVertLayout);
+        horizontalLayout_2->addLayout(usernameList);
 
-        bookInfoVertLayout = new QVBoxLayout();
-        bookInfoVertLayout->setObjectName("bookInfoVertLayout");
+        userPasswordList = new QVBoxLayout();
+        userPasswordList->setObjectName("userPasswordList");
 
-        catalogueLayout->addLayout(bookInfoVertLayout);
+        horizontalLayout_2->addLayout(userPasswordList);
 
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName("horizontalLayout_4");
-        horizontalLayout_4->setContentsMargins(5, 5, 5, 5);
-        bookQuantityVertLayout = new QVBoxLayout();
-        bookQuantityVertLayout->setObjectName("bookQuantityVertLayout");
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        horizontalLayout_7->setContentsMargins(5, 5, 5, 5);
+        userIDList = new QVBoxLayout();
+        userIDList->setObjectName("userIDList");
 
-        horizontalLayout_4->addLayout(bookQuantityVertLayout);
+        horizontalLayout_7->addLayout(userIDList);
 
-        bookEditVertLayout = new QVBoxLayout();
-        bookEditVertLayout->setObjectName("bookEditVertLayout");
+        userEditButtons = new QVBoxLayout();
+        userEditButtons->setObjectName("userEditButtons");
 
-        horizontalLayout_4->addLayout(bookEditVertLayout);
+        horizontalLayout_7->addLayout(userEditButtons);
 
-        bookDeleteVertLayout = new QVBoxLayout();
-        bookDeleteVertLayout->setObjectName("bookDeleteVertLayout");
+        userDeleteButtons = new QVBoxLayout();
+        userDeleteButtons->setObjectName("userDeleteButtons");
 
-        horizontalLayout_4->addLayout(bookDeleteVertLayout);
+        horizontalLayout_7->addLayout(userDeleteButtons);
 
 
-        catalogueLayout->addLayout(horizontalLayout_4);
+        horizontalLayout_2->addLayout(horizontalLayout_7);
 
-        catalogue_scrollArea->setWidget(catalogueVertLayout);
+        scrollArea_2->setWidget(scrollContents_2);
+        label_9 = new QLabel(widget_4);
+        label_9->setObjectName("label_9");
+        label_9->setGeometry(QRect(20, 20, 191, 21));
+        label_9->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 20pt \"Sitka Banner\";\n"
+"color: #CED2BA;\n"
+""));
+        addUserButton = new QPushButton(widget_4);
+        addUserButton->setObjectName("addUserButton");
+        addUserButton->setGeometry(QRect(940, 20, 171, 31));
+        QPalette palette1;
+        palette1.setBrush(QPalette::Active, QPalette::WindowText, brush2);
+        QBrush brush15(QColor(133, 141, 111, 255));
+        brush15.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Button, brush15);
+        palette1.setBrush(QPalette::Active, QPalette::Text, brush2);
+        palette1.setBrush(QPalette::Active, QPalette::ButtonText, brush2);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush15);
+        palette1.setBrush(QPalette::Active, QPalette::Window, brush15);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette::Active, QPalette::PlaceholderText, brush2);
+#endif
+        palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush2);
+        palette1.setBrush(QPalette::Inactive, QPalette::Button, brush15);
+        palette1.setBrush(QPalette::Inactive, QPalette::Text, brush2);
+        palette1.setBrush(QPalette::Inactive, QPalette::ButtonText, brush2);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush15);
+        palette1.setBrush(QPalette::Inactive, QPalette::Window, brush15);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush2);
+#endif
+        palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
+        palette1.setBrush(QPalette::Disabled, QPalette::Button, brush15);
+        palette1.setBrush(QPalette::Disabled, QPalette::Text, brush2);
+        palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
+        palette1.setBrush(QPalette::Disabled, QPalette::Base, brush15);
+        palette1.setBrush(QPalette::Disabled, QPalette::Window, brush15);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush2);
+#endif
+        addUserButton->setPalette(palette1);
+        addUserButton->setStyleSheet(QString::fromUtf8("background-color:#858D6F ;\n"
+"border-radius : 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: rgb(255, 255, 255);"));
+        label_4 = new QLabel(tab_3);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(20, 10, 671, 51));
+        label_4->setStyleSheet(QString::fromUtf8("\n"
+"font: 700 50pt \"Sitka Banner\";\n"
+"color :#858D6F;"));
+        tabWidget->addTab(tab_3, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName("tab_2");
+        bookSearchButtonAdmin = new QPushButton(tab_2);
+        bookSearchButtonAdmin->setObjectName("bookSearchButtonAdmin");
+        bookSearchButtonAdmin->setGeometry(QRect(380, 120, 171, 31));
+        bookSearchButtonAdmin->setStyleSheet(QString::fromUtf8("background-color:#858D6F ;\n"
+"border-radius : 1px;\n"
+"font: 300 12pt \"Segoe UI Light\";\n"
+"color: rgb(255, 255, 255);"));
+        lineEdit_bookSearchText = new QLineEdit(tab_2);
+        lineEdit_bookSearchText->setObjectName("lineEdit_bookSearchText");
+        lineEdit_bookSearchText->setGeometry(QRect(10, 120, 361, 31));
         widget_2 = new QWidget(tab_2);
         widget_2->setObjectName("widget_2");
         widget_2->setGeometry(QRect(910, 640, 120, 80));
@@ -423,54 +384,11 @@ public:
 "border-radius : 1px;\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
 "color: rgb(255, 255, 255);"));
-        tabWidget->addTab(tab_2, QString());
-        bookSearchButtonAdmin->raise();
-        catalogue_scrollArea->raise();
-        widget_2->raise();
-        label_3->raise();
-        label_5->raise();
-        lineEdit_bookSearchText->raise();
-        addBookButton->raise();
-        tab = new QWidget();
-        tab->setObjectName("tab");
-        loggedInUsernameLabel = new QLabel(tab);
-        loggedInUsernameLabel->setObjectName("loggedInUsernameLabel");
-        loggedInUsernameLabel->setGeometry(QRect(10, 10, 431, 41));
-        QFont font;
-        font.setFamilies({QString::fromUtf8("Sitka Banner")});
-        font.setPointSize(20);
-        font.setBold(true);
-        font.setItalic(false);
-        loggedInUsernameLabel->setFont(font);
-        loggedInUsernameLabel->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color :#858D6F;\n"
-""));
-        widget_3 = new QWidget(tab);
-        widget_3->setObjectName("widget_3");
-        widget_3->setGeometry(QRect(10, 60, 1181, 441));
-        widget_3->setStyleSheet(QString::fromUtf8("background-color:#858D6F; \n"
-"border-style:none  ;\n"
-""));
-        widget = new QWidget(widget_3);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 90, 1161, 341));
-        widget->setStyleSheet(QString::fromUtf8("\n"
-"\n"
-"\n"
-"background-color: #CED2BA;"));
-        label = new QLabel(widget);
-        label->setObjectName("label");
-        label->setGeometry(QRect(10, 20, 161, 31));
-        label->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color :#CED2BA;\n"
-""));
-        notifScrollArea = new QScrollArea(widget);
-        notifScrollArea->setObjectName("notifScrollArea");
-        notifScrollArea->setGeometry(QRect(10, 0, 1151, 351));
-        notifScrollArea->setAutoFillBackground(false);
-        notifScrollArea->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
+        scrollArea = new QScrollArea(tab_2);
+        scrollArea->setObjectName("scrollArea");
+        scrollArea->setGeometry(QRect(20, 160, 1151, 351));
+        scrollArea->setAutoFillBackground(false);
+        scrollArea->setStyleSheet(QString::fromUtf8("QscrollArea{\n"
 "font: 300 12pt \"Segoe UI Light\";\n"
 "color: #ffffff;\n"
 "border-style: none;\n"
@@ -539,118 +457,68 @@ public:
 "	background: none;\n"
 "}\n"
 ""));
-        notifScrollArea->setWidgetResizable(true);
-        catalogueVertLayout_3 = new QWidget();
-        catalogueVertLayout_3->setObjectName("catalogueVertLayout_3");
-        catalogueVertLayout_3->setGeometry(QRect(0, 0, 1151, 351));
-        horizontalLayoutWidget_2 = new QWidget(catalogueVertLayout_3);
+        scrollArea->setWidgetResizable(true);
+        scrollContents = new QWidget();
+        scrollContents->setObjectName("scrollContents");
+        scrollContents->setGeometry(QRect(0, 0, 1149, 349));
+        horizontalLayoutWidget_2 = new QWidget(scrollContents);
         horizontalLayoutWidget_2->setObjectName("horizontalLayoutWidget_2");
-        horizontalLayoutWidget_2->setGeometry(QRect(0, 10, 1121, 321));
-        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_2);
-        horizontalLayout_3->setSpacing(2);
-        horizontalLayout_3->setObjectName("horizontalLayout_3");
-        horizontalLayout_3->setContentsMargins(10, 10, 10, 10);
-        allBookCovers = new QVBoxLayout();
-        allBookCovers->setObjectName("allBookCovers");
-        allBookCovers->setContentsMargins(-1, 0, -1, 0);
+        horizontalLayoutWidget_2->setGeometry(QRect(10, 10, 1131, 321));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout->setSpacing(2);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(10, 10, 10, 10);
+        bookCoverVertLayout = new QVBoxLayout();
+        bookCoverVertLayout->setObjectName("bookCoverVertLayout");
+        bookCoverVertLayout->setContentsMargins(-1, 0, -1, 0);
 
-        horizontalLayout_3->addLayout(allBookCovers);
+        horizontalLayout->addLayout(bookCoverVertLayout);
 
-        allReservedBooksList = new QVBoxLayout();
-        allReservedBooksList->setObjectName("allReservedBooksList");
+        bookInfoVertLayout = new QVBoxLayout();
+        bookInfoVertLayout->setObjectName("bookInfoVertLayout");
 
-        horizontalLayout_3->addLayout(allReservedBooksList);
+        horizontalLayout->addLayout(bookInfoVertLayout);
 
-        allReservedBooksListReservedDate = new QVBoxLayout();
-        allReservedBooksListReservedDate->setObjectName("allReservedBooksListReservedDate");
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName("horizontalLayout_6");
+        horizontalLayout_6->setContentsMargins(5, 5, 5, 5);
+        bookQuantityVertLayout = new QVBoxLayout();
+        bookQuantityVertLayout->setObjectName("bookQuantityVertLayout");
 
-        horizontalLayout_3->addLayout(allReservedBooksListReservedDate);
+        horizontalLayout_6->addLayout(bookQuantityVertLayout);
 
-        allReservedBooksListDueDate = new QVBoxLayout();
-        allReservedBooksListDueDate->setObjectName("allReservedBooksListDueDate");
+        bookEditVertLayout = new QVBoxLayout();
+        bookEditVertLayout->setObjectName("bookEditVertLayout");
 
-        horizontalLayout_3->addLayout(allReservedBooksListDueDate);
+        horizontalLayout_6->addLayout(bookEditVertLayout);
 
-        allReservedBooksListStatus = new QVBoxLayout();
-        allReservedBooksListStatus->setObjectName("allReservedBooksListStatus");
+        bookDeleteVertLayout = new QVBoxLayout();
+        bookDeleteVertLayout->setObjectName("bookDeleteVertLayout");
 
-        horizontalLayout_3->addLayout(allReservedBooksListStatus);
+        horizontalLayout_6->addLayout(bookDeleteVertLayout);
 
-        allReservedBooksUserName = new QVBoxLayout();
-        allReservedBooksUserName->setObjectName("allReservedBooksUserName");
 
-        horizontalLayout_3->addLayout(allReservedBooksUserName);
+        horizontalLayout->addLayout(horizontalLayout_6);
 
-        allReservedBooksListUserID = new QVBoxLayout();
-        allReservedBooksListUserID->setObjectName("allReservedBooksListUserID");
-
-        horizontalLayout_3->addLayout(allReservedBooksListUserID);
-
-        notifScrollArea->setWidget(catalogueVertLayout_3);
-        label_7 = new QLabel(widget_3);
-        label_7->setObjectName("label_7");
-        label_7->setGeometry(QRect(70, 40, 71, 21));
-        label_7->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_9 = new QLabel(widget_3);
-        label_9->setObjectName("label_9");
-        label_9->setGeometry(QRect(350, 40, 161, 21));
-        label_9->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_10 = new QLabel(widget_3);
-        label_10->setObjectName("label_10");
-        label_10->setGeometry(QRect(540, 40, 161, 21));
-        label_10->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_11 = new QLabel(widget_3);
-        label_11->setObjectName("label_11");
-        label_11->setGeometry(QRect(890, 40, 61, 21));
-        label_11->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_12 = new QLabel(widget_3);
-        label_12->setObjectName("label_12");
-        label_12->setGeometry(QRect(1040, 40, 201, 21));
-        label_12->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_13 = new QLabel(widget_3);
-        label_13->setObjectName("label_13");
-        label_13->setGeometry(QRect(710, 40, 71, 21));
-        label_13->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        label_14 = new QLabel(widget_3);
-        label_14->setObjectName("label_14");
-        label_14->setGeometry(QRect(230, 40, 71, 21));
-        label_14->setStyleSheet(QString::fromUtf8("\n"
-"font: 700 20pt \"Sitka Banner\";\n"
-"color: #CED2BA;\n"
-""));
-        widget->raise();
-        label_7->raise();
-        label_9->raise();
-        label_10->raise();
-        label_12->raise();
-        label_13->raise();
-        label_11->raise();
-        label_14->raise();
-        tabWidget->addTab(tab, QString());
-        widget_3->raise();
-        loggedInUsernameLabel->raise();
+        scrollArea->setWidget(scrollContents);
+        tabWidget->addTab(tab_2, QString());
+        bookSearchButtonAdmin->raise();
+        widget_2->raise();
+        label_3->raise();
+        label_5->raise();
+        lineEdit_bookSearchText->raise();
+        addBookButton->raise();
+        scrollArea->raise();
+        layoutWidget = new QWidget(adminWindow);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(890, 600, 2, 2));
+        usernameList_2 = new QVBoxLayout(layoutWidget);
+        usernameList_2->setObjectName("usernameList_2");
+        usernameList_2->setContentsMargins(0, 0, 0, 0);
 
         retranslateUi(adminWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(adminWindow);
@@ -661,7 +529,8 @@ public:
         adminWindow->setWindowTitle(QCoreApplication::translate("adminWindow", "Dialog", nullptr));
         pushButton_admin_logout->setText(QCoreApplication::translate("adminWindow", "Log Out", nullptr));
         label_2->setText(QCoreApplication::translate("adminWindow", "My Books", nullptr));
-        label_8->setText(QCoreApplication::translate("adminWindow", "User Account List", nullptr));
+        label_9->setText(QCoreApplication::translate("adminWindow", "USER DATABASE", nullptr));
+        addUserButton->setText(QCoreApplication::translate("adminWindow", "Add new user", nullptr));
         label_4->setText(QCoreApplication::translate("adminWindow", "Welcome Administrator", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("adminWindow", "User Accounts", nullptr));
         bookSearchButtonAdmin->setText(QCoreApplication::translate("adminWindow", "Search", nullptr));
@@ -669,16 +538,6 @@ public:
         label_5->setText(QCoreApplication::translate("adminWindow", "Enter title and click search below ", nullptr));
         addBookButton->setText(QCoreApplication::translate("adminWindow", "Add new Book", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("adminWindow", "Catalogue", nullptr));
-        loggedInUsernameLabel->setText(QCoreApplication::translate("adminWindow", "Review all Active notifications", nullptr));
-        label->setText(QCoreApplication::translate("adminWindow", "My Books", nullptr));
-        label_7->setText(QCoreApplication::translate("adminWindow", "Book", nullptr));
-        label_9->setText(QCoreApplication::translate("adminWindow", "Date Reserved", nullptr));
-        label_10->setText(QCoreApplication::translate("adminWindow", "Date Due", nullptr));
-        label_11->setText(QCoreApplication::translate("adminWindow", "User", nullptr));
-        label_12->setText(QCoreApplication::translate("adminWindow", "User ID", nullptr));
-        label_13->setText(QCoreApplication::translate("adminWindow", "Status", nullptr));
-        label_14->setText(QCoreApplication::translate("adminWindow", "Title", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("adminWindow", "Notifications", nullptr));
     } // retranslateUi
 
 };
